@@ -1,0 +1,174 @@
+{
+  "repo_id": "google-t5/t5-small",
+  "model_id": "google-t5/t5-small",
+  "author": "google-t5",
+  "last_modified": "2023-06-30 02:31:26+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "onnx",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "summarization",
+    "translation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:c4",
+    "arxiv:1805.12471",
+    "arxiv:1708.00055",
+    "arxiv:1704.05426",
+    "arxiv:1606.05250",
+    "arxiv:1808.09121",
+    "arxiv:1810.12885",
+    "arxiv:1905.10044",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "translation",
+  "files_count": 20,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/generation_config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/model.safetensors"
+    },
+    {
+      "name": "onnx/decoder_model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/decoder_model.onnx"
+    },
+    {
+      "name": "onnx/decoder_model_merged.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/decoder_model_merged.onnx"
+    },
+    {
+      "name": "onnx/decoder_model_merged_quantized.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/decoder_model_merged_quantized.onnx"
+    },
+    {
+      "name": "onnx/decoder_model_quantized.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/decoder_model_quantized.onnx"
+    },
+    {
+      "name": "onnx/decoder_with_past_model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/decoder_with_past_model.onnx"
+    },
+    {
+      "name": "onnx/decoder_with_past_model_quantized.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/decoder_with_past_model_quantized.onnx"
+    },
+    {
+      "name": "onnx/encoder_model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/encoder_model.onnx"
+    },
+    {
+      "name": "onnx/encoder_model_quantized.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/onnx/encoder_model_quantized.onnx"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "spiece.model",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/spiece.model"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google-t5/t5-small/resolve/main/tokenizer_config.json"
+    }
+  ],
+  "external_links": [
+    "https://aclanthology.org/I05-5002",
+    "https://aclanthology.org/N18-1023",
+    "https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html",
+    "https://arxiv.org/abs/1606.05250",
+    "https://arxiv.org/abs/1704.05426",
+    "https://arxiv.org/abs/1708.00055",
+    "https://arxiv.org/abs/1805.12471",
+    "https://arxiv.org/abs/1808.09121",
+    "https://arxiv.org/abs/1810.12885",
+    "https://arxiv.org/abs/1905.10044",
+    "https://arxiv.org/abs/1910.09700",
+    "https://camo.githubusercontent.com/623b4dea0b653f2ad3f36c71ebfe749a677ac0a1/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f343030362f312a44304a31674e51663876727255704b657944387750412e706e67",
+    "https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/main/notebooks/t5-trivia.ipynb",
+    "https://github.com/google-research/text-to-text-transfer-transformer",
+    "https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints",
+    "https://huggingface.co/datasets/c4",
+    "https://huggingface.co/datasets/wiki_dpr",
+    "https://huggingface.co/docs/transformers/model_doc/t5",
+    "https://huggingface.co/docs/transformers/model_doc/t5#transformers.T5Model",
+    "https://huggingface.co/models?search=t5",
+    "https://jmlr.org/papers/volume21/20-074/20-074.pdf",
+    "https://link.springer.com/chapter/10.1007/11736790_9",
+    "https://mlco2.github.io/impact#compute",
+    "https://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf",
+    "https://quoradata.quora.com/First-Quora-Dataset-Release-Question-Pairs",
+    "https://semanticsarchive.net/Archive/Tg3ZGI2M/Marneffe.pdf",
+    "https://www.researchgate.net/publication/221251392_Choice_of_Plausible_Alternatives_An_Evaluation_of_Commonsense_Causal_Reasoning",
+    "https://www.tensorflow.org/datasets/catalog/c4"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:48.058377"
+}

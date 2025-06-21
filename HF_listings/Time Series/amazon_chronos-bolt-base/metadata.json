@@ -1,0 +1,65 @@
+{
+  "repo_id": "amazon/chronos-bolt-base",
+  "model_id": "amazon/chronos-bolt-base",
+  "author": "amazon",
+  "last_modified": "2025-02-17 10:49:17+00:00",
+  "tags": [
+    "safetensors",
+    "t5",
+    "time series",
+    "forecasting",
+    "pretrained models",
+    "foundation models",
+    "time series foundation models",
+    "time-series",
+    "time-series-forecasting",
+    "arxiv:1910.10683",
+    "arxiv:2403.07815",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "pipeline_tag": "time-series-forecasting",
+  "files_count": 4,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/amazon/chronos-bolt-base/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/amazon/chronos-bolt-base/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/amazon/chronos-bolt-base/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/amazon/chronos-bolt-base/resolve/main/model.safetensors"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/1910.10683",
+    "https://arxiv.org/abs/2403.07815",
+    "https://auto.gluon.ai/stable/index.html",
+    "https://auto.gluon.ai/stable/tutorials/timeseries/forecasting-chronos.html",
+    "https://auto.gluon.ai/stable/tutorials/timeseries/forecasting-metrics.html#autogluon.timeseries.metrics.MASE",
+    "https://auto.gluon.ai/stable/tutorials/timeseries/forecasting-metrics.html#autogluon.timeseries.metrics.WQL",
+    "https://github.com/amazon-science/chronos-forecasting",
+    "https://github.com/amazon-science/chronos-forecasting/blob/main/notebooks/deploy-chronos-bolt-to-amazon-sagemaker.ipynb",
+    "https://huggingface.co/amazon/chronos-bolt-base",
+    "https://huggingface.co/amazon/chronos-bolt-mini",
+    "https://huggingface.co/amazon/chronos-bolt-small",
+    "https://huggingface.co/amazon/chronos-bolt-tiny",
+    "https://huggingface.co/google/t5-efficient-base",
+    "https://huggingface.co/google/t5-efficient-mini",
+    "https://huggingface.co/google/t5-efficient-small",
+    "https://huggingface.co/google/t5-efficient-tiny"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:44.795278"
+}

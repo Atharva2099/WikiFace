@@ -1,0 +1,129 @@
+{
+  "repo_id": "dslim/bert-base-NER",
+  "model_id": "dslim/bert-base-NER",
+  "author": "dslim",
+  "last_modified": "2024-10-08 07:51:39+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "en",
+    "dataset:conll2003",
+    "arxiv:1810.04805",
+    "license:mit",
+    "model-index",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "token-classification",
+  "files_count": 18,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/README.md"
+    },
+    {
+      "name": "added_tokens.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/added_tokens.json"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/model.safetensors"
+    },
+    {
+      "name": "onnx/added_tokens.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/added_tokens.json"
+    },
+    {
+      "name": "onnx/config.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/config.json"
+    },
+    {
+      "name": "onnx/model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/model.onnx"
+    },
+    {
+      "name": "onnx/special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/special_tokens_map.json"
+    },
+    {
+      "name": "onnx/tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/tokenizer.json"
+    },
+    {
+      "name": "onnx/tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/tokenizer_config.json"
+    },
+    {
+      "name": "onnx/vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/onnx/vocab.txt"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/dslim/bert-base-NER/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/pdf/1810.04805",
+    "https://github.com/google-research/bert/issues/223",
+    "https://huggingface.co/dslim/bert-base-NER",
+    "https://huggingface.co/dslim/bert-base-NER-uncased",
+    "https://huggingface.co/dslim/bert-large-NER/",
+    "https://huggingface.co/dslim/distilbert-NER",
+    "https://www.aclweb.org/anthology/W03-0419.pdf"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:33.130690"
+}

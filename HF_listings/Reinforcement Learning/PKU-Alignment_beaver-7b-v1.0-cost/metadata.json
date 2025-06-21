@@ -1,0 +1,107 @@
+{
+  "repo_id": "PKU-Alignment/beaver-7b-v1.0-cost",
+  "model_id": "PKU-Alignment/beaver-7b-v1.0-cost",
+  "author": "PKU-Alignment",
+  "last_modified": "2024-04-20 18:03:39+00:00",
+  "tags": [
+    "safe-rlhf",
+    "safetensors",
+    "llama",
+    "reinforcement-learning-from-human-feedback",
+    "reinforcement-learning",
+    "beaver",
+    "safety",
+    "ai-safety",
+    "deepspeed",
+    "rlhf",
+    "alpaca",
+    "en",
+    "dataset:PKU-Alignment/PKU-SafeRLHF",
+    "arxiv:2302.13971",
+    "arxiv:2307.04657",
+    "arxiv:2310.12773",
+    "region:us"
+  ],
+  "pipeline_tag": "reinforcement-learning",
+  "files_count": 14,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/config.json"
+    },
+    {
+      "name": "model-00001-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00001-of-00007.safetensors"
+    },
+    {
+      "name": "model-00002-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00002-of-00007.safetensors"
+    },
+    {
+      "name": "model-00003-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00003-of-00007.safetensors"
+    },
+    {
+      "name": "model-00004-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00004-of-00007.safetensors"
+    },
+    {
+      "name": "model-00005-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00005-of-00007.safetensors"
+    },
+    {
+      "name": "model-00006-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00006-of-00007.safetensors"
+    },
+    {
+      "name": "model-00007-of-00007.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model-00007-of-00007.safetensors"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/model.safetensors.index.json"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/PKU-Alignment/beaver-7b-v1.0-cost/resolve/main/tokenizer_config.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2302.13971",
+    "https://github.com/PKU-Alignment",
+    "https://github.com/tatsu-lab/stanford_alpaca",
+    "https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:54.847312"
+}

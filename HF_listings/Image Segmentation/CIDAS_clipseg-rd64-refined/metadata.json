@@ -1,0 +1,78 @@
+{
+  "repo_id": "CIDAS/clipseg-rd64-refined",
+  "model_id": "CIDAS/clipseg-rd64-refined",
+  "author": "CIDAS",
+  "last_modified": "2024-12-11 09:46:10+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "clipseg",
+    "vision",
+    "image-segmentation",
+    "arxiv:2112.10003",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "pipeline_tag": "image-segmentation",
+  "files_count": 10,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/merges.txt"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2112.10003",
+    "https://github.com/timojl/clipseg",
+    "https://huggingface.co/docs/transformers/main/en/model_doc/clipseg"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:05.561681"
+}

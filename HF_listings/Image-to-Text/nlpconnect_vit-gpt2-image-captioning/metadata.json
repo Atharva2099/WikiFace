@@ -1,0 +1,78 @@
+{
+  "repo_id": "nlpconnect/vit-gpt2-image-captioning",
+  "model_id": "nlpconnect/vit-gpt2-image-captioning",
+  "author": "nlpconnect",
+  "last_modified": "2023-02-27 15:00:09+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "image-to-text",
+    "image-captioning",
+    "doi:10.57967/hf/0222",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-to-text",
+  "files_count": 10,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/merges.txt"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/nlpconnect/vit-gpt2-image-captioning/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://github.com/huggingface/transformers/tree/main/examples/flax/image-captioning",
+    "https://huggingface.co/ydshieh/vit-gpt2-coco-en-ckpts"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:17.843994"
+}

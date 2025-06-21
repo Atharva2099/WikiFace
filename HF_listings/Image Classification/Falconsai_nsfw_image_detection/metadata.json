@@ -1,0 +1,74 @@
+{
+  "repo_id": "Falconsai/nsfw_image_detection",
+  "model_id": "Falconsai/nsfw_image_detection",
+  "author": "Falconsai",
+  "last_modified": "2025-04-06 13:42:07+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:2010.11929",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-classification",
+  "files_count": 9,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/config.json"
+    },
+    {
+      "name": "falconsai_yolov9_nsfw_model_quantized.pt",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/falconsai_yolov9_nsfw_model_quantized.pt"
+    },
+    {
+      "name": "labels.json",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/labels.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/model.safetensors"
+    },
+    {
+      "name": "optimizer.pt",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/optimizer.pt"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection/resolve/main/pytorch_model.bin"
+    }
+  ],
+  "external_links": [
+    "http://www.image-net.org/",
+    "https://arxiv.org/abs/2010.11929",
+    "https://huggingface.co/models"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:56.152558"
+}

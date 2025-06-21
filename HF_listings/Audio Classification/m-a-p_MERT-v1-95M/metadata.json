@@ -1,0 +1,74 @@
+{
+  "repo_id": "m-a-p/MERT-v1-95M",
+  "model_id": "m-a-p/MERT-v1-95M",
+  "author": "m-a-p",
+  "last_modified": "2025-05-25 05:03:07+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "mert_model",
+    "feature-extraction",
+    "music",
+    "audio-classification",
+    "custom_code",
+    "arxiv:2306.00107",
+    "license:cc-by-nc-4.0",
+    "region:us"
+  ],
+  "pipeline_tag": "audio-classification",
+  "files_count": 8,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/.gitattributes"
+    },
+    {
+      "name": "MERT-v1-95M_fairseq.pt",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/MERT-v1-95M_fairseq.pt"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/config.json"
+    },
+    {
+      "name": "configuration_MERT.py",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/configuration_MERT.py"
+    },
+    {
+      "name": "modeling_MERT.py",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/modeling_MERT.py"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/m-a-p/MERT-v1-95M/resolve/main/pytorch_model.bin"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2306.00107",
+    "https://github.com/facebookresearch/encodec",
+    "https://github.com/yizhilll/MERT",
+    "https://huggingface.co/m-a-p/MERT-v0",
+    "https://huggingface.co/m-a-p/MERT-v0-public",
+    "https://huggingface.co/m-a-p/MERT-v1-330M",
+    "https://huggingface.co/m-a-p/MERT-v1-95M",
+    "https://huggingface.co/m-a-p/music2vec-v1"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:33.982733"
+}

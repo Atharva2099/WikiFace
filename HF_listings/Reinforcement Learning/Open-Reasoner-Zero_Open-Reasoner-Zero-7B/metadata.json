@@ -1,0 +1,156 @@
+{
+  "repo_id": "Open-Reasoner-Zero/Open-Reasoner-Zero-7B",
+  "model_id": "Open-Reasoner-Zero/Open-Reasoner-Zero-7B",
+  "author": "Open-Reasoner-Zero",
+  "last_modified": "2025-04-07 09:09:29+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reinforcement-learning",
+    "arxiv:2503.24290",
+    "license:mit",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "reinforcement-learning",
+  "files_count": 19,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/README.md"
+    },
+    {
+      "name": "README_hf.md",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/README_hf.md"
+    },
+    {
+      "name": "added_tokens.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/added_tokens.json"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/config.json"
+    },
+    {
+      "name": "figure/logo.jpg",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/figure/logo.jpg"
+    },
+    {
+      "name": "figure/teaser.png",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/figure/teaser.png"
+    },
+    {
+      "name": "figure/train_curve.png",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/figure/train_curve.png"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/generation_config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/merges.txt"
+    },
+    {
+      "name": "model-00001-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/model-00001-of-00004.safetensors"
+    },
+    {
+      "name": "model-00002-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/model-00002-of-00004.safetensors"
+    },
+    {
+      "name": "model-00003-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/model-00003-of-00004.safetensors"
+    },
+    {
+      "name": "model-00004-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/model-00004-of-00004.safetensors"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/model.safetensors.index.json"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://allenai.org/blog/tulu-3-technical",
+    "https://api.star-history.com/svg?repos=Open-Reasoner-Zero/Open-Reasoner-Zero&type=Timeline",
+    "https://arxiv.org/abs/2503.24290",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/data/orz_math_13k_collection_hard.json",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/data/orz_math_57k_collected.json",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/data/orz_math_72k_collection_extended.json",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/docker/Dockerfile",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/orz/ppo/actors.py#L738",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/playground/orz_0p5b_ppo.py",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/playground/orz_0p5b_ppo_1gpu.py",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/blob/main/playground/orz_1p5b_ppo.py",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/tree/main/data",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/tree/main/docker",
+    "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero/tree/main/playground",
+    "https://github.com/OpenRLHF/OpenRLHF",
+    "https://github.com/deepspeedai/DeepSpeed",
+    "https://github.com/ray-project/ray",
+    "https://github.com/vllm-project/vllm",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-0.5B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-1.5B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-32B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-Critic-0.5B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-Critic-1.5B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-Critic-32B",
+    "https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-Critic-7B",
+    "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+    "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+    "https://huggingface.co/Qwen/Qwen2.5-32B",
+    "https://huggingface.co/Qwen/Qwen2.5-7B",
+    "https://huggingface.co/datasets/open-r1/OpenR1-Math-220k",
+    "https://projectnumina.ai/",
+    "https://qwenlm.github.io/blog/qwen2.5-llm/",
+    "https://www.stepfun.com/"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:57.713970"
+}

@@ -1,0 +1,47 @@
+{
+  "repo_id": "pyannote/voice-activity-detection",
+  "model_id": "pyannote/voice-activity-detection",
+  "author": "pyannote",
+  "last_modified": "2024-05-10 19:39:17+00:00",
+  "tags": [
+    "pyannote-audio",
+    "pyannote",
+    "pyannote-audio-pipeline",
+    "audio",
+    "voice",
+    "speech",
+    "speaker",
+    "voice-activity-detection",
+    "automatic-speech-recognition",
+    "dataset:ami",
+    "dataset:dihard",
+    "dataset:voxconverse",
+    "license:mit",
+    "region:us"
+  ],
+  "pipeline_tag": "automatic-speech-recognition",
+  "files_count": 3,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/pyannote/voice-activity-detection/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/pyannote/voice-activity-detection/resolve/main/README.md"
+    },
+    {
+      "name": "config.yaml",
+      "size": null,
+      "url": "https://huggingface.co/pyannote/voice-activity-detection/resolve/main/config.yaml"
+    }
+  ],
+  "external_links": [
+    "https://github.com/pyannote/pyannote-audio#installation",
+    "https://www.pyannote.ai"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:40.203123"
+}

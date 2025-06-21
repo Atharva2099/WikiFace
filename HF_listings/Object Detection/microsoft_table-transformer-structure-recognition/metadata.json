@@ -1,0 +1,59 @@
+{
+  "repo_id": "microsoft/table-transformer-structure-recognition",
+  "model_id": "microsoft/table-transformer-structure-recognition",
+  "author": "microsoft",
+  "last_modified": "2023-09-06 14:50:49+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "table-transformer",
+    "object-detection",
+    "arxiv:2110.00061",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "object-detection",
+  "files_count": 6,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/pytorch_model.bin"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2110.00061",
+    "https://github.com/microsoft/table-transformer",
+    "https://huggingface.co/docs/transformers/main/en/model_doc/table-transformer",
+    "https://huggingface.co/docs/transformers/model_doc/detr"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:02.212805"
+}

@@ -1,0 +1,76 @@
+{
+  "repo_id": "sshleifer/distilbart-cnn-12-6",
+  "model_id": "sshleifer/distilbart-cnn-12-6",
+  "author": "sshleifer",
+  "last_modified": "2021-06-14 07:51:12+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "jax",
+    "rust",
+    "bart",
+    "text2text-generation",
+    "summarization",
+    "en",
+    "dataset:cnn_dailymail",
+    "dataset:xsum",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "summarization",
+  "files_count": 9,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/merges.txt"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://huggingface.co/transformers/model_doc/bart.html?#transformers.BartForConditionalGeneration"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:52.922105"
+}

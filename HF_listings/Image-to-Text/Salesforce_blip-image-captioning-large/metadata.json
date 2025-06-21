@@ -1,0 +1,85 @@
+{
+  "repo_id": "Salesforce/blip-image-captioning-large",
+  "model_id": "Salesforce/blip-image-captioning-large",
+  "author": "Salesforce",
+  "last_modified": "2025-02-03 06:42:42+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "safetensors",
+    "blip",
+    "image-text-to-text",
+    "image-captioning",
+    "image-to-text",
+    "arxiv:2201.12086",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-to-text",
+  "files_count": 11,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2201.12086",
+    "https://cdn-uploads.huggingface.co/production/uploads/1670928184033-62441d1d9fdefb55a0b7d12c.gif"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:16.475237"
+}

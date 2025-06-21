@@ -1,0 +1,160 @@
+{
+  "repo_id": "jonatasgrosman/wav2vec2-large-xlsr-53-russian",
+  "model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-russian",
+  "author": "jonatasgrosman",
+  "last_modified": "2022-12-14 01:58:43+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "jax",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "audio",
+    "hf-asr-leaderboard",
+    "mozilla-foundation/common_voice_6_0",
+    "robust-speech-event",
+    "ru",
+    "speech",
+    "xlsr-fine-tuning-week",
+    "dataset:common_voice",
+    "dataset:mozilla-foundation/common_voice_6_0",
+    "doi:10.57967/hf/3571",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "automatic-speech-recognition",
+  "files_count": 24,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/README.md"
+    },
+    {
+      "name": "alphabet.json",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/alphabet.json"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/config.json"
+    },
+    {
+      "name": "eval.py",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/eval.py"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "full_eval.sh",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/full_eval.sh"
+    },
+    {
+      "name": "language_model/attrs.json",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/language_model/attrs.json"
+    },
+    {
+      "name": "language_model/lm.binary",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/language_model/lm.binary"
+    },
+    {
+      "name": "language_model/unigrams.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/language_model/unigrams.txt"
+    },
+    {
+      "name": "log_mozilla-foundation_common_voice_6_0_ru_test_predictions.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/log_mozilla-foundation_common_voice_6_0_ru_test_predictions.txt"
+    },
+    {
+      "name": "log_mozilla-foundation_common_voice_6_0_ru_test_predictions_greedy.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/log_mozilla-foundation_common_voice_6_0_ru_test_predictions_greedy.txt"
+    },
+    {
+      "name": "log_mozilla-foundation_common_voice_6_0_ru_test_targets.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/log_mozilla-foundation_common_voice_6_0_ru_test_targets.txt"
+    },
+    {
+      "name": "log_speech-recognition-community-v2_dev_data_ru_validation_predictions.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/log_speech-recognition-community-v2_dev_data_ru_validation_predictions.txt"
+    },
+    {
+      "name": "log_speech-recognition-community-v2_dev_data_ru_validation_predictions_greedy.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/log_speech-recognition-community-v2_dev_data_ru_validation_predictions_greedy.txt"
+    },
+    {
+      "name": "log_speech-recognition-community-v2_dev_data_ru_validation_targets.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/log_speech-recognition-community-v2_dev_data_ru_validation_targets.txt"
+    },
+    {
+      "name": "mozilla-foundation_common_voice_6_0_ru_test_eval_results.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/mozilla-foundation_common_voice_6_0_ru_test_eval_results.txt"
+    },
+    {
+      "name": "mozilla-foundation_common_voice_6_0_ru_test_eval_results_greedy.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/mozilla-foundation_common_voice_6_0_ru_test_eval_results_greedy.txt"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "speech-recognition-community-v2_dev_data_ru_validation_eval_results.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/speech-recognition-community-v2_dev_data_ru_validation_eval_results.txt"
+    },
+    {
+      "name": "speech-recognition-community-v2_dev_data_ru_validation_eval_results_greedy.txt",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/speech-recognition-community-v2_dev_data_ru_validation_eval_results_greedy.txt"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://github.com/Kyubyong/css10",
+    "https://github.com/jonatasgrosman/huggingsound",
+    "https://huggingface.co/datasets/common_voice",
+    "https://huggingface.co/facebook/wav2vec2-large-xlsr-53",
+    "https://www.ovhcloud.com/en/public-cloud/ai-training/"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:41.612614"
+}

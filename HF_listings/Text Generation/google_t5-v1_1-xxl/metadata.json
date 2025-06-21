@@ -1,0 +1,82 @@
+{
+  "repo_id": "google/t5-v1_1-xxl",
+  "model_id": "google/t5-v1_1-xxl",
+  "author": "google",
+  "last_modified": "2023-01-24 16:52:41+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "t5",
+    "text2text-generation",
+    "en",
+    "dataset:c4",
+    "arxiv:2002.05202",
+    "arxiv:1910.10683",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text2text-generation",
+  "files_count": 9,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/config.json"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/generation_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "spiece.model",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/spiece.model"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google/t5-v1_1-xxl/resolve/main/tokenizer_config.json"
+    }
+  ],
+  "external_links": [
+    "https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html",
+    "https://arxiv.org/abs/2002.05202",
+    "https://arxiv.org/pdf/1910.10683.pdf",
+    "https://camo.githubusercontent.com/623b4dea0b653f2ad3f36c71ebfe749a677ac0a1/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f343030362f312a44304a31674e51663876727255704b657944387750412e706e67",
+    "https://github.com/google-research/text-to-text-transfer-transformer/blob/master/released_checkpoints.md#t511",
+    "https://huggingface.co/datasets/c4",
+    "https://huggingface.co/models?search=t5-v1_1"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:26.320707"
+}

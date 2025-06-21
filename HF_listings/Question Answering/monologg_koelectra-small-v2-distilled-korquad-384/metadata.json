@@ -1,0 +1,73 @@
+{
+  "repo_id": "monologg/koelectra-small-v2-distilled-korquad-384",
+  "model_id": "monologg/koelectra-small-v2-distilled-korquad-384",
+  "author": "monologg",
+  "last_modified": "2023-06-12 12:30:35+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tflite",
+    "safetensors",
+    "electra",
+    "question-answering",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "question-answering",
+  "files_count": 10,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/.gitattributes"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/model.safetensors"
+    },
+    {
+      "name": "model.tflite",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/model.tflite"
+    },
+    {
+      "name": "model_8bits.tflite",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/model_8bits.tflite"
+    },
+    {
+      "name": "model_fp16.tflite",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/model_fp16.tflite"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/monologg/koelectra-small-v2-distilled-korquad-384/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [],
+  "has_readme": false,
+  "scraped_at": "2025-06-21T15:06:43.294138"
+}

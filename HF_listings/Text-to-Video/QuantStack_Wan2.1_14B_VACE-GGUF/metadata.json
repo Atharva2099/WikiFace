@@ -1,0 +1,111 @@
+{
+  "repo_id": "QuantStack/Wan2.1_14B_VACE-GGUF",
+  "model_id": "QuantStack/Wan2.1_14B_VACE-GGUF",
+  "author": "QuantStack",
+  "last_modified": "2025-06-11 13:59:15+00:00",
+  "tags": [
+    "gguf",
+    "video",
+    "video-generation",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-VACE-14B",
+    "base_model:quantized:Wan-AI/Wan2.1-VACE-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "pipeline_tag": "text-to-video",
+  "files_count": 16,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/README.md"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-BF16.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-BF16.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-F16.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-F16.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q3_K_S.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q3_K_S.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q4_0.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q4_0.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q4_1.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q4_1.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q4_K_M.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q4_K_M.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q4_K_S.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q4_K_S.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q5_0.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q5_0.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q5_1.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q5_1.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q5_K_M.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q5_K_M.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q5_K_S.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q5_K_S.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q6_K.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q6_K.gguf"
+    },
+    {
+      "name": "Wan2.1_14B_VACE-Q8_0.gguf",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q8_0.gguf"
+    },
+    {
+      "name": "vace_v2v_example_workflow.json",
+      "size": null,
+      "url": "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/vace_v2v_example_workflow.json"
+    }
+  ],
+  "external_links": [
+    "https://docs.comfy.org/tutorials/video/wan/vace",
+    "https://github.com/city96/ComfyUI-GGUF",
+    "https://github.com/ggerganov/llama.cpp/blob/master/examples/perplexity/README.md#llama-3-8b-scoreboard",
+    "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors?download=true",
+    "https://huggingface.co/QuantStack/Wan2.1-VACE-14B-GGUF/blob/main/vace_v2v_example_workflow.json",
+    "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B",
+    "https://huggingface.co/city96"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:26.102424"
+}

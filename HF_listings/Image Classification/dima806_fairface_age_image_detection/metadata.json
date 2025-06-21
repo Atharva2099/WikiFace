@@ -1,0 +1,218 @@
+{
+  "repo_id": "dima806/fairface_age_image_detection",
+  "model_id": "dima806/fairface_age_image_detection",
+  "author": "dima806",
+  "last_modified": "2024-12-15 19:54:53+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "dataset:nateraw/fairface",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-classification",
+  "files_count": 38,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/README.md"
+    },
+    {
+      "name": "checkpoint-32/config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/config.json"
+    },
+    {
+      "name": "checkpoint-32/model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/model.safetensors"
+    },
+    {
+      "name": "checkpoint-32/optimizer.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/optimizer.pt"
+    },
+    {
+      "name": "checkpoint-32/preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/preprocessor_config.json"
+    },
+    {
+      "name": "checkpoint-32/rng_state.pth",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/rng_state.pth"
+    },
+    {
+      "name": "checkpoint-32/scheduler.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/scheduler.pt"
+    },
+    {
+      "name": "checkpoint-32/trainer_state.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/trainer_state.json"
+    },
+    {
+      "name": "checkpoint-32/training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-32/training_args.bin"
+    },
+    {
+      "name": "checkpoint-4688/config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/config.json"
+    },
+    {
+      "name": "checkpoint-4688/model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/model.safetensors"
+    },
+    {
+      "name": "checkpoint-4688/optimizer.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/optimizer.pt"
+    },
+    {
+      "name": "checkpoint-4688/preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/preprocessor_config.json"
+    },
+    {
+      "name": "checkpoint-4688/rng_state.pth",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/rng_state.pth"
+    },
+    {
+      "name": "checkpoint-4688/scheduler.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/scheduler.pt"
+    },
+    {
+      "name": "checkpoint-4688/trainer_state.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/trainer_state.json"
+    },
+    {
+      "name": "checkpoint-4688/training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-4688/training_args.bin"
+    },
+    {
+      "name": "checkpoint-8752/config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/config.json"
+    },
+    {
+      "name": "checkpoint-8752/model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/model.safetensors"
+    },
+    {
+      "name": "checkpoint-8752/optimizer.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/optimizer.pt"
+    },
+    {
+      "name": "checkpoint-8752/preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/preprocessor_config.json"
+    },
+    {
+      "name": "checkpoint-8752/rng_state.pth",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/rng_state.pth"
+    },
+    {
+      "name": "checkpoint-8752/scheduler.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/scheduler.pt"
+    },
+    {
+      "name": "checkpoint-8752/trainer_state.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/trainer_state.json"
+    },
+    {
+      "name": "checkpoint-8752/training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-8752/training_args.bin"
+    },
+    {
+      "name": "checkpoint-9376/config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/config.json"
+    },
+    {
+      "name": "checkpoint-9376/model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/model.safetensors"
+    },
+    {
+      "name": "checkpoint-9376/optimizer.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/optimizer.pt"
+    },
+    {
+      "name": "checkpoint-9376/preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/preprocessor_config.json"
+    },
+    {
+      "name": "checkpoint-9376/rng_state.pth",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/rng_state.pth"
+    },
+    {
+      "name": "checkpoint-9376/scheduler.pt",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/scheduler.pt"
+    },
+    {
+      "name": "checkpoint-9376/trainer_state.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/trainer_state.json"
+    },
+    {
+      "name": "checkpoint-9376/training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/checkpoint-9376/training_args.bin"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/dima806/fairface_age_image_detection/resolve/main/training_args.bin"
+    }
+  ],
+  "external_links": [
+    "https://cdn-uploads.huggingface.co/production/uploads/6449300e3adf50d864095b90/gvzsgTtWDOE4vxwugZF4P.png"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:57.535972"
+}

@@ -1,0 +1,173 @@
+{
+  "repo_id": "openai-community/gpt2",
+  "model_id": "openai-community/gpt2",
+  "author": "openai-community",
+  "last_modified": "2024-02-19 10:57:45+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "exbert",
+    "en",
+    "doi:10.57967/hf/0039",
+    "license:mit",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text-generation",
+  "files_count": 26,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/.gitattributes"
+    },
+    {
+      "name": "64-8bits.tflite",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/64-8bits.tflite"
+    },
+    {
+      "name": "64-fp16.tflite",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/64-fp16.tflite"
+    },
+    {
+      "name": "64.tflite",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/64.tflite"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/generation_config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/merges.txt"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/model.safetensors"
+    },
+    {
+      "name": "onnx/config.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/config.json"
+    },
+    {
+      "name": "onnx/decoder_model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/decoder_model.onnx"
+    },
+    {
+      "name": "onnx/decoder_model_merged.onnx",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/decoder_model_merged.onnx"
+    },
+    {
+      "name": "onnx/decoder_with_past_model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/decoder_with_past_model.onnx"
+    },
+    {
+      "name": "onnx/generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/generation_config.json"
+    },
+    {
+      "name": "onnx/merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/merges.txt"
+    },
+    {
+      "name": "onnx/special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/special_tokens_map.json"
+    },
+    {
+      "name": "onnx/tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/tokenizer.json"
+    },
+    {
+      "name": "onnx/tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/tokenizer_config.json"
+    },
+    {
+      "name": "onnx/vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/onnx/vocab.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/openai-community/gpt2/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "https://github.com/openai/gpt-2/blob/master/domains.txt",
+    "https://github.com/openai/gpt-2/blob/master/model_card.md",
+    "https://github.com/openai/gpt-2/blob/master/model_card.md#out-of-scope-use-cases",
+    "https://huggingface.co/gpt2-large",
+    "https://huggingface.co/gpt2-medium",
+    "https://huggingface.co/gpt2-xl",
+    "https://huggingface.co/models?filter=gpt2",
+    "https://openai.com/blog/better-language-models/"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:18.310374"
+}

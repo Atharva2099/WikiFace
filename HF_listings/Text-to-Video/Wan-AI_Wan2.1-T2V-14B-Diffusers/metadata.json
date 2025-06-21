@@ -1,0 +1,250 @@
+{
+  "repo_id": "Wan-AI/Wan2.1-T2V-14B-Diffusers",
+  "model_id": "Wan-AI/Wan2.1-T2V-14B-Diffusers",
+  "author": "Wan-AI",
+  "last_modified": "2025-04-04 02:28:17+00:00",
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "diffusers:WanPipeline",
+    "region:us"
+  ],
+  "pipeline_tag": "text-to-video",
+  "files_count": 41,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/README.md"
+    },
+    {
+      "name": "assets/comp_effic.png",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/comp_effic.png"
+    },
+    {
+      "name": "assets/data_for_diff_stage.jpg",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/data_for_diff_stage.jpg"
+    },
+    {
+      "name": "assets/i2v_res.png",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/i2v_res.png"
+    },
+    {
+      "name": "assets/logo.png",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/logo.png"
+    },
+    {
+      "name": "assets/t2v_res.jpg",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/t2v_res.jpg"
+    },
+    {
+      "name": "assets/vben_1.3b_vs_sota.png",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/vben_1.3b_vs_sota.png"
+    },
+    {
+      "name": "assets/vben_vs_sota.png",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/vben_vs_sota.png"
+    },
+    {
+      "name": "assets/video_dit_arch.jpg",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/video_dit_arch.jpg"
+    },
+    {
+      "name": "assets/video_vae_res.jpg",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/assets/video_vae_res.jpg"
+    },
+    {
+      "name": "examples/i2v_input.JPG",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/examples/i2v_input.JPG"
+    },
+    {
+      "name": "model_index.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/model_index.json"
+    },
+    {
+      "name": "scheduler/scheduler_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/scheduler/scheduler_config.json"
+    },
+    {
+      "name": "text_encoder/config.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/config.json"
+    },
+    {
+      "name": "text_encoder/model-00001-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/model-00001-of-00005.safetensors"
+    },
+    {
+      "name": "text_encoder/model-00002-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/model-00002-of-00005.safetensors"
+    },
+    {
+      "name": "text_encoder/model-00003-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/model-00003-of-00005.safetensors"
+    },
+    {
+      "name": "text_encoder/model-00004-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/model-00004-of-00005.safetensors"
+    },
+    {
+      "name": "text_encoder/model-00005-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/model-00005-of-00005.safetensors"
+    },
+    {
+      "name": "text_encoder/model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/text_encoder/model.safetensors.index.json"
+    },
+    {
+      "name": "tokenizer/special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/tokenizer/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer/spiece.model",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/tokenizer/spiece.model"
+    },
+    {
+      "name": "tokenizer/tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/tokenizer/tokenizer.json"
+    },
+    {
+      "name": "tokenizer/tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/tokenizer/tokenizer_config.json"
+    },
+    {
+      "name": "transformer/config.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/config.json"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00001-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00001-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00002-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00002-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00003-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00003-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00004-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00004-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00005-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00005-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00006-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00006-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00007-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00007-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00008-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00008-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00009-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00009-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00010-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00010-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00011-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00011-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00012-of-00012.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model-00012-of-00012.safetensors"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/transformer/diffusion_pytorch_model.safetensors.index.json"
+    },
+    {
+      "name": "vae/config.json",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/vae/config.json"
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B-Diffusers/resolve/main/vae/diffusion_pytorch_model.safetensors"
+    }
+  ],
+  "external_links": [
+    "https://discord.gg/p5XbdQV7",
+    "https://github.com/huggingface/diffusers",
+    "https://github.com/modelscope/DiffSynth-Studio",
+    "https://github.com/modelscope/DiffSynth-Studio/tree/main/examples/wanvideo",
+    "https://gw.alicdn.com/imgextra/i2/O1CN01tqjWFi1ByuyehkTSB_!!6000000000015-0-tps-611-1279.jpg",
+    "https://help.aliyun.com/zh/model-studio/getting-started/first-api-call-to-qwen",
+    "https://huggingface.co",
+    "https://huggingface.co/Qwen",
+    "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P",
+    "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P",
+    "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+    "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B",
+    "https://huggingface.co/google/umt5-xxl",
+    "https://huggingface.co/stabilityai/stable-diffusion-3-medium",
+    "https://www.alibabacloud.com/help/en/model-studio/developer-reference/use-qwen-by-calling-api?spm=a2c63.p38356.0.i1",
+    "https://www.alibabacloud.com/help/en/model-studio/getting-started/first-api-call-to-qwen",
+    "https://www.modelscope.cn/models/Wan-AI/Wan2.1-I2V-14B-480P",
+    "https://www.modelscope.cn/models/Wan-AI/Wan2.1-I2V-14B-720P",
+    "https://www.modelscope.cn/models/Wan-AI/Wan2.1-T2V-1.3B",
+    "https://www.modelscope.cn/models/Wan-AI/Wan2.1-T2V-14B"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:27.631931"
+}

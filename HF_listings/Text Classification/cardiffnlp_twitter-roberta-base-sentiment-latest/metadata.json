@@ -1,0 +1,73 @@
+{
+  "repo_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "author": "cardiffnlp",
+  "last_modified": "2023-05-28 05:45:10+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "roberta",
+    "text-classification",
+    "en",
+    "dataset:tweet_eval",
+    "arxiv:2202.03829",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text-classification",
+  "files_count": 8,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/merges.txt"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2202.03829",
+    "https://github.com/cardiffnlp/timelms",
+    "https://github.com/cardiffnlp/tweeteval",
+    "https://github.com/cardiffnlp/tweetnlp",
+    "https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m",
+    "https://tweetnlp.org"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:29.656589"
+}

@@ -1,0 +1,42 @@
+{
+  "repo_id": "unslothai/1",
+  "model_id": "unslothai/1",
+  "author": "unslothai",
+  "last_modified": "2024-07-14 03:07:01+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "feature-extraction",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "feature-extraction",
+  "files_count": 4,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/unslothai/1/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/unslothai/1/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/unslothai/1/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/unslothai/1/resolve/main/model.safetensors"
+    }
+  ],
+  "external_links": [],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:48.854601"
+}

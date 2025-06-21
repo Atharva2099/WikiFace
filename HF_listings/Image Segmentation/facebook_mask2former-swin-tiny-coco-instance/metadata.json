@@ -1,0 +1,64 @@
+{
+  "repo_id": "facebook/mask2former-swin-tiny-coco-instance",
+  "model_id": "facebook/mask2former-swin-tiny-coco-instance",
+  "author": "facebook",
+  "last_modified": "2023-09-11 20:46:03+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "mask2former",
+    "vision",
+    "image-segmentation",
+    "dataset:coco",
+    "arxiv:2112.01527",
+    "arxiv:2107.06278",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-segmentation",
+  "files_count": 6,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance/resolve/main/pytorch_model.bin"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2107.06278",
+    "https://arxiv.org/abs/2112.01527",
+    "https://github.com/facebookresearch/Mask2Former/",
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/mask2former_architecture.png",
+    "https://huggingface.co/docs/transformers/master/en/model_doc/mask2former",
+    "https://huggingface.co/models?search=mask2former"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:08.393396"
+}

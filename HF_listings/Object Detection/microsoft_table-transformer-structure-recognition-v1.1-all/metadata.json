@@ -1,0 +1,53 @@
+{
+  "repo_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+  "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+  "author": "microsoft",
+  "last_modified": "2023-11-18 21:58:10+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "table-transformer",
+    "object-detection",
+    "arxiv:2303.00716",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "object-detection",
+  "files_count": 5,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition-v1.1-all/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition-v1.1-all/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition-v1.1-all/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition-v1.1-all/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/table-transformer-structure-recognition-v1.1-all/resolve/main/preprocessor_config.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2303.00716",
+    "https://github.com/microsoft/table-transformer",
+    "https://huggingface.co/docs/transformers/main/en/model_doc/table-transformer",
+    "https://huggingface.co/docs/transformers/model_doc/detr"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:03.604603"
+}

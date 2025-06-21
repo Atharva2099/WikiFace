@@ -1,0 +1,88 @@
+{
+  "repo_id": "Helsinki-NLP/opus-mt-fr-en",
+  "model_id": "Helsinki-NLP/opus-mt-fr-en",
+  "author": "Helsinki-NLP",
+  "last_modified": "2023-08-16 11:36:20+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "fr",
+    "en",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "translation",
+  "files_count": 11,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/generation_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "source.spm",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/source.spm"
+    },
+    {
+      "name": "target.spm",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/target.spm"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://github.com/Helsinki-NLP/OPUS-MT-train/blob/master/models/fr-en/README.md",
+    "https://object.pouta.csc.fi/OPUS-MT-models/fr-en/opus-2020-02-26.eval.txt",
+    "https://object.pouta.csc.fi/OPUS-MT-models/fr-en/opus-2020-02-26.test.txt",
+    "https://object.pouta.csc.fi/OPUS-MT-models/fr-en/opus-2020-02-26.zip"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:49.455798"
+}

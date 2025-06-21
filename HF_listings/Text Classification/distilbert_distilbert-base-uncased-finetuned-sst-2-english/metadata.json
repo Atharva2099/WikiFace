@@ -1,0 +1,128 @@
+{
+  "repo_id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "model_id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "author": "distilbert",
+  "last_modified": "2023-12-19 16:29:37+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "rust",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "en",
+    "dataset:sst2",
+    "dataset:glue",
+    "arxiv:1910.01108",
+    "doi:10.57967/hf/0181",
+    "license:apache-2.0",
+    "model-index",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text-classification",
+  "files_count": 17,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/config.json"
+    },
+    {
+      "name": "map.jpeg",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/map.jpeg"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/model.safetensors"
+    },
+    {
+      "name": "onnx/added_tokens.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/added_tokens.json"
+    },
+    {
+      "name": "onnx/config.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/config.json"
+    },
+    {
+      "name": "onnx/model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/model.onnx"
+    },
+    {
+      "name": "onnx/special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/special_tokens_map.json"
+    },
+    {
+      "name": "onnx/tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/tokenizer.json"
+    },
+    {
+      "name": "onnx/tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/tokenizer_config.json"
+    },
+    {
+      "name": "onnx/vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/onnx/vocab.txt"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/1910.01108",
+    "https://colab.research.google.com/gist/ageron/fb2f64fb145b4bc7c49efc97e5f114d3/biasmap.ipynb",
+    "https://huggingface.co/datasets/sst2",
+    "https://huggingface.co/datasets/stereoset",
+    "https://huggingface.co/datasets/super_glue",
+    "https://huggingface.co/datasets/wino_bias",
+    "https://huggingface.co/distilbert-base-uncased",
+    "https://huggingface.co/docs/transformers/main/en/model_doc/distilbert#transformers.DistilBertForSequenceClassification",
+    "https://twitter.com/aureliengeron"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:28.305164"
+}

@@ -1,0 +1,114 @@
+{
+  "repo_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "author": "Qwen",
+  "last_modified": "2025-04-06 16:23:01+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-text-to-text",
+  "files_count": 16,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/README.md"
+    },
+    {
+      "name": "chat_template.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/chat_template.json"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/config.json"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/generation_config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/merges.txt"
+    },
+    {
+      "name": "model-00001-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model-00001-of-00005.safetensors"
+    },
+    {
+      "name": "model-00002-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model-00002-of-00005.safetensors"
+    },
+    {
+      "name": "model-00003-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model-00003-of-00005.safetensors"
+    },
+    {
+      "name": "model-00004-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model-00004-of-00005.safetensors"
+    },
+    {
+      "name": "model-00005-of-00005.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model-00005-of-00005.safetensors"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/model.safetensors.index.json"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2309.00071",
+    "https://github.com/QwenLM/Qwen2.5-VL",
+    "https://github.com/dmlc/decord?tab=readme-ov-file#install-from-source",
+    "https://qwenlm.github.io/blog/qwen2.5-vl/"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:21.191559"
+}

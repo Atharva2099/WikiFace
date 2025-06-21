@@ -1,0 +1,116 @@
+{
+  "repo_id": "distilbert/distilbert-base-cased-distilled-squad",
+  "model_id": "distilbert/distilbert-base-cased-distilled-squad",
+  "author": "distilbert",
+  "last_modified": "2024-05-06 13:46:31+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "rust",
+    "safetensors",
+    "openvino",
+    "distilbert",
+    "question-answering",
+    "en",
+    "dataset:squad",
+    "arxiv:1910.01108",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "question-answering",
+  "files_count": 14,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/model.safetensors"
+    },
+    {
+      "name": "openvino_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/openvino_model.bin"
+    },
+    {
+      "name": "openvino_model.xml",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/openvino_model.xml"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "saved_model.tar.gz",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/saved_model.tar.gz"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tfjs.tar.gz",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/tfjs.tar.gz"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [
+    "https://aclanthology.org/2021.acl-long.330.pdf",
+    "https://arxiv.org/abs/1910.01108",
+    "https://arxiv.org/abs/1910.09700",
+    "https://arxiv.org/pdf/1910.01108.pdf",
+    "https://dl.acm.org/doi/pdf/10.1145/3442188.3445922",
+    "https://en.wikipedia.org/wiki/English_Wikipedia",
+    "https://github.com/huggingface/transformers/blob/main/examples/research_projects/distillation/README.md",
+    "https://github.com/huggingface/transformers/tree/main/examples/research_projects/distillation",
+    "https://huggingface.co/datasets/squad",
+    "https://huggingface.co/distilbert-base-cased",
+    "https://huggingface.co/distilbert-base-uncased",
+    "https://medium.com/huggingface/distilbert-8cf3380435b5",
+    "https://mlco2.github.io/impact#compute",
+    "https://yknzhu.wixsite.com/mbweb"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:44.789981"
+}

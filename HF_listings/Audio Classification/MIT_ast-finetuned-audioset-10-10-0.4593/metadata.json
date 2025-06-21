@@ -1,0 +1,59 @@
+{
+  "repo_id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "model_id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "author": "MIT",
+  "last_modified": "2023-09-06 14:49:15+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "arxiv:2104.01778",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "audio-classification",
+  "files_count": 6,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/resolve/main/model.safetensors"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/resolve/main/pytorch_model.bin"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2104.01778",
+    "https://github.com/YuanGongND/ast",
+    "https://huggingface.co/docs/transformers/main/en/model_doc/audio-spectrogram-transformer#transformers.ASTForAudioClassification.forward.example",
+    "https://huggingface.co/docs/transformers/model_doc/vit"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:36.819988"
+}

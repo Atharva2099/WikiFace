@@ -1,0 +1,76 @@
+{
+  "repo_id": "ibm-granite/granite-timeseries-ttm-r2",
+  "model_id": "ibm-granite/granite-timeseries-ttm-r2",
+  "author": "ibm-granite",
+  "last_modified": "2025-02-26 13:33:01+00:00",
+  "tags": [
+    "granite-tsfm",
+    "safetensors",
+    "tinytimemixer",
+    "time series",
+    "forecasting",
+    "pretrained models",
+    "foundation models",
+    "time series foundation models",
+    "time-series",
+    "time-series-forecasting",
+    "arxiv:2401.03955",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "pipeline_tag": "time-series-forecasting",
+  "files_count": 8,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/README.md"
+    },
+    {
+      "name": "benchmarks.webp",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/benchmarks.webp"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/config.json"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/generation_config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/model.safetensors"
+    },
+    {
+      "name": "training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/training_args.bin"
+    },
+    {
+      "name": "ttm_image.webp",
+      "size": null,
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/ttm_image.webp"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/pdf/2401.03955.pdf",
+    "https://github.com/IBM/tsfm/blob/main/notebooks/hfdemo/ttm_getting_started.ipynb",
+    "https://github.com/IBM/tsfm/blob/main/tsfm_public/toolkit/time_series_preprocessor.py",
+    "https://github.com/ibm-granite/granite-tsfm/blob/main/tsfm_public/toolkit/get_model.py",
+    "https://github.com/ibm-granite/granite-tsfm/tree/main/notebooks/hfdemo/tinytimemixer/full_benchmarking",
+    "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r1",
+    "https://proceedings.neurips.cc/paper_files/paper/2024/hash/874a4d89f2d04b4bcf9a2c19545cf040-Abstract-Conference.html"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:46.188658"
+}

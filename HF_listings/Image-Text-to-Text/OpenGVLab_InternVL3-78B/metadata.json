@@ -1,0 +1,343 @@
+{
+  "repo_id": "OpenGVLab/InternVL3-78B",
+  "model_id": "OpenGVLab/InternVL3-78B",
+  "author": "OpenGVLab",
+  "last_modified": "2025-05-29 11:14:57+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "internvl_chat",
+    "feature-extraction",
+    "internvl",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "multilingual",
+    "dataset:OpenGVLab/MMPR-v1.2",
+    "arxiv:2312.14238",
+    "arxiv:2404.16821",
+    "arxiv:2412.05271",
+    "arxiv:2411.10442",
+    "arxiv:2504.10479",
+    "arxiv:2412.09616",
+    "base_model:OpenGVLab/InternVL3-78B-Instruct",
+    "base_model:finetune:OpenGVLab/InternVL3-78B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "pipeline_tag": "image-text-to-text",
+  "files_count": 53,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/README.md"
+    },
+    {
+      "name": "added_tokens.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/added_tokens.json"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/config.json"
+    },
+    {
+      "name": "configuration_intern_vit.py",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/configuration_intern_vit.py"
+    },
+    {
+      "name": "configuration_internvl_chat.py",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/configuration_internvl_chat.py"
+    },
+    {
+      "name": "conversation.py",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/conversation.py"
+    },
+    {
+      "name": "examples/image1.jpg",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/examples/image1.jpg"
+    },
+    {
+      "name": "examples/image2.jpg",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/examples/image2.jpg"
+    },
+    {
+      "name": "examples/red-panda.mp4",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/examples/red-panda.mp4"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/generation_config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/merges.txt"
+    },
+    {
+      "name": "model-00001-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00001-of-00033.safetensors"
+    },
+    {
+      "name": "model-00002-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00002-of-00033.safetensors"
+    },
+    {
+      "name": "model-00003-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00003-of-00033.safetensors"
+    },
+    {
+      "name": "model-00004-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00004-of-00033.safetensors"
+    },
+    {
+      "name": "model-00005-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00005-of-00033.safetensors"
+    },
+    {
+      "name": "model-00006-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00006-of-00033.safetensors"
+    },
+    {
+      "name": "model-00007-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00007-of-00033.safetensors"
+    },
+    {
+      "name": "model-00008-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00008-of-00033.safetensors"
+    },
+    {
+      "name": "model-00009-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00009-of-00033.safetensors"
+    },
+    {
+      "name": "model-00010-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00010-of-00033.safetensors"
+    },
+    {
+      "name": "model-00011-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00011-of-00033.safetensors"
+    },
+    {
+      "name": "model-00012-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00012-of-00033.safetensors"
+    },
+    {
+      "name": "model-00013-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00013-of-00033.safetensors"
+    },
+    {
+      "name": "model-00014-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00014-of-00033.safetensors"
+    },
+    {
+      "name": "model-00015-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00015-of-00033.safetensors"
+    },
+    {
+      "name": "model-00016-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00016-of-00033.safetensors"
+    },
+    {
+      "name": "model-00017-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00017-of-00033.safetensors"
+    },
+    {
+      "name": "model-00018-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00018-of-00033.safetensors"
+    },
+    {
+      "name": "model-00019-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00019-of-00033.safetensors"
+    },
+    {
+      "name": "model-00020-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00020-of-00033.safetensors"
+    },
+    {
+      "name": "model-00021-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00021-of-00033.safetensors"
+    },
+    {
+      "name": "model-00022-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00022-of-00033.safetensors"
+    },
+    {
+      "name": "model-00023-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00023-of-00033.safetensors"
+    },
+    {
+      "name": "model-00024-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00024-of-00033.safetensors"
+    },
+    {
+      "name": "model-00025-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00025-of-00033.safetensors"
+    },
+    {
+      "name": "model-00026-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00026-of-00033.safetensors"
+    },
+    {
+      "name": "model-00027-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00027-of-00033.safetensors"
+    },
+    {
+      "name": "model-00028-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00028-of-00033.safetensors"
+    },
+    {
+      "name": "model-00029-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00029-of-00033.safetensors"
+    },
+    {
+      "name": "model-00030-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00030-of-00033.safetensors"
+    },
+    {
+      "name": "model-00031-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00031-of-00033.safetensors"
+    },
+    {
+      "name": "model-00032-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00032-of-00033.safetensors"
+    },
+    {
+      "name": "model-00033-of-00033.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model-00033-of-00033.safetensors"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/model.safetensors.index.json"
+    },
+    {
+      "name": "modeling_intern_vit.py",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/modeling_intern_vit.py"
+    },
+    {
+      "name": "modeling_internvl_chat.py",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/modeling_internvl_chat.py"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/preprocessor_config.json"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2411.10442",
+    "https://arxiv.org/abs/2412.05271",
+    "https://arxiv.org/abs/2412.09616",
+    "https://cdn-uploads.huggingface.co/production/uploads/64119264f0f81eb569e0d569/BiiyXN6NOk0p-3rl3ueyL.png",
+    "https://github.com/InternLM/xtuner",
+    "https://github.com/OpenGVLab/InternVL",
+    "https://github.com/modelscope/ms-swift",
+    "https://huggingface.co/OpenGVLab/InternVL3-14B",
+    "https://huggingface.co/OpenGVLab/InternVL3-1B",
+    "https://huggingface.co/OpenGVLab/InternVL3-2B",
+    "https://huggingface.co/OpenGVLab/InternVL3-38B",
+    "https://huggingface.co/OpenGVLab/InternVL3-78B",
+    "https://huggingface.co/OpenGVLab/InternVL3-8B",
+    "https://huggingface.co/OpenGVLab/InternVL3-9B",
+    "https://huggingface.co/OpenGVLab/InternViT-300M-448px-V2_5",
+    "https://huggingface.co/OpenGVLab/InternViT-6B-448px-V2_5",
+    "https://huggingface.co/OpenGVLab/VisualPRM-8B",
+    "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+    "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+    "https://huggingface.co/Qwen/Qwen2.5-14B",
+    "https://huggingface.co/Qwen/Qwen2.5-32B",
+    "https://huggingface.co/Qwen/Qwen2.5-72B",
+    "https://huggingface.co/Qwen/Qwen2.5-7B",
+    "https://huggingface.co/datasets/OpenGVLab/MMPR-v1.2/resolve/main/ablation-mpo.png",
+    "https://huggingface.co/datasets/OpenGVLab/VisualPRM400K-v1.1/resolve/main/visualprm-performance.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/ablation-native.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/ablation-v2pe.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/comprehensive.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/grounding.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/gui.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/multi-images.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/multilingual.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/ocr.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/overall-table.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/overall.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/text.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/video.png",
+    "https://huggingface.co/datasets/Weiyun1025/InternVL-Performance/resolve/main/internvl3/vsi.png",
+    "https://huggingface.co/internlm/internlm3-8b-instruct",
+    "https://huggingface.co/papers/2504.10479",
+    "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+    "https://internvl.github.io/blog/2025-04-11-InternVL-3/"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:22.707945"
+}

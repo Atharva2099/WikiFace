@@ -1,0 +1,83 @@
+{
+  "repo_id": "ZhengPeng7/BiRefNet",
+  "model_id": "ZhengPeng7/BiRefNet",
+  "author": "ZhengPeng7",
+  "last_modified": "2025-03-31 06:29:55+00:00",
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "image-segmentation",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "Camouflaged Object Detection",
+    "Salient Object Detection",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "transformers",
+    "transformers.js",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "image-segmentation",
+  "files_count": 9,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/.gitattributes"
+    },
+    {
+      "name": ".gitignore",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/.gitignore"
+    },
+    {
+      "name": "BiRefNet_config.py",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/BiRefNet_config.py"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/README.md"
+    },
+    {
+      "name": "birefnet.py",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/birefnet.py"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/config.json"
+    },
+    {
+      "name": "handler.py",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/handler.py"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/model.safetensors"
+    },
+    {
+      "name": "requirements.txt",
+      "size": null,
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet/resolve/main/requirements.txt"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/pdf/2401.03407",
+    "https://arxiv.org/pdf/2401.03407.pdf",
+    "https://colab.research.google.com/assets/colab-badge.svg",
+    "https://github.com/ZhengPeng7/BiRefNet",
+    "https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:07.000123"
+}

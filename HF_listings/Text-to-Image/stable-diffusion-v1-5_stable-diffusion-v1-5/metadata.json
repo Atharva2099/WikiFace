@@ -1,0 +1,244 @@
+{
+  "repo_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "author": "stable-diffusion-v1-5",
+  "last_modified": "2024-09-07 16:20:30+00:00",
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "arxiv:2207.12598",
+    "arxiv:2112.10752",
+    "arxiv:2103.00020",
+    "arxiv:2205.11487",
+    "arxiv:1910.09700",
+    "license:creativeml-openrail-m",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "pipeline_tag": "text-to-image",
+  "files_count": 36,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/README.md"
+    },
+    {
+      "name": "feature_extractor/preprocessor_config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/feature_extractor/preprocessor_config.json"
+    },
+    {
+      "name": "model_index.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/model_index.json"
+    },
+    {
+      "name": "safety_checker/config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/safety_checker/config.json"
+    },
+    {
+      "name": "safety_checker/model.fp16.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/safety_checker/model.fp16.safetensors"
+    },
+    {
+      "name": "safety_checker/model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/safety_checker/model.safetensors"
+    },
+    {
+      "name": "safety_checker/pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/safety_checker/pytorch_model.bin"
+    },
+    {
+      "name": "safety_checker/pytorch_model.fp16.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/safety_checker/pytorch_model.fp16.bin"
+    },
+    {
+      "name": "scheduler/scheduler_config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/scheduler/scheduler_config.json"
+    },
+    {
+      "name": "text_encoder/config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/text_encoder/config.json"
+    },
+    {
+      "name": "text_encoder/model.fp16.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/text_encoder/model.fp16.safetensors"
+    },
+    {
+      "name": "text_encoder/model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/text_encoder/model.safetensors"
+    },
+    {
+      "name": "text_encoder/pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/text_encoder/pytorch_model.bin"
+    },
+    {
+      "name": "text_encoder/pytorch_model.fp16.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/text_encoder/pytorch_model.fp16.bin"
+    },
+    {
+      "name": "tokenizer/merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/tokenizer/merges.txt"
+    },
+    {
+      "name": "tokenizer/special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/tokenizer/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer/tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/tokenizer/tokenizer_config.json"
+    },
+    {
+      "name": "tokenizer/vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/tokenizer/vocab.json"
+    },
+    {
+      "name": "unet/config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/config.json"
+    },
+    {
+      "name": "unet/diffusion_pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.bin"
+    },
+    {
+      "name": "unet/diffusion_pytorch_model.fp16.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.fp16.bin"
+    },
+    {
+      "name": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.fp16.safetensors"
+    },
+    {
+      "name": "unet/diffusion_pytorch_model.non_ema.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.non_ema.bin"
+    },
+    {
+      "name": "unet/diffusion_pytorch_model.non_ema.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.non_ema.safetensors"
+    },
+    {
+      "name": "unet/diffusion_pytorch_model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/unet/diffusion_pytorch_model.safetensors"
+    },
+    {
+      "name": "v1-5-pruned-emaonly.ckpt",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
+    },
+    {
+      "name": "v1-5-pruned-emaonly.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors"
+    },
+    {
+      "name": "v1-5-pruned.ckpt",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-5-pruned.ckpt"
+    },
+    {
+      "name": "v1-5-pruned.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors"
+    },
+    {
+      "name": "v1-inference.yaml",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-inference.yaml"
+    },
+    {
+      "name": "vae/config.json",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/vae/config.json"
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/vae/diffusion_pytorch_model.bin"
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.fp16.bin",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/vae/diffusion_pytorch_model.fp16.bin"
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/vae/diffusion_pytorch_model.fp16.safetensors"
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/vae/diffusion_pytorch_model.safetensors"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/1910.09700",
+    "https://arxiv.org/abs/2103.00020",
+    "https://arxiv.org/abs/2112.10752",
+    "https://arxiv.org/abs/2205.11487",
+    "https://arxiv.org/abs/2207.12598",
+    "https://bigscience.huggingface.co/",
+    "https://bigscience.huggingface.co/blog/the-bigscience-rail-license",
+    "https://github.com/CompVis/stable-diffusion",
+    "https://github.com/christophschuhmann/improved-aesthetic-predictor",
+    "https://github.com/huggingface/diffusers",
+    "https://github.com/huggingface/diffusers#text-to-image-generation-with-stable-diffusion",
+    "https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/safety_checker.py",
+    "https://github.com/runwayml/stable-diffusion",
+    "https://huggingface.co/CompVis/stable-diffusion-v1-1",
+    "https://huggingface.co/CompVis/stable-diffusion-v1-2",
+    "https://huggingface.co/CompVis/stable-diffusion-v1-3",
+    "https://huggingface.co/CompVis/stable-diffusion-v1-4",
+    "https://huggingface.co/CompVis/stable-diffusion/resolve/main/v1-1-to-v1-5.png",
+    "https://huggingface.co/blog/stable_diffusion",
+    "https://huggingface.co/dalle-mini/dalle-mini",
+    "https://huggingface.co/datasets/laion/laion-high-resolution",
+    "https://huggingface.co/datasets/laion/laion2B-en",
+    "https://huggingface.co/sd-legacy/stable-diffusion-inpainting",
+    "https://huggingface.co/sd-legacy/stable-diffusion-v1-5",
+    "https://huggingface.co/sd-legacy/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors",
+    "https://huggingface.co/sd-legacy/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors",
+    "https://huggingface.co/spaces/CompVis/stable-diffusion-license",
+    "https://laion.ai/blog/laion-5b/",
+    "https://mlco2.github.io/impact#compute",
+    "https://rom1504.github.io/clip-retrieval/",
+    "https://www.licenses.ai/",
+    "https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses",
+    "https:/steps/huggingface.co/CompVis/stable-diffusion-v1-2"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:11.630143"
+}

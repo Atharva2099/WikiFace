@@ -1,0 +1,70 @@
+{
+  "repo_id": "SWivid/F5-TTS",
+  "model_id": "SWivid/F5-TTS",
+  "author": "SWivid",
+  "last_modified": "2025-03-21 05:05:00+00:00",
+  "tags": [
+    "f5-tts",
+    "text-to-speech",
+    "dataset:amphion/Emilia-Dataset",
+    "arxiv:2410.06885",
+    "license:cc-by-nc-4.0",
+    "region:us"
+  ],
+  "pipeline_tag": "text-to-speech",
+  "files_count": 9,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/.gitattributes"
+    },
+    {
+      "name": "F5TTS_Base/model_1200000.pt",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_Base/model_1200000.pt"
+    },
+    {
+      "name": "F5TTS_Base/model_1200000.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_Base/model_1200000.safetensors"
+    },
+    {
+      "name": "F5TTS_Base/vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_Base/vocab.txt"
+    },
+    {
+      "name": "F5TTS_Base_bigvgan/model_1250000.pt",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_Base_bigvgan/model_1250000.pt"
+    },
+    {
+      "name": "F5TTS_v1_Base/model_1250000.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_v1_Base/model_1250000.safetensors"
+    },
+    {
+      "name": "F5TTS_v1_Base/vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_v1_Base/vocab.txt"
+    },
+    {
+      "name": "F5TTS_v1_Base_no_zero_init/model_1250000.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/F5TTS_v1_Base_no_zero_init/model_1250000.safetensors"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/SWivid/F5-TTS/resolve/main/README.md"
+    }
+  ],
+  "external_links": [
+    "https://huggingface.co/SWivid/E2-TTS/tree/main/E2TTS_Base",
+    "https://huggingface.co/SWivid/F5-TTS/tree/main/F5TTS_Base",
+    "https://huggingface.co/papers/2410.06885"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:32.135899"
+}

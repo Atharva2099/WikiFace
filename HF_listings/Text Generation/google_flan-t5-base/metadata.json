@@ -1,0 +1,118 @@
+{
+  "repo_id": "google/flan-t5-base",
+  "model_id": "google/flan-t5-base",
+  "author": "google",
+  "last_modified": "2023-07-17 12:48:39+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:svakulenk0/qrecc",
+    "dataset:taskmaster2",
+    "dataset:djaym7/wiki_dialog",
+    "dataset:deepmind/code_contests",
+    "dataset:lambada",
+    "dataset:gsm8k",
+    "dataset:aqua_rat",
+    "dataset:esnli",
+    "dataset:quasc",
+    "dataset:qed",
+    "arxiv:2210.11416",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text2text-generation",
+  "files_count": 12,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/generation_config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/model.safetensors"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "spiece.model",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/spiece.model"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google/flan-t5-base/resolve/main/tokenizer_config.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/1910.09700",
+    "https://arxiv.org/pdf/2210.11416.pdf",
+    "https://github.com/google-research/t5x",
+    "https://github.com/google-research/t5x/blob/main/docs/models.md#flan-t5-checkpoints",
+    "https://github.com/google/jax",
+    "https://huggingface.co/docs/transformers/model_doc/t5",
+    "https://huggingface.co/models?search=flan-t5",
+    "https://huggingface.co/t5-large",
+    "https://ibm.github.io/model-recycling/",
+    "https://ibm.github.io/model-recycling/model_gain_chart?avg=9.16&mnli_lp=nan&20_newsgroup=3.34&ag_news=1.49&amazon_reviews_multi=0.21&anli=13.91&boolq=16.75&cb=23.12&cola=9.97&copa=34.50&dbpedia=6.90&esnli=5.37&financial_phrasebank=18.66&imdb=0.33&isear=1.37&mnli=11.74&mrpc=16.63&multirc=6.24&poem_sentiment=14.62&qnli=3.41&qqp=6.18&rotten_tomatoes=2.98&rte=24.26&sst2=0.67&sst_5bins=5.44&stsb=20.68&trec_coarse=3.95&trec_fine=10.73&tweet_ev_emoji=13.39&tweet_ev_emotion=4.62&tweet_ev_hate=3.46&tweet_ev_irony=9.04&tweet_ev_offensive=1.69&tweet_ev_sentiment=0.75&wic=14.22&wnli=9.44&wsc=5.53&yahoo_answers=4.14&model_name=google%2Fflan-t5-base&base_name=google%2Ft5-v1_1-base",
+    "https://mlco2.github.io/impact#compute",
+    "https://s3.amazonaws.com/moonup/production/uploads/1666363265279-62441d1d9fdefb55a0b7d12c.png",
+    "https://s3.amazonaws.com/moonup/production/uploads/1668072995230-62441d1d9fdefb55a0b7d12c.png"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:23.388472"
+}

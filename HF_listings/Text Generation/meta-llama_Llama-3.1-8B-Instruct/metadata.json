@@ -1,0 +1,148 @@
+{
+  "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "author": "meta-llama",
+  "last_modified": "2024-09-25 17:00:57+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2204.05149",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "license:llama3.1",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text-generation",
+  "files_count": 17,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/.gitattributes"
+    },
+    {
+      "name": "LICENSE",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/LICENSE"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/README.md"
+    },
+    {
+      "name": "USE_POLICY.md",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/USE_POLICY.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/generation_config.json"
+    },
+    {
+      "name": "model-00001-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model-00001-of-00004.safetensors"
+    },
+    {
+      "name": "model-00002-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model-00002-of-00004.safetensors"
+    },
+    {
+      "name": "model-00003-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model-00003-of-00004.safetensors"
+    },
+    {
+      "name": "model-00004-of-00004.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model-00004-of-00004.safetensors"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors.index.json"
+    },
+    {
+      "name": "original/consolidated.00.pth",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/original/consolidated.00.pth"
+    },
+    {
+      "name": "original/params.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/original/params.json"
+    },
+    {
+      "name": "original/tokenizer.model",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/original/tokenizer.model"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/pdf/2204.05149",
+    "https://developers.facebook.com/llama_output_feedback",
+    "https://github.com/huggingface/huggingface-llama-recipes",
+    "https://github.com/meta-llama/PurpleLlama",
+    "https://github.com/meta-llama/llama",
+    "https://github.com/meta-llama/llama-agentic-system",
+    "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE",
+    "https://github.com/meta-llama/llama-models/issues",
+    "https://github.com/meta-llama/llama-recipes",
+    "https://github.com/meta-llama/llama3",
+    "https://huggingface.co/docs/transformers/main/chat_templating#advanced-tool-use--function-calling",
+    "https://llama.meta.com/community-stories/",
+    "https://llama.meta.com/docs/get-started/",
+    "https://llama.meta.com/docs/model-cards-and-prompt-formats/llama3_1/",
+    "https://llama.meta.com/llama-impact-grants/",
+    "https://llama.meta.com/llama-impact-grants/#finalists",
+    "https://llama.meta.com/llama3_1/use-policy",
+    "https://llama.meta.com/responsible-use-guide",
+    "https://llama.meta.com/responsible-use-guide/",
+    "https://llama.meta.com/trust-and-safety/",
+    "https://www.facebook.com/privacy/policy/",
+    "https://www.facebook.com/whitehat"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:21.534117"
+}

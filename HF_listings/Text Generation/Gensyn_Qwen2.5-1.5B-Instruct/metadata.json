@@ -1,0 +1,88 @@
+{
+  "repo_id": "Gensyn/Qwen2.5-1.5B-Instruct",
+  "model_id": "Gensyn/Qwen2.5-1.5B-Instruct",
+  "author": "Gensyn",
+  "last_modified": "2025-04-04 02:34:03+00:00",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "rl-swarm",
+    "gensyn",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text-generation",
+  "files_count": 10,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/.gitattributes"
+    },
+    {
+      "name": "LICENSE",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/LICENSE"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/config.json"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/generation_config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/merges.txt"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/model.safetensors"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/Gensyn/Qwen2.5-1.5B-Instruct/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://github.com/gensyn-ai/paper-rl-swarm/blob/main/latest.pdf",
+    "https://github.com/gensyn-ai/rl-swarm",
+    "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+    "https://qwen.readthedocs.io/en/latest/",
+    "https://www.gensyn.ai/articles/rl-swarm",
+    "https://www.gensyn.ai/testnet"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:19.932113"
+}

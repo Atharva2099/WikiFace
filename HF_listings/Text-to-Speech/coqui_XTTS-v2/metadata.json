@@ -1,0 +1,123 @@
+{
+  "repo_id": "coqui/XTTS-v2",
+  "model_id": "coqui/XTTS-v2",
+  "author": "coqui",
+  "last_modified": "2023-12-11 17:50:00+00:00",
+  "tags": [
+    "coqui",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "pipeline_tag": "text-to-speech",
+  "files_count": 18,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/.gitattributes"
+    },
+    {
+      "name": "LICENSE.txt",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/LICENSE.txt"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/config.json"
+    },
+    {
+      "name": "dvae.pth",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/dvae.pth"
+    },
+    {
+      "name": "hash.md5",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/hash.md5"
+    },
+    {
+      "name": "mel_stats.pth",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/mel_stats.pth"
+    },
+    {
+      "name": "model.pth",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/model.pth"
+    },
+    {
+      "name": "samples/de_sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/de_sample.wav"
+    },
+    {
+      "name": "samples/en_sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/en_sample.wav"
+    },
+    {
+      "name": "samples/es_sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/es_sample.wav"
+    },
+    {
+      "name": "samples/fr_sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/fr_sample.wav"
+    },
+    {
+      "name": "samples/ja-sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/ja-sample.wav"
+    },
+    {
+      "name": "samples/pt_sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/pt_sample.wav"
+    },
+    {
+      "name": "samples/tr_sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/tr_sample.wav"
+    },
+    {
+      "name": "samples/zh-cn-sample.wav",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/samples/zh-cn-sample.wav"
+    },
+    {
+      "name": "speakers_xtts.pth",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/speakers_xtts.pth"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/coqui/XTTS-v2/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://coqui.ai/",
+    "https://coqui.ai/blog/tts/cpml",
+    "https://coqui.ai/cpml",
+    "https://discord.gg/5eXr5seRrv",
+    "https://discord.gg/fBC58unbKE",
+    "https://docs.coqui.ai/docs",
+    "https://github.com/coqui-ai/TTS",
+    "https://github.com/coqui-ai/TTS/discussions",
+    "https://huggingface.co/spaces/coqui/voice-chat-with-mistral",
+    "https://huggingface.co/spaces/coqui/xtts",
+    "https://tts.readthedocs.io/en/latest/",
+    "https://tts.readthedocs.io/en/latest/models/xtts.html#training",
+    "https://twitter.com/coqui_ai"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:29.470999"
+}

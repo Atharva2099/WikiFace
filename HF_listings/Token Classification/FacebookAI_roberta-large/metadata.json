@@ -1,0 +1,102 @@
+{
+  "repo_id": "FacebookAI/roberta-large",
+  "model_id": "FacebookAI/roberta-large",
+  "author": "FacebookAI",
+  "last_modified": "2024-02-19 12:47:04+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "exbert",
+    "en",
+    "dataset:bookcorpus",
+    "dataset:wikipedia",
+    "arxiv:1907.11692",
+    "arxiv:1806.02847",
+    "license:mit",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "fill-mask",
+  "files_count": 12,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/merges.txt"
+    },
+    {
+      "name": "model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/model.onnx"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/model.safetensors"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/FacebookAI/roberta-large/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/1806.02847",
+    "https://arxiv.org/abs/1907.11692",
+    "https://commoncrawl.org/2016/10/news-dataset-available/",
+    "https://en.wikipedia.org/wiki/English_Wikipedia",
+    "https://github.com/jcpeterson/openwebtext",
+    "https://github.com/pytorch/fairseq/tree/master/examples/roberta",
+    "https://huggingface.co/models?filter=roberta",
+    "https://yknzhu.wixsite.com/mbweb"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:38.905484"
+}

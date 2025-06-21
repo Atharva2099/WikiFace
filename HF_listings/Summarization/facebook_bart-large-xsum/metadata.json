@@ -1,0 +1,90 @@
+{
+  "repo_id": "facebook/bart-large-xsum",
+  "model_id": "facebook/bart-large-xsum",
+  "author": "facebook",
+  "last_modified": "2023-01-24 16:28:59+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "bart",
+    "text2text-generation",
+    "summarization",
+    "en",
+    "arxiv:1910.13461",
+    "license:mit",
+    "model-index",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "summarization",
+  "files_count": 12,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/config.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "generation_config.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/generation_config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/merges.txt"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/facebook/bart-large-xsum/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:54.318911"
+}

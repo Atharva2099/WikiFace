@@ -1,0 +1,401 @@
+{
+  "repo_id": "hexgrad/Kokoro-82M",
+  "model_id": "hexgrad/Kokoro-82M",
+  "author": "hexgrad",
+  "last_modified": "2025-04-10 18:12:48+00:00",
+  "tags": [
+    "text-to-speech",
+    "en",
+    "arxiv:2306.07691",
+    "arxiv:2203.02395",
+    "base_model:yl4579/StyleTTS2-LJSpeech",
+    "base_model:finetune:yl4579/StyleTTS2-LJSpeech",
+    "doi:10.57967/hf/4329",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "pipeline_tag": "text-to-speech",
+  "files_count": 72,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/.gitattributes"
+    },
+    {
+      "name": "DONATE.md",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/DONATE.md"
+    },
+    {
+      "name": "EVAL.md",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/EVAL.md"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/README.md"
+    },
+    {
+      "name": "SAMPLES.md",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/SAMPLES.md"
+    },
+    {
+      "name": "VOICES.md",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/VOICES.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/config.json"
+    },
+    {
+      "name": "eval/ArtificialAnalysis-2025-02-26.jpeg",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/eval/ArtificialAnalysis-2025-02-26.jpeg"
+    },
+    {
+      "name": "eval/TTS_Arena-2025-02-26.jpeg",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/eval/TTS_Arena-2025-02-26.jpeg"
+    },
+    {
+      "name": "eval/TTS_Spaces_Arena-2025-02-26.jpeg",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/eval/TTS_Spaces_Arena-2025-02-26.jpeg"
+    },
+    {
+      "name": "kokoro-v1_0.pth",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/kokoro-v1_0.pth"
+    },
+    {
+      "name": "samples/HEARME.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/HEARME.wav"
+    },
+    {
+      "name": "samples/af_heart_0.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/af_heart_0.wav"
+    },
+    {
+      "name": "samples/af_heart_1.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/af_heart_1.wav"
+    },
+    {
+      "name": "samples/af_heart_2.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/af_heart_2.wav"
+    },
+    {
+      "name": "samples/af_heart_3.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/af_heart_3.wav"
+    },
+    {
+      "name": "samples/af_heart_4.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/af_heart_4.wav"
+    },
+    {
+      "name": "samples/af_heart_5.wav",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/samples/af_heart_5.wav"
+    },
+    {
+      "name": "voices/af_alloy.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_alloy.pt"
+    },
+    {
+      "name": "voices/af_aoede.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_aoede.pt"
+    },
+    {
+      "name": "voices/af_bella.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_bella.pt"
+    },
+    {
+      "name": "voices/af_heart.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_heart.pt"
+    },
+    {
+      "name": "voices/af_jessica.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_jessica.pt"
+    },
+    {
+      "name": "voices/af_kore.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_kore.pt"
+    },
+    {
+      "name": "voices/af_nicole.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_nicole.pt"
+    },
+    {
+      "name": "voices/af_nova.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_nova.pt"
+    },
+    {
+      "name": "voices/af_river.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_river.pt"
+    },
+    {
+      "name": "voices/af_sarah.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_sarah.pt"
+    },
+    {
+      "name": "voices/af_sky.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/af_sky.pt"
+    },
+    {
+      "name": "voices/am_adam.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_adam.pt"
+    },
+    {
+      "name": "voices/am_echo.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_echo.pt"
+    },
+    {
+      "name": "voices/am_eric.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_eric.pt"
+    },
+    {
+      "name": "voices/am_fenrir.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_fenrir.pt"
+    },
+    {
+      "name": "voices/am_liam.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_liam.pt"
+    },
+    {
+      "name": "voices/am_michael.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_michael.pt"
+    },
+    {
+      "name": "voices/am_onyx.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_onyx.pt"
+    },
+    {
+      "name": "voices/am_puck.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_puck.pt"
+    },
+    {
+      "name": "voices/am_santa.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/am_santa.pt"
+    },
+    {
+      "name": "voices/bf_alice.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bf_alice.pt"
+    },
+    {
+      "name": "voices/bf_emma.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bf_emma.pt"
+    },
+    {
+      "name": "voices/bf_isabella.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bf_isabella.pt"
+    },
+    {
+      "name": "voices/bf_lily.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bf_lily.pt"
+    },
+    {
+      "name": "voices/bm_daniel.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bm_daniel.pt"
+    },
+    {
+      "name": "voices/bm_fable.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bm_fable.pt"
+    },
+    {
+      "name": "voices/bm_george.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bm_george.pt"
+    },
+    {
+      "name": "voices/bm_lewis.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/bm_lewis.pt"
+    },
+    {
+      "name": "voices/ef_dora.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/ef_dora.pt"
+    },
+    {
+      "name": "voices/em_alex.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/em_alex.pt"
+    },
+    {
+      "name": "voices/em_santa.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/em_santa.pt"
+    },
+    {
+      "name": "voices/ff_siwis.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/ff_siwis.pt"
+    },
+    {
+      "name": "voices/hf_alpha.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/hf_alpha.pt"
+    },
+    {
+      "name": "voices/hf_beta.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/hf_beta.pt"
+    },
+    {
+      "name": "voices/hm_omega.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/hm_omega.pt"
+    },
+    {
+      "name": "voices/hm_psi.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/hm_psi.pt"
+    },
+    {
+      "name": "voices/if_sara.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/if_sara.pt"
+    },
+    {
+      "name": "voices/im_nicola.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/im_nicola.pt"
+    },
+    {
+      "name": "voices/jf_alpha.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/jf_alpha.pt"
+    },
+    {
+      "name": "voices/jf_gongitsune.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/jf_gongitsune.pt"
+    },
+    {
+      "name": "voices/jf_nezumi.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/jf_nezumi.pt"
+    },
+    {
+      "name": "voices/jf_tebukuro.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/jf_tebukuro.pt"
+    },
+    {
+      "name": "voices/jm_kumo.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/jm_kumo.pt"
+    },
+    {
+      "name": "voices/pf_dora.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/pf_dora.pt"
+    },
+    {
+      "name": "voices/pm_alex.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/pm_alex.pt"
+    },
+    {
+      "name": "voices/pm_santa.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/pm_santa.pt"
+    },
+    {
+      "name": "voices/zf_xiaobei.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaobei.pt"
+    },
+    {
+      "name": "voices/zf_xiaoni.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaoni.pt"
+    },
+    {
+      "name": "voices/zf_xiaoxiao.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaoxiao.pt"
+    },
+    {
+      "name": "voices/zf_xiaoyi.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaoyi.pt"
+    },
+    {
+      "name": "voices/zm_yunjian.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunjian.pt"
+    },
+    {
+      "name": "voices/zm_yunxi.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunxi.pt"
+    },
+    {
+      "name": "voices/zm_yunxia.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunxia.pt"
+    },
+    {
+      "name": "voices/zm_yunyang.pt",
+      "size": null,
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunyang.pt"
+    }
+  ],
+  "external_links": [
+    "https://artificialanalysis.ai/text-to-speech/model-family/kokoro#price",
+    "https://colab.research.google.com/",
+    "https://creativecommons.org/licenses/by/3.0/deed.ja",
+    "https://datashare.ed.ac.uk/bitstream/handle/10283/2353/license_text",
+    "https://datashare.ed.ac.uk/handle/10283/2353",
+    "https://deepinfra.com/hexgrad/Kokoro-82M",
+    "https://github.com/hexgrad/kokoro?tab=readme-ov-file#advanced-usage",
+    "https://github.com/koniwa/koniwa",
+    "https://huggingface.co/Pendrokar",
+    "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/EVAL.md",
+    "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/SAMPLES.md",
+    "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md",
+    "https://huggingface.co/hexgrad/kLegacy/tree/main/v0.19",
+    "https://huggingface.co/yl4579",
+    "https://pypi.org/project/misaki/",
+    "https://terminator.fandom.com/wiki/Kokoro"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:07:30.823335"
+}

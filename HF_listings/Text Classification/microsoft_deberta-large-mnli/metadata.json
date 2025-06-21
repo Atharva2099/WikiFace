@@ -1,0 +1,79 @@
+{
+  "repo_id": "microsoft/deberta-large-mnli",
+  "model_id": "microsoft/deberta-large-mnli",
+  "author": "microsoft",
+  "last_modified": "2021-05-21 20:07:51+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "deberta",
+    "text-classification",
+    "deberta-v1",
+    "deberta-mnli",
+    "en",
+    "arxiv:2006.03654",
+    "license:mit",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text-classification",
+  "files_count": 8,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/README.md"
+    },
+    {
+      "name": "bpe_encoder.bin",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/bpe_encoder.bin"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/merges.txt"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/microsoft/deberta-large-mnli/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2006.03654",
+    "https://github.com/microsoft/DeBERTa",
+    "https://huggingface.co/microsoft/deberta-large",
+    "https://huggingface.co/microsoft/deberta-large-mnli",
+    "https://huggingface.co/microsoft/deberta-v2-xlarge",
+    "https://huggingface.co/microsoft/deberta-v2-xlarge-mnli",
+    "https://huggingface.co/microsoft/deberta-v2-xxlarge",
+    "https://huggingface.co/microsoft/deberta-v2-xxlarge-mnli",
+    "https://huggingface.co/microsoft/deberta-xlarge",
+    "https://huggingface.co/microsoft/deberta-xlarge-mnli",
+    "https://huggingface.co/transformers/main_classes/trainer.html"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:31.157122"
+}

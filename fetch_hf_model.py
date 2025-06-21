@@ -1,19 +1,45 @@
 #!/usr/bin/env python3
 """
-HuggingFace Trending Models Scraper - Enhanced Version
-Scrapes the top 10 trending models from HuggingFace and saves each in its own folder.
-Enhanced with file tree, external links extraction, and bug fixes.
+Enhanced HuggingFace Model Fetcher with Automatic Task Classification
+Fetches top 3 trending models from each task category and automatically organizes them by task.
 """
 
 import requests
 import json
 import os
 import re
+import shutil
 from datetime import datetime
 from pathlib import Path
 import time
 from huggingface_hub import model_info, hf_hub_download
 from urllib.parse import urlparse
+from collections import defaultdict
+
+# Define task categories and their pipeline tags
+TASK_CATEGORIES = {
+    "Text Generation": ["text-generation", "text2text-generation"],
+    "Text Classification": ["text-classification", "sentiment-analysis"],
+    "Token Classification": ["token-classification", "fill-mask"],
+    "Question Answering": ["question-answering"],
+    "Translation": ["translation"],
+    "Summarization": ["summarization"],
+    "Image Classification": ["image-classification"],
+    "Object Detection": ["object-detection"],
+    "Image Segmentation": ["image-segmentation"],
+    "Text-to-Image": ["text-to-image"],
+    "Image-to-Text": ["image-to-text"],
+    "Image-Text-to-Text": ["image-text-to-text"],
+    "Text-to-Video": ["text-to-video"],
+    "Text-to-Speech": ["text-to-speech"],
+    "Audio Classification": ["audio-classification", "automatic-speech-recognition"],
+    "Time Series": ["time-series-forecasting"],
+    "Embeddings": ["feature-extraction"],
+    "Multimodal": ["multimodal"],
+    "Reinforcement Learning": ["reinforcement-learning"],
+    "Code Generation": ["code-generation"],
+    "Other": []
+}
 
 def extract_external_links(readme_content):
     """
@@ -51,25 +77,27 @@ def extract_external_links(readme_content):
     
     return unique_links
 
-def get_trending_models(limit=10):
+def get_trending_models_by_task(pipeline_tag, limit=3):
     """
-    Get trending models from HuggingFace.
+    Get top models from HuggingFace for a specific task using downloads as the sort order.
     
     Args:
-        limit (int): Number of trending models to fetch (default: 10)
+        pipeline_tag (str): The pipeline tag to filter by
+        limit (int): Number of top models to fetch (default: 3)
     
     Returns:
-        list: List of trending model information
+        list: List of top model information
     """
     
     # HuggingFace models API endpoint
     url = "https://huggingface.co/api/models"
     
     try:
-        print(f"Fetching top {limit} trending models...")
+        print(f"Fetching top {limit} downloaded models for {pipeline_tag}...")
         
-        # Get trending models
+        # Get top models for specific pipeline tag
         response = requests.get(url, params={
+            "pipeline_tag": pipeline_tag,
             "sort": "downloads",
             "direction": "-1",
             "limit": limit
@@ -93,6 +121,7 @@ def get_trending_models(limit=10):
                             'author': info.author or model.get('author', {}).get('name', 'Unknown'),
                             'last_modified': info.lastModified,
                             'tags': info.tags,
+                            'pipeline_tag': pipeline_tag,
                             'downloads': model.get('downloads', 0),
                             'likes': model.get('likes', 0),
                             'description': model.get('description', '')
@@ -106,23 +135,122 @@ def get_trending_models(limit=10):
             
             return trending_models
         else:
-            print(f"Error fetching trending models: {response.status_code}")
+            print(f"Error fetching models for {pipeline_tag}: {response.status_code}")
+            print(f"Response: {response.text[:200]}...")
             return []
             
     except Exception as e:
-        print(f"Error: {str(e)}")
+        print(f"Error fetching {pipeline_tag}: {str(e)}")
         return []
 
-def fetch_and_save_model_data(repo_id, output_dir):
+def determine_primary_task(api_info, metadata):
+    """
+    Determine the primary task of a model based on API info and metadata.
+    
+    Args:
+        api_info (dict): Model information from Hugging Face API
+        metadata (dict): Local metadata from metadata.json
+        
+    Returns:
+        str: Primary task category
+    """
+    # Check pipeline_tag first (most reliable)
+    if api_info and api_info.get('pipeline_tag'):
+        pipeline_tag = api_info['pipeline_tag'].lower()
+        
+        # Map pipeline tags to our categories
+        for category, category_tags in TASK_CATEGORIES.items():
+            if pipeline_tag in category_tags:
+                return category
+    
+    # Check tags for specific indicators
+    tags = []
+    if api_info:
+        tags.extend(api_info.get('tags', []))
+    if metadata:
+        tags.extend(metadata.get('tags', []))
+    
+    tags_lower = [tag.lower() for tag in tags]
+    
+    # Specific model type checks (highest priority)
+    if "sentence-transformers" in tags_lower:
+        return "Embeddings"
+    
+    if "clip" in tags_lower:
+        return "Multimodal"
+    
+    if any(tag in tags_lower for tag in ["time-series", "forecasting", "chronos"]):
+        return "Time Series"
+    
+    if any(tag in tags_lower for tag in ["rlhf", "ppo", "dpo", "reward-modeling"]):
+        return "Reinforcement Learning"
+    
+    if any(tag in tags_lower for tag in ["text2text-generation", "text-generation"]):
+        return "Text Generation"
+    
+    if any(tag in tags_lower for tag in ["text-classification", "sentiment-analysis"]):
+        return "Text Classification"
+    
+    if any(tag in tags_lower for tag in ["fill-mask", "token-classification"]):
+        return "Token Classification"
+    
+    if any(tag in tags_lower for tag in ["image-classification"]):
+        return "Image Classification"
+    
+    if any(tag in tags_lower for tag in ["segmentation"]):
+        return "Image Segmentation"
+    
+    if any(tag in tags_lower for tag in ["object-detection", "detection"]):
+        return "Object Detection"
+    
+    if any(tag in tags_lower for tag in ["question-answering", "qa"]):
+        return "Question Answering"
+    
+    if any(tag in tags_lower for tag in ["translation"]):
+        return "Translation"
+    
+    if any(tag in tags_lower for tag in ["summarization"]):
+        return "Summarization"
+    
+    if any(tag in tags_lower for tag in ["text-to-image", "diffusion", "stable-diffusion"]):
+        return "Text-to-Image"
+    
+    if any(tag in tags_lower for tag in ["image-to-text", "image-captioning"]):
+        return "Image-to-Text"
+    
+    if any(tag in tags_lower for tag in ["audio", "speech"]):
+        return "Audio Classification"
+    
+    if any(tag in tags_lower for tag in ["code", "programming"]):
+        return "Code Generation"
+    
+    # Check for general patterns
+    if any(tag in tags_lower for tag in ["generation", "generative"]):
+        return "Text Generation"
+    
+    if any(tag in tags_lower for tag in ["classification"]):
+        return "Text Classification"
+    
+    if any(tag in tags_lower for tag in ["vision", "computer-vision"]):
+        return "Image Classification"
+    
+    if any(tag in tags_lower for tag in ["multimodal", "vision-language"]):
+        return "Multimodal"
+    
+    # Default fallback
+    return "Other"
+
+def fetch_and_save_model_data(repo_id, output_dir, pipeline_tag=None):
     """
     Fetch model data and save to a specific directory.
     
     Args:
         repo_id (str): The model repository ID
         output_dir (str): Output directory path
+        pipeline_tag (str): The pipeline tag for this model
     
     Returns:
-        bool: True if successful, False otherwise
+        tuple: (success, primary_task, metadata)
     """
     
     try:
@@ -228,11 +356,12 @@ def fetch_and_save_model_data(repo_id, output_dir):
             'repo_id': repo_id,
             'model_id': info.modelId,
             'author': info.author,
-            'last_modified': str(info.lastModified) if info.lastModified else None,  # Fixed: keep as string
+            'last_modified': str(info.lastModified) if info.lastModified else None,
             'tags': info.tags,
+            'pipeline_tag': pipeline_tag,
             'files_count': len(info.siblings),
-            'file_tree': file_tree,  # Enhanced: full file tree with URLs
-            'external_links': external_links,  # New: extracted external links
+            'file_tree': file_tree,
+            'external_links': external_links,
             'has_readme': readme_file is not None,
             'scraped_at': datetime.now().isoformat()
         }
@@ -241,58 +370,142 @@ def fetch_and_save_model_data(repo_id, output_dir):
         with open(metadata_file, 'w', encoding='utf-8') as f:
             json.dump(metadata, f, indent=2, ensure_ascii=False)
         
+        # Determine primary task
+        primary_task = determine_primary_task({'pipeline_tag': pipeline_tag, 'tags': info.tags}, metadata)
+        
         print(f"  ✅ Saved to: {output_dir}")
         print(f"  📁 Files: {len(file_tree)}")
-        print(f"  �� External links: {len(external_links)}")
-        return True
+        print(f"  🔗 External links: {len(external_links)}")
+        print(f"  🏷️  Primary task: {primary_task}")
+        
+        return True, primary_task, metadata
         
     except Exception as e:
         print(f"  ❌ Error processing {repo_id}: {str(e)}")
-        return False
+        return False, "Other", None
+
+def create_task_directories(base_dir, task_counts):
+    """
+    Create task directories and return the mapping.
+    
+    Args:
+        base_dir (str): Base directory for task folders
+        task_counts (dict): Dictionary with task counts
+        
+    Returns:
+        dict: Mapping of task names to directory paths
+    """
+    task_dirs = {}
+    
+    for task in task_counts.keys():
+        if task_counts[task] > 0:  # Only create directories for tasks that have models
+            task_dir = os.path.join(base_dir, task)
+            os.makedirs(task_dir, exist_ok=True)
+            task_dirs[task] = task_dir
+            print(f"Created task directory: {task_dir}")
+    
+    return task_dirs
 
 def main():
-    """Main function to scrape trending models and save them."""
+    """Main function to fetch trending models by task and organize them."""
     
     # Create output directory
     output_base = "HF_listings"
     Path(output_base).mkdir(exist_ok=True)
     
-    print("🚀 Starting Enhanced HuggingFace Trending Models Scraper")
+    print("🚀 Starting Enhanced HuggingFace Model Fetcher with Task Classification")
     print(f"📁 Output directory: {output_base}")
-    print("-" * 50)
+    print("-" * 60)
     
-    # Get trending models
-    trending_models = get_trending_models(10)
+    # Get models from each task category
+    all_models = []
+    task_counts = defaultdict(int)
+    model_task_mapping = {}
     
-    if not trending_models:
-        print("❌ No trending models found or error occurred.")
-        return
+    # Fetch top 3 models from each task category
+    for category, pipeline_tags in TASK_CATEGORIES.items():
+        if pipeline_tags:  # Skip "Other" category for fetching
+            for pipeline_tag in pipeline_tags:
+                print(f"\n📊 Fetching {category} models (pipeline: {pipeline_tag})...")
+                models = get_trending_models_by_task(pipeline_tag, limit=3)
+                
+                for model in models:
+                    # Create directory for this model
+                    safe_name = model['repo_id'].replace("/", "_")
+                    model_dir = os.path.join(output_base, safe_name)
+                    Path(model_dir).mkdir(exist_ok=True)
+                    
+                    # Fetch and save model data
+                    success, primary_task, metadata = fetch_and_save_model_data(
+                        model['repo_id'], 
+                        model_dir, 
+                        pipeline_tag
+                    )
+                    
+                    if success:
+                        all_models.append(model)
+                        task_counts[primary_task] += 1
+                        model_task_mapping[safe_name] = {
+                            'primary_task': primary_task,
+                            'folder_path': model_dir,
+                            'metadata': metadata,
+                            'original_pipeline': pipeline_tag
+                        }
+                    
+                    # Add a small delay to be respectful to the API
+                    time.sleep(1)
     
-    print(f"📊 Found {len(trending_models)} trending models")
-    print("-" * 50)
+    # Create task-based organization
+    print(f"\n📂 Creating task-based organization...")
+    task_dirs = create_task_directories(output_base, task_counts)
     
-    # Process each model
-    successful = 0
-    for i, model in enumerate(trending_models, 1):
-        print(f"\n[{i}/{len(trending_models)}] Processing: {model['repo_id']}")
+    # Organize models into task directories
+    print(f"🔄 Organizing models into task directories...")
+    
+    for model_name, info in model_task_mapping.items():
+        primary_task = info['primary_task']
+        source_path = info['folder_path']
         
-        # Create directory for this model
-        safe_name = model['repo_id'].replace("/", "_")
-        model_dir = os.path.join(output_base, safe_name)
-        Path(model_dir).mkdir(exist_ok=True)
-        
-        # Fetch and save model data
-        if fetch_and_save_model_data(model['repo_id'], model_dir):
-            successful += 1
-        
-        # Add a small delay to be respectful to the API
-        time.sleep(1)
+        if primary_task in task_dirs:
+            target_path = os.path.join(task_dirs[primary_task], model_name)
+            
+            try:
+                if os.path.exists(target_path):
+                    print(f"Model {model_name} already exists in {primary_task}, skipping...")
+                else:
+                    shutil.move(source_path, target_path)
+                    print(f"Moved {model_name} to {primary_task}")
+            except Exception as e:
+                print(f"Error moving {model_name}: {e}")
+        else:
+            print(f"No directory found for task: {primary_task}")
     
-    print("\n" + "=" * 50)
-    print(f"🎉 Enhanced scraping completed!")
-    print(f"✅ Successfully processed: {successful}/{len(trending_models)} models")
-    print(f"📁 All data saved in: {output_base}/")
-    print("=" * 50)
+    # Create summary file
+    summary_path = os.path.join(output_base, "organization_summary.json")
+    summary = {
+        "total_models": len(all_models),
+        "task_counts": dict(task_counts),
+        "model_mappings": model_task_mapping,
+        "operation": "fetch_and_organize",
+        "categories_fetched": list(TASK_CATEGORIES.keys())
+    }
+    
+    with open(summary_path, 'w', encoding='utf-8') as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    
+    # Print summary
+    print("\n" + "=" * 60)
+    print("🎉 Enhanced fetching and organization completed!")
+    print(f"✅ Total models processed: {len(all_models)}")
+    print(f"📁 Output directory: {output_base}")
+    print("\nTask distribution:")
+    
+    for task, count in sorted(task_counts.items(), key=lambda x: x[1], reverse=True):
+        if count > 0:
+            print(f"  {task}: {count} models")
+    
+    print(f"\n📄 Summary saved to: {summary_path}")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()

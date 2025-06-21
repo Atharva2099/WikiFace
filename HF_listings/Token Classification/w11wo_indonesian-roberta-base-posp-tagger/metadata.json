@@ -1,0 +1,104 @@
+{
+  "repo_id": "w11wo/indonesian-roberta-base-posp-tagger",
+  "model_id": "w11wo/indonesian-roberta-base-posp-tagger",
+  "author": "w11wo",
+  "last_modified": "2024-02-19 11:03:26+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "tensorboard",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "ind",
+    "dataset:indonlu",
+    "base_model:flax-community/indonesian-roberta-base",
+    "base_model:finetune:flax-community/indonesian-roberta-base",
+    "license:mit",
+    "model-index",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "token-classification",
+  "files_count": 14,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/config.json"
+    },
+    {
+      "name": "merges.txt",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/merges.txt"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/model.safetensors"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "runs/Feb19_11-00-22_bookbot-h100/events.out.tfevents.1708340422.bookbot-h100.8811.0",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/runs/Feb19_11-00-22_bookbot-h100/events.out.tfevents.1708340422.bookbot-h100.8811.0"
+    },
+    {
+      "name": "runs/Feb19_11-00-22_bookbot-h100/events.out.tfevents.1708340574.bookbot-h100.8811.1",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/runs/Feb19_11-00-22_bookbot-h100/events.out.tfevents.1708340574.bookbot-h100.8811.1"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/training_args.bin"
+    },
+    {
+      "name": "vocab.json",
+      "size": null,
+      "url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/resolve/main/vocab.json"
+    }
+  ],
+  "external_links": [
+    "https://huggingface.co/flax-community/indonesian-roberta-base"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:34.595167"
+}

@@ -1,0 +1,72 @@
+{
+  "repo_id": "prithivida/parrot_paraphraser_on_T5",
+  "model_id": "prithivida/parrot_paraphraser_on_T5",
+  "author": "prithivida",
+  "last_modified": "2021-05-18 07:53:27+00:00",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "autotrain_compatible",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "pipeline_tag": "text2text-generation",
+  "files_count": 8,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/config.json"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "spiece.model",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/spiece.model"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "training_args.bin",
+      "size": null,
+      "url": "https://huggingface.co/prithivida/parrot_paraphraser_on_T5/resolve/main/training_args.bin"
+    }
+  ],
+  "external_links": [
+    "http://paraphrase.org/#/download",
+    "https://forum.rasa.com/t/paraphrasing-for-nlu-data-augmentation-experimental/27744",
+    "https://github.com/PrithivirajDamodaran/Parrot",
+    "https://github.com/makcedward/nlpaug",
+    "https://huggingface.co/models?pipeline_tag=text2text-generation&search=paraphrase",
+    "https://rapidapi.com/search/paraphrase?section=apis&page=1",
+    "https://www.aclweb.org/anthology/D10-1090.pdf",
+    "https://www.sbert.net/examples/applications/paraphrase-mining/README.html"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T15:06:24.745968"
+}
