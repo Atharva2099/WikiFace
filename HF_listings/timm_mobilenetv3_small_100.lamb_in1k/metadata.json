@@ -1,0 +1,52 @@
+{
+  "repo_id": "timm/mobilenetv3_small_100.lamb_in1k",
+  "model_id": "timm/mobilenetv3_small_100.lamb_in1k",
+  "author": "timm",
+  "last_modified": "2025-01-21T18:21:16.000Z",
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "dataset:imagenet-1k",
+    "arxiv:2110.00476",
+    "arxiv:1905.02244",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "files_count": 5,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/resolve/main/config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/resolve/main/model.safetensors"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/resolve/main/pytorch_model.bin"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/2110.00476",
+    "https://github.com/huggingface/pytorch-image-models/tree/main/results"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T12:33:55.196555"
+}

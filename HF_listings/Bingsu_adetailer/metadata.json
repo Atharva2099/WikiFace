@@ -1,0 +1,105 @@
+{
+  "repo_id": "Bingsu/adetailer",
+  "model_id": "Bingsu/adetailer",
+  "author": "Bingsu",
+  "last_modified": "2024-11-21T12:40:27.000Z",
+  "tags": [
+    "ultralytics",
+    "pytorch",
+    "dataset:wider_face",
+    "dataset:skytnt/anime-segmentation",
+    "doi:10.57967/hf/3633",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "files_count": 14,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/.gitattributes"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/README.md"
+    },
+    {
+      "name": "deepfashion2_yolov8s-seg.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/deepfashion2_yolov8s-seg.pt"
+    },
+    {
+      "name": "face_yolov8m.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8m.pt"
+    },
+    {
+      "name": "face_yolov8n.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8n.pt"
+    },
+    {
+      "name": "face_yolov8n_v2.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8n_v2.pt"
+    },
+    {
+      "name": "face_yolov8s.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8s.pt"
+    },
+    {
+      "name": "face_yolov9c.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov9c.pt"
+    },
+    {
+      "name": "hand_yolov8n.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/hand_yolov8n.pt"
+    },
+    {
+      "name": "hand_yolov8s.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/hand_yolov8s.pt"
+    },
+    {
+      "name": "hand_yolov9c.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/hand_yolov9c.pt"
+    },
+    {
+      "name": "person_yolov8m-seg.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8m-seg.pt"
+    },
+    {
+      "name": "person_yolov8n-seg.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8n-seg.pt"
+    },
+    {
+      "name": "person_yolov8s-seg.pt",
+      "size": null,
+      "url": "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8s-seg.pt"
+    }
+  ],
+  "external_links": [
+    "http://shuoyang1213.me/WIDERFACE/index.html",
+    "https://cocodataset.org/#home",
+    "https://github.com/jerryli27/AniSeg",
+    "https://github.com/switchablenorms/DeepFashion2",
+    "https://github.com/ultralytics/ultralytics",
+    "https://huggingface.co/datasets/skytnt/anime-segmentation",
+    "https://i.imgur.com/9Btuy8j.png",
+    "https://i.imgur.com/9ny1wmD.png",
+    "https://universe.roboflow.com/0oooooo0/xml2txt-njqx1",
+    "https://universe.roboflow.com/1-yshhi/anhdet",
+    "https://universe.roboflow.com/catwithawand/hand-detection-fuao9",
+    "https://universe.roboflow.com/my-workspace-mph8o/anime-face-createml",
+    "https://universe.roboflow.com/sed-b8vkf/an-lfg5i"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T12:33:59.091451"
+}

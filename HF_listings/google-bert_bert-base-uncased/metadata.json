@@ -1,0 +1,128 @@
+{
+  "repo_id": "google-bert/bert-base-uncased",
+  "model_id": "google-bert/bert-base-uncased",
+  "author": "google-bert",
+  "last_modified": "2024-02-19T11:06:12.000Z",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "coreml",
+    "onnx",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "exbert",
+    "en",
+    "dataset:bookcorpus",
+    "dataset:wikipedia",
+    "arxiv:1810.04805",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "files_count": 16,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/.gitattributes"
+    },
+    {
+      "name": "LICENSE",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/LICENSE"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/config.json"
+    },
+    {
+      "name": "coreml/fill-mask/float32_model.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/coreml/fill-mask/float32_model.mlpackage/Data/com.apple.CoreML/model.mlmodel"
+    },
+    {
+      "name": "coreml/fill-mask/float32_model.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/coreml/fill-mask/float32_model.mlpackage/Data/com.apple.CoreML/weights/weight.bin"
+    },
+    {
+      "name": "coreml/fill-mask/float32_model.mlpackage/Manifest.json",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/coreml/fill-mask/float32_model.mlpackage/Manifest.json"
+    },
+    {
+      "name": "flax_model.msgpack",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/flax_model.msgpack"
+    },
+    {
+      "name": "model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/model.onnx"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/model.safetensors"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "rust_model.ot",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/rust_model.ot"
+    },
+    {
+      "name": "tf_model.h5",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/tf_model.h5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/google-bert/bert-base-uncased/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [
+    "https://arxiv.org/abs/1810.04805",
+    "https://en.wikipedia.org/wiki/English_Wikipedia",
+    "https://github.com/google-research/bert",
+    "https://github.com/google-research/bert/blob/master/README.md",
+    "https://huggingface.co/bert-base-cased",
+    "https://huggingface.co/bert-base-chinese",
+    "https://huggingface.co/bert-base-multilingual-cased",
+    "https://huggingface.co/bert-base-uncased",
+    "https://huggingface.co/bert-large-cased",
+    "https://huggingface.co/bert-large-cased-whole-word-masking",
+    "https://huggingface.co/bert-large-uncased",
+    "https://huggingface.co/bert-large-uncased-whole-word-masking",
+    "https://huggingface.co/models?filter=bert",
+    "https://yknzhu.wixsite.com/mbweb"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T12:33:53.866444"
+}

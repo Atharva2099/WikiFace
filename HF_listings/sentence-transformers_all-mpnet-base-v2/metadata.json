@@ -1,0 +1,244 @@
+{
+  "repo_id": "sentence-transformers/all-mpnet-base-v2",
+  "model_id": "sentence-transformers/all-mpnet-base-v2",
+  "author": "sentence-transformers",
+  "last_modified": "2025-03-06T13:35:43.000Z",
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "mpnet",
+    "fill-mask",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "en",
+    "dataset:s2orc",
+    "dataset:flax-sentence-embeddings/stackexchange_xml",
+    "dataset:ms_marco",
+    "dataset:gooaq",
+    "dataset:yahoo_answers_topics",
+    "dataset:code_search_net",
+    "dataset:search_qa",
+    "dataset:eli5",
+    "dataset:snli",
+    "dataset:multi_nli",
+    "dataset:wikihow",
+    "dataset:natural_questions",
+    "dataset:trivia_qa",
+    "dataset:embedding-data/sentence-compression",
+    "dataset:embedding-data/flickr30k-captions",
+    "dataset:embedding-data/altlex",
+    "dataset:embedding-data/simple-wiki",
+    "dataset:embedding-data/QQP",
+    "dataset:embedding-data/SPECTER",
+    "dataset:embedding-data/PAQ_pairs",
+    "dataset:embedding-data/WikiAnswers",
+    "arxiv:1904.06472",
+    "arxiv:2102.07033",
+    "arxiv:2104.08727",
+    "arxiv:1704.05179",
+    "arxiv:1810.09305",
+    "license:apache-2.0",
+    "autotrain_compatible",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "files_count": 28,
+  "file_tree": [
+    {
+      "name": ".gitattributes",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/.gitattributes"
+    },
+    {
+      "name": "1_Pooling/config.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/1_Pooling/config.json"
+    },
+    {
+      "name": "README.md",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/README.md"
+    },
+    {
+      "name": "config.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json"
+    },
+    {
+      "name": "config_sentence_transformers.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config_sentence_transformers.json"
+    },
+    {
+      "name": "data_config.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/data_config.json"
+    },
+    {
+      "name": "model.safetensors",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/model.safetensors"
+    },
+    {
+      "name": "modules.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/modules.json"
+    },
+    {
+      "name": "onnx/model.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model.onnx"
+    },
+    {
+      "name": "onnx/model_O1.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_O1.onnx"
+    },
+    {
+      "name": "onnx/model_O2.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_O2.onnx"
+    },
+    {
+      "name": "onnx/model_O3.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_O3.onnx"
+    },
+    {
+      "name": "onnx/model_O4.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_O4.onnx"
+    },
+    {
+      "name": "onnx/model_qint8_arm64.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_qint8_arm64.onnx"
+    },
+    {
+      "name": "onnx/model_qint8_avx512.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_qint8_avx512.onnx"
+    },
+    {
+      "name": "onnx/model_qint8_avx512_vnni.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_qint8_avx512_vnni.onnx"
+    },
+    {
+      "name": "onnx/model_quint8_avx2.onnx",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/onnx/model_quint8_avx2.onnx"
+    },
+    {
+      "name": "openvino/openvino_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/openvino/openvino_model.bin"
+    },
+    {
+      "name": "openvino/openvino_model.xml",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/openvino/openvino_model.xml"
+    },
+    {
+      "name": "openvino/openvino_model_qint8_quantized.bin",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/openvino/openvino_model_qint8_quantized.bin"
+    },
+    {
+      "name": "openvino/openvino_model_qint8_quantized.xml",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/openvino/openvino_model_qint8_quantized.xml"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/pytorch_model.bin"
+    },
+    {
+      "name": "sentence_bert_config.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/sentence_bert_config.json"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/special_tokens_map.json"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/tokenizer.json"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/tokenizer_config.json"
+    },
+    {
+      "name": "train_script.py",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/train_script.py"
+    },
+    {
+      "name": "vocab.txt",
+      "size": null,
+      "url": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/vocab.txt"
+    }
+  ],
+  "external_links": [
+    "https://aclanthology.org/2020.acl-main.447/",
+    "https://aclanthology.org/P16-1135.pdf",
+    "https://aclanthology.org/P18-2124.pdf",
+    "https://ai.google.com/research/NaturalQuestions",
+    "https://arxiv.org/abs/1704.05179",
+    "https://arxiv.org/abs/1810.09305",
+    "https://arxiv.org/abs/1904.06472",
+    "https://arxiv.org/abs/2102.07033",
+    "https://arxiv.org/pdf/2104.08727.pdf",
+    "https://cims.nyu.edu/~sbowman/multinli/",
+    "https://cocodataset.org/#home",
+    "https://cs.pomona.edu/~dkauchak/simplification/",
+    "https://discuss.huggingface.co/t/open-to-the-community-community-week-using-jax-flax-for-nlp-cv/7104",
+    "https://discuss.huggingface.co/t/train-the-best-sentence-embedding-model-ever-with-1b-training-pairs/7354",
+    "https://doi.org/10.1145/2623330.2623677",
+    "https://doi.org/10.1145/3404835.3462804",
+    "https://doi.org/10.18653/v1/2020.acl-main.207",
+    "https://doi.org/10.18653/v1/d15-1075",
+    "https://doi.org/10.18653/v1/n18-1101",
+    "https://doi.org/10.18653/v1/p19-1346",
+    "https://github.com/PolyAI-LDN/conversational-datasets/tree/master/reddit",
+    "https://github.com/afader/oqa#wikianswers-corpus",
+    "https://github.com/allenai/gooaq",
+    "https://github.com/allenai/s2orc",
+    "https://github.com/allenai/specter",
+    "https://github.com/chridey/altlex/",
+    "https://github.com/facebookresearch/PAQ",
+    "https://github.com/google-research-datasets/sentence-compression",
+    "https://github.com/pvl/wikihow_pairs_dataset",
+    "https://huggingface.co/datasets/code_search_net",
+    "https://huggingface.co/datasets/eli5",
+    "https://huggingface.co/datasets/flax-sentence-embeddings/stackexchange_xml",
+    "https://huggingface.co/datasets/search_qa",
+    "https://huggingface.co/datasets/trivia_qa",
+    "https://huggingface.co/microsoft/mpnet-base",
+    "https://link.springer.com/chapter/10.1007%2F978-3-319-10602-1_48",
+    "https://microsoft.github.io/msmarco/",
+    "https://nlp.stanford.edu/projects/snli/",
+    "https://proceedings.neurips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html",
+    "https://quoradata.quora.com/First-Quora-Dataset-Release-Question-Pairs",
+    "https://rajpurkar.github.io/SQuAD-explorer/",
+    "https://shannon.cs.illinois.edu/DenotationGraph/",
+    "https://transacl.org/ojs/index.php/tacl/article/view/1455",
+    "https://transacl.org/ojs/index.php/tacl/article/view/229/33",
+    "https://www.SBERT.net",
+    "https://www.aclweb.org/anthology/D13-1155/",
+    "https://www.aclweb.org/anthology/P11-2117/",
+    "https://www.kaggle.com/soumikrakshit/yahoo-answers-dataset"
+  ],
+  "has_readme": true,
+  "scraped_at": "2025-06-21T12:34:00.498371"
+}
