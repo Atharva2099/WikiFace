@@ -430,12 +430,12 @@ def main():
                 models = get_trending_models_by_task(pipeline_tag, limit=3)
                 
                 for model in models:
-                    # Create directory for this model
-                    safe_name = model['repo_id'].replace("/", "_")
-                    model_dir = os.path.join(output_base, safe_name)
-                    Path(model_dir).mkdir(exist_ok=True)
-                    
-                    # Fetch and save model data
+        # Create directory for this model
+        safe_name = model['repo_id'].replace("/", "_")
+        model_dir = os.path.join(output_base, safe_name)
+        Path(model_dir).mkdir(exist_ok=True)
+        
+        # Fetch and save model data
                     success, primary_task, metadata = fetch_and_save_model_data(
                         model['repo_id'], 
                         model_dir, 
@@ -451,9 +451,9 @@ def main():
                             'metadata': metadata,
                             'original_pipeline': pipeline_tag
                         }
-                    
-                    # Add a small delay to be respectful to the API
-                    time.sleep(1)
+        
+        # Add a small delay to be respectful to the API
+        time.sleep(1)
     
     # Create task-based organization
     print(f"\n📂 Creating task-based organization...")

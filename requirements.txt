@@ -4,4 +4,5 @@ python-dotenv>=1.0.0
 jinja2>=3.1.0
 pydantic>=1.10.0
 PyPDF2>=3.0.0
-llama-api-client>=0.1.0 
+llama-api-client>=0.1.0
+PyGithub>=2.0.0 
