@@ -1,0 +1,617 @@
+{
+  "categories": [
+    {
+      "name": "Audio Classification",
+      "model_count": 6,
+      "models": [
+        {
+          "name": "facebook_mms-lid-256",
+          "path": "Audio Classification\\facebook_mms-lid-256",
+          "downloads": "703,766",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 1
+        },
+        {
+          "name": "jonatasgrosman_wav2vec2-large-xlsr-53-russian",
+          "path": "Audio Classification\\jonatasgrosman_wav2vec2-large-xlsr-53-russian",
+          "downloads": "4,712,418",
+          "adapters": 0,
+          "finetunes": 6,
+          "quantizations": 0
+        },
+        {
+          "name": "m-a-p_MERT-v1-95M",
+          "path": "Audio Classification\\m-a-p_MERT-v1-95M",
+          "downloads": "839,368",
+          "adapters": 1,
+          "finetunes": 3,
+          "quantizations": 0
+        },
+        {
+          "name": "MIT_ast-finetuned-audioset-10-10-0.4593",
+          "path": "Audio Classification\\MIT_ast-finetuned-audioset-10-10-0.4593",
+          "downloads": "670,062",
+          "adapters": 0,
+          "finetunes": 127,
+          "quantizations": 0
+        },
+        {
+          "name": "pyannote_speaker-diarization-3.1",
+          "path": "Audio Classification\\pyannote_speaker-diarization-3.1",
+          "downloads": "14,335,997",
+          "adapters": 0,
+          "finetunes": 31,
+          "quantizations": 0
+        },
+        {
+          "name": "pyannote_voice-activity-detection",
+          "path": "Audio Classification\\pyannote_voice-activity-detection",
+          "downloads": "8,086,116",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Embeddings",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "BAAI_bge-base-en-v1.5",
+          "path": "Embeddings\\BAAI_bge-base-en-v1.5",
+          "downloads": "3,979,710",
+          "adapters": 0,
+          "finetunes": 417,
+          "quantizations": 5
+        },
+        {
+          "name": "jinaai_jina-embeddings-v3",
+          "path": "Embeddings\\jinaai_jina-embeddings-v3",
+          "downloads": "4,007,003",
+          "adapters": 0,
+          "finetunes": 28,
+          "quantizations": 2
+        },
+        {
+          "name": "unslothai_1",
+          "path": "Embeddings\\unslothai_1",
+          "downloads": "6,159,301",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Image Classification",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "dima806_fairface_age_image_detection",
+          "path": "Image Classification\\dima806_fairface_age_image_detection",
+          "downloads": "87,214,782",
+          "adapters": 0,
+          "finetunes": 2267,
+          "quantizations": 1
+        },
+        {
+          "name": "Falconsai_nsfw_image_detection",
+          "path": "Image Classification\\Falconsai_nsfw_image_detection",
+          "downloads": "165,514,547",
+          "adapters": 0,
+          "finetunes": 10,
+          "quantizations": 3
+        },
+        {
+          "name": "timm_mobilenetv3_small_100.lamb_in1k",
+          "path": "Image Classification\\timm_mobilenetv3_small_100.lamb_in1k",
+          "downloads": "50,712,690",
+          "adapters": 0,
+          "finetunes": 3,
+          "quantizations": 2
+        }
+      ]
+    },
+    {
+      "name": "Image Segmentation",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "CIDAS_clipseg-rd64-refined",
+          "path": "Image Segmentation\\CIDAS_clipseg-rd64-refined",
+          "downloads": "2,667,621",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 1
+        },
+        {
+          "name": "facebook_mask2former-swin-tiny-coco-instance",
+          "path": "Image Segmentation\\facebook_mask2former-swin-tiny-coco-instance",
+          "downloads": "669,937",
+          "adapters": 0,
+          "finetunes": 12,
+          "quantizations": 0
+        },
+        {
+          "name": "ZhengPeng7_BiRefNet",
+          "path": "Image Segmentation\\ZhengPeng7_BiRefNet",
+          "downloads": "1,311,116",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 1
+        }
+      ]
+    },
+    {
+      "name": "Image-Text-to-Text",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "OpenGVLab_InternVL3-78B",
+          "path": "Image-Text-to-Text\\OpenGVLab_InternVL3-78B",
+          "downloads": "1,555,317",
+          "adapters": 0,
+          "finetunes": 4,
+          "quantizations": 3
+        },
+        {
+          "name": "Qwen_Qwen2.5-VL-3B-Instruct",
+          "path": "Image-Text-to-Text\\Qwen_Qwen2.5-VL-3B-Instruct",
+          "downloads": "3,318,216",
+          "adapters": 29,
+          "finetunes": 237,
+          "quantizations": 35
+        },
+        {
+          "name": "Qwen_Qwen2.5-VL-7B-Instruct",
+          "path": "Image-Text-to-Text\\Qwen_Qwen2.5-VL-7B-Instruct",
+          "downloads": "3,102,169",
+          "adapters": 50,
+          "finetunes": 374,
+          "quantizations": 70
+        }
+      ]
+    },
+    {
+      "name": "Image-to-Text",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "nlpconnect_vit-gpt2-image-captioning",
+          "path": "Image-to-Text\\nlpconnect_vit-gpt2-image-captioning",
+          "downloads": "595,592",
+          "adapters": 1,
+          "finetunes": 9,
+          "quantizations": 3
+        },
+        {
+          "name": "Salesforce_blip-image-captioning-base",
+          "path": "Image-to-Text\\Salesforce_blip-image-captioning-base",
+          "downloads": "3,059,251",
+          "adapters": 4,
+          "finetunes": 32,
+          "quantizations": 0
+        },
+        {
+          "name": "Salesforce_blip-image-captioning-large",
+          "path": "Image-to-Text\\Salesforce_blip-image-captioning-large",
+          "downloads": "2,402,347",
+          "adapters": 0,
+          "finetunes": 10,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "microsoft_table-transformer-detection",
+          "path": "Object Detection\\microsoft_table-transformer-detection",
+          "downloads": "3,894,792",
+          "adapters": 0,
+          "finetunes": 13,
+          "quantizations": 1
+        },
+        {
+          "name": "microsoft_table-transformer-structure-recognition",
+          "path": "Object Detection\\microsoft_table-transformer-structure-recognition",
+          "downloads": "1,187,239",
+          "adapters": 0,
+          "finetunes": 19,
+          "quantizations": 1
+        },
+        {
+          "name": "microsoft_table-transformer-structure-recognition-v1.1-all",
+          "path": "Object Detection\\microsoft_table-transformer-structure-recognition-v1.1-all",
+          "downloads": "908,247",
+          "adapters": 0,
+          "finetunes": 15,
+          "quantizations": 1
+        }
+      ]
+    },
+    {
+      "name": "Question Answering",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "deepset_roberta-base-squad2",
+          "path": "Question Answering\\deepset_roberta-base-squad2",
+          "downloads": "1,380,581",
+          "adapters": 3,
+          "finetunes": 1681,
+          "quantizations": 2
+        },
+        {
+          "name": "distilbert_distilbert-base-cased-distilled-squad",
+          "path": "Question Answering\\distilbert_distilbert-base-cased-distilled-squad",
+          "downloads": "212,468",
+          "adapters": 2,
+          "finetunes": 29,
+          "quantizations": 2
+        },
+        {
+          "name": "monologg_koelectra-small-v2-distilled-korquad-384",
+          "path": "Question Answering\\monologg_koelectra-small-v2-distilled-korquad-384",
+          "downloads": "254,962",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "Open-Reasoner-Zero_Open-Reasoner-Zero-7B",
+          "path": "Reinforcement Learning\\Open-Reasoner-Zero_Open-Reasoner-Zero-7B",
+          "downloads": "9,213",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 11
+        },
+        {
+          "name": "PKU-Alignment_beaver-7b-v1.0-cost",
+          "path": "Reinforcement Learning\\PKU-Alignment_beaver-7b-v1.0-cost",
+          "downloads": "11,359",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        },
+        {
+          "name": "PKU-Alignment_beaver-7b-v1.0-reward",
+          "path": "Reinforcement Learning\\PKU-Alignment_beaver-7b-v1.0-reward",
+          "downloads": "11,271",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Summarization",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "facebook_bart-large-cnn",
+          "path": "Summarization\\facebook_bart-large-cnn",
+          "downloads": "3,186,707",
+          "adapters": 25,
+          "finetunes": 366,
+          "quantizations": 4
+        },
+        {
+          "name": "facebook_bart-large-xsum",
+          "path": "Summarization\\facebook_bart-large-xsum",
+          "downloads": "150,950",
+          "adapters": 0,
+          "finetunes": 52,
+          "quantizations": 1
+        },
+        {
+          "name": "sshleifer_distilbart-cnn-12-6",
+          "path": "Summarization\\sshleifer_distilbart-cnn-12-6",
+          "downloads": "2,611,944",
+          "adapters": 0,
+          "finetunes": 34,
+          "quantizations": 2
+        }
+      ]
+    },
+    {
+      "name": "Text Classification",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "cardiffnlp_twitter-roberta-base-sentiment-latest",
+          "path": "Text Classification\\cardiffnlp_twitter-roberta-base-sentiment-latest",
+          "downloads": "4,222,431",
+          "adapters": 8,
+          "finetunes": 192,
+          "quantizations": 1
+        },
+        {
+          "name": "distilbert_distilbert-base-uncased-finetuned-sst-2-english",
+          "path": "Text Classification\\distilbert_distilbert-base-uncased-finetuned-sst-2-english",
+          "downloads": "4,540,258",
+          "adapters": 0,
+          "finetunes": 96,
+          "quantizations": 0
+        },
+        {
+          "name": "microsoft_deberta-large-mnli",
+          "path": "Text Classification\\microsoft_deberta-large-mnli",
+          "downloads": "3,740,563",
+          "adapters": 0,
+          "finetunes": 1,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Text Generation",
+      "model_count": 6,
+      "models": [
+        {
+          "name": "Gensyn_Qwen2.5-1.5B-Instruct",
+          "path": "Text Generation\\Gensyn_Qwen2.5-1.5B-Instruct",
+          "downloads": "5,444,573",
+          "adapters": 0,
+          "finetunes": 606,
+          "quantizations": 1
+        },
+        {
+          "name": "google_flan-t5-base",
+          "path": "Text Generation\\google_flan-t5-base",
+          "downloads": "1,939,704",
+          "adapters": 233,
+          "finetunes": 791,
+          "quantizations": 8
+        },
+        {
+          "name": "google_t5-v1_1-xxl",
+          "path": "Text Generation\\google_t5-v1_1-xxl",
+          "downloads": "810,003",
+          "adapters": 0,
+          "finetunes": 2,
+          "quantizations": 10
+        },
+        {
+          "name": "meta-llama_Llama-3.1-8B-Instruct",
+          "path": "Text Generation\\meta-llama_Llama-3.1-8B-Instruct",
+          "downloads": "5,162,140",
+          "adapters": 912,
+          "finetunes": 1437,
+          "quantizations": 451
+        },
+        {
+          "name": "openai-community_gpt2",
+          "path": "Text Generation\\openai-community_gpt2",
+          "downloads": "13,194,330",
+          "adapters": 1666,
+          "finetunes": 1890,
+          "quantizations": 76
+        },
+        {
+          "name": "prithivida_parrot_paraphraser_on_T5",
+          "path": "Text Generation\\prithivida_parrot_paraphraser_on_T5",
+          "downloads": "914,377",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Text-to-Image",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "stabilityai_stable-diffusion-xl-base-1.0",
+          "path": "Text-to-Image\\stabilityai_stable-diffusion-xl-base-1.0",
+          "downloads": "2,700,147",
+          "adapters": 7033,
+          "finetunes": 1187,
+          "quantizations": 13
+        },
+        {
+          "name": "stable-diffusion-v1-5_stable-diffusion-inpainting",
+          "path": "Text-to-Image\\stable-diffusion-v1-5_stable-diffusion-inpainting",
+          "downloads": "3,241,973",
+          "adapters": 1,
+          "finetunes": 1,
+          "quantizations": 0
+        },
+        {
+          "name": "stable-diffusion-v1-5_stable-diffusion-v1-5",
+          "path": "Text-to-Image\\stable-diffusion-v1-5_stable-diffusion-v1-5",
+          "downloads": "3,105,179",
+          "adapters": 368,
+          "finetunes": 222,
+          "quantizations": 6
+        }
+      ]
+    },
+    {
+      "name": "Text-to-Speech",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "coqui_XTTS-v2",
+          "path": "Text-to-Speech\\coqui_XTTS-v2",
+          "downloads": "1,955,929",
+          "adapters": 0,
+          "finetunes": 43,
+          "quantizations": 0
+        },
+        {
+          "name": "hexgrad_Kokoro-82M",
+          "path": "Text-to-Speech\\hexgrad_Kokoro-82M",
+          "downloads": "1,653,999",
+          "adapters": 9,
+          "finetunes": 19,
+          "quantizations": 10
+        },
+        {
+          "name": "SWivid_F5-TTS",
+          "path": "Text-to-Speech\\SWivid_F5-TTS",
+          "downloads": "870,494",
+          "adapters": 0,
+          "finetunes": 49,
+          "quantizations": 1
+        }
+      ]
+    },
+    {
+      "name": "Text-to-Video",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "QuantStack_Wan2.1_14B_VACE-GGUF",
+          "path": "Text-to-Video\\QuantStack_Wan2.1_14B_VACE-GGUF",
+          "downloads": "134,819",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        },
+        {
+          "name": "Wan-AI_Wan2.1-T2V-1.3B-Diffusers",
+          "path": "Text-to-Video\\Wan-AI_Wan2.1-T2V-1.3B-Diffusers",
+          "downloads": "138,694",
+          "adapters": 3,
+          "finetunes": 1,
+          "quantizations": 0
+        },
+        {
+          "name": "Wan-AI_Wan2.1-T2V-14B-Diffusers",
+          "path": "Text-to-Video\\Wan-AI_Wan2.1-T2V-14B-Diffusers",
+          "downloads": "115,304",
+          "adapters": 36,
+          "finetunes": 1,
+          "quantizations": 1
+        }
+      ]
+    },
+    {
+      "name": "Time Series",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "amazon_chronos-bolt-base",
+          "path": "Time Series\\amazon_chronos-bolt-base",
+          "downloads": "4,675,342",
+          "adapters": 0,
+          "finetunes": 3,
+          "quantizations": 0
+        },
+        {
+          "name": "amazon_chronos-t5-small",
+          "path": "Time Series\\amazon_chronos-t5-small",
+          "downloads": "68,164,373",
+          "adapters": 0,
+          "finetunes": 1,
+          "quantizations": 0
+        },
+        {
+          "name": "ibm-granite_granite-timeseries-ttm-r2",
+          "path": "Time Series\\ibm-granite_granite-timeseries-ttm-r2",
+          "downloads": "4,561,664",
+          "adapters": 0,
+          "finetunes": 0,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Token Classification",
+      "model_count": 6,
+      "models": [
+        {
+          "name": "dbmdz_bert-large-cased-finetuned-conll03-english",
+          "path": "Token Classification\\dbmdz_bert-large-cased-finetuned-conll03-english",
+          "downloads": "1,385,939",
+          "adapters": 0,
+          "finetunes": 7,
+          "quantizations": 0
+        },
+        {
+          "name": "dslim_bert-base-NER",
+          "path": "Token Classification\\dslim_bert-base-NER",
+          "downloads": "1,895,421",
+          "adapters": 4,
+          "finetunes": 25,
+          "quantizations": 2
+        },
+        {
+          "name": "FacebookAI_roberta-large",
+          "path": "Token Classification\\FacebookAI_roberta-large",
+          "downloads": "16,921,248",
+          "adapters": 61,
+          "finetunes": 368,
+          "quantizations": 2
+        },
+        {
+          "name": "FacebookAI_xlm-roberta-base",
+          "path": "Token Classification\\FacebookAI_xlm-roberta-base",
+          "downloads": "13,601,240",
+          "adapters": 37,
+          "finetunes": 3181,
+          "quantizations": 3
+        },
+        {
+          "name": "google-bert_bert-base-uncased",
+          "path": "Token Classification\\google-bert_bert-base-uncased",
+          "downloads": "66,487,309",
+          "adapters": 78,
+          "finetunes": 5366,
+          "quantizations": 13
+        },
+        {
+          "name": "w11wo_indonesian-roberta-base-posp-tagger",
+          "path": "Token Classification\\w11wo_indonesian-roberta-base-posp-tagger",
+          "downloads": "1,787,050",
+          "adapters": 0,
+          "finetunes": 6,
+          "quantizations": 0
+        }
+      ]
+    },
+    {
+      "name": "Translation",
+      "model_count": 3,
+      "models": [
+        {
+          "name": "google-t5_t5-base",
+          "path": "Translation\\google-t5_t5-base",
+          "downloads": "2,882,185",
+          "adapters": 48,
+          "finetunes": 596,
+          "quantizations": 11
+        },
+        {
+          "name": "google-t5_t5-small",
+          "path": "Translation\\google-t5_t5-small",
+          "downloads": "2,769,571",
+          "adapters": 61,
+          "finetunes": 1991,
+          "quantizations": 10
+        },
+        {
+          "name": "Helsinki-NLP_opus-mt-fr-en",
+          "path": "Translation\\Helsinki-NLP_opus-mt-fr-en",
+          "downloads": "1,014,340",
+          "adapters": 0,
+          "finetunes": 9,
+          "quantizations": 3
+        }
+      ]
+    }
+  ],
+  "total_models": 63
+}

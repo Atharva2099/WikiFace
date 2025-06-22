@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiFace - Model Categories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .categories-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .category-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .category-card:hover::before {
+            left: 100%;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: #4a90e2;
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .category-count {
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+
+        .repositories-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #0f1419;
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 800px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #2d3748;
+        }
+
+        .modal-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: #a0aec0;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .repositories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .repo-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid #2d3748;
+            border-radius: 10px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .repo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(74, 144, 226, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .repo-card:hover::before {
+            left: 100%;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-color: #4a90e2;
+        }
+
+        .repo-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            word-break: break-word;
+        }
+
+        .repo-info {
+            color: #a0aec0;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #a0aec0;
+        }
+
+        .spinner {
+            border: 3px solid #2d3748;
+            border-top: 3px solid #4a90e2;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 1rem;
+            }
+
+            .repositories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='index.html'">
+        ← Back to Home
+    </button>
+
+    <div class="container">
+        <header class="hero">
+            <h1 class="hero-title">Model Categories</h1>
+            <p class="hero-subtitle">Explore our curated collection of AI models organized by task</p>
+        </header>
+
+        <div class="categories-container">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading categories...</p>
+            </div>
+
+            <div class="categories-grid" id="categoriesGrid" style="display: none;">
+                <!-- Categories will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for repositories -->
+    <div class="repositories-modal" id="repositoriesModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Repositories</h2>
+                <button class="close-modal" onclick="closeModal()">×</button>
+            </div>
+            <div id="repositoriesContent">
+                <!-- Repositories will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Category icons mapping
+        const categoryIcons = {
+            'Audio Classification': '🎵',
+            'Embeddings': '🔗',
+            'Image Classification': '🖼️',
+            'Image Segmentation': '✂️',
+            'Image-Text-to-Text': '🔄',
+            'Image-to-Text': '📝',
+            'Object Detection': '🎯',
+            'Question Answering': '❓',
+            'Reinforcement Learning': '🎮',
+            'Summarization': '📄',
+            'Text Classification': '🏷️',
+            'Text Generation': '✍️',
+            'Text-to-Image': '🎨',
+            'Text-to-Speech': '🔊',
+            'Text-to-Video': '🎬',
+            'Time Series': '⏰',
+            'Token Classification': '🔤',
+            'Translation': '🌐'
+        };
+
+        let categoriesData = null;
+
+        // Load categories data from JSON file
+        async function loadCategoriesData() {
+            try {
+                const response = await fetch('categories_data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                categoriesData = await response.json();
+                return categoriesData;
+            } catch (error) {
+                console.error('Error loading categories data:', error);
+                return null;
+            }
+        }
+
+        function createCategoryCard(category) {
+            const icon = categoryIcons[category.name] || '📁';
+            
+            return `
+                <div class="category-card" onclick="showRepositories('${category.name}')">
+                    <span class="category-icon">${icon}</span>
+                    <h3 class="category-title">${category.name}</h3>
+                    <p class="category-count">${category.model_count} repositories</p>
+                </div>
+            `;
+        }
+
+        function createRepositoryCard(repo) {
+            return `
+                <div class="repo-card" onclick="openRepository('${repo.name}', '${repo.path}')">
+                    <h4 class="repo-name">${repo.name}</h4>
+                    <div class="repo-info">
+                        <div>📥 ${repo.downloads} downloads</div>
+                        <div>🔌 ${repo.adapters} adapters</div>
+                        <div>🔧 ${repo.finetunes} finetunes</div>
+                        <div>⚖️ ${repo.quantizations} quantizations</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showRepositories(categoryName) {
+            const modal = document.getElementById('repositoriesModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const repositoriesContent = document.getElementById('repositoriesContent');
+            
+            modalTitle.textContent = `${categoryName} Repositories`;
+            
+            const category = categoriesData.categories.find(cat => cat.name === categoryName);
+            if (!category || category.models.length === 0) {
+                repositoriesContent.innerHTML = `
+                    <div class="loading">
+                        <p>No repositories available for this category yet.</p>
+                        <p>Check back soon for updates!</p>
+                    </div>
+                `;
+            } else {
+                repositoriesContent.innerHTML = `
+                    <div class="repositories-grid">
+                        ${category.models.map(repo => createRepositoryCard(repo)).join('')}
+                    </div>
+                `;
+            }
+            
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('repositoriesModal').style.display = 'none';
+        }
+
+        function openRepository(repoName, repoPath) {
+            // In a real application, this would navigate to the repository page
+            alert(`Opening repository: ${repoName}\n\nPath: ${repoPath}\n\nThis would navigate to a detailed repository page with all the model information, including:\n\n• Model metadata\n• Sidebar information (downloads, adapters, etc.)\n• GitHub data\n• Research papers\n• Model files and structure\n\nFor now, this is a placeholder for the repository detail page.`);
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('repositoriesModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Initialize the page
+        async function initPage() {
+            const loading = document.getElementById('loading');
+            const categoriesGrid = document.getElementById('categoriesGrid');
+            
+            // Load the categories data
+            const data = await loadCategoriesData();
+            
+            if (data) {
+                loading.style.display = 'none';
+                categoriesGrid.style.display = 'grid';
+                
+                categoriesGrid.innerHTML = data.categories.map(category => 
+                    createCategoryCard(category)
+                ).join('');
+                
+                // Update the hero subtitle with real stats
+                const heroSubtitle = document.querySelector('.hero-subtitle');
+                heroSubtitle.textContent = `Explore our curated collection of ${data.total_models} AI models across ${data.categories.length} task categories`;
+            } else {
+                loading.innerHTML = `
+                    <div class="spinner"></div>
+                    <p>Error loading categories data. Please refresh the page.</p>
+                `;
+            }
+        }
+
+        // Start the page
+        initPage();
+    </script>
+</body>
+</html> 
