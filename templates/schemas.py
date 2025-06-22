@@ -36,4 +36,11 @@ class ModelWikiPage(BaseModel):
     file_tree: List[FileEntry] = []
     papers: List[PaperEntry] = []
     evaluation_summary: Optional[str] = None
-    references: List[str] = [] 
+    references: List[str] = []
+    
+    # Additional scraped metadata from sidebar
+    spaces_count: Optional[int] = None
+    datasets_used: List[str] = []
+    adapter_count: Optional[int] = None
+    finetune_count: Optional[int] = None
+    quantization_count: Optional[int] = None 

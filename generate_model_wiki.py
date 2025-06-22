@@ -21,15 +21,22 @@ from huggingface_hub import hf_hub_url, get_hf_file_metadata
 
 from templates.schemas import ModelWikiPage, FileEntry, PaperEntry
 
+# Optional import for sidebar scraping
+try:
+    from hf_sidebar_scraper import scrape_hf_model_sidebar
+    SIDEBAR_SCRAPING_AVAILABLE = True
+except ImportError:
+    SIDEBAR_SCRAPING_AVAILABLE = False
+    print("⚠️ Warning: hf_sidebar_scraper not available. Sidebar data will be skipped.")
 
-def resolve_file_size(repo_id: str, filename: str) -> Optional[int]:
-    """Fetch file size using HuggingFace Hub metadata API."""
+
+def resolve_file_size(repo_id, filename):
     try:
         url = hf_hub_url(repo_id, filename)
         meta = get_hf_file_metadata(url)
-        return meta.size  # size in bytes
+        return meta.size
     except Exception as e:
-        print(f"⚠️ Warning: Could not fetch size for {filename}: {e}")
+        print(f"[WARN] Could not get size for {filename}: {e}")
         return None
 
 
@@ -71,10 +78,11 @@ def resolve_and_enrich_file_tree(repo_id: str, file_info_list: List[Any]) -> Lis
 class ModelWikiGenerator:
     """Main class for generating model wiki pages."""
     
-    def __init__(self, api_key: str, model_name: str = "Llama-4-Scout-17B-16E-Instruct-FP8"):
+    def __init__(self, api_key: str, model_name: str = "Llama-4-Scout-17B-16E-Instruct-FP8", enable_sidebar_scraping: bool = True):
         """Initialize the wiki generator with LLaMA API client."""
         self.client = LlamaAPIClient(api_key=api_key)
         self.model_name = model_name
+        self.enable_sidebar_scraping = enable_sidebar_scraping and SIDEBAR_SCRAPING_AVAILABLE
         self.jinja_env = Environment(
             loader=FileSystemLoader('templates'),
             trim_blocks=True,
@@ -120,6 +128,34 @@ class ModelWikiGenerator:
         
         return data
     
+    def scrape_sidebar_data(self, repo_id: str) -> Dict[str, Any]:
+        """Scrape additional metadata from the HuggingFace model page sidebar."""
+        if not self.enable_sidebar_scraping:
+            return {}
+            
+        try:
+            print("🌐 Scraping additional sidebar data...")
+            sidebar_data = scrape_hf_model_sidebar(repo_id, debug=False)
+            
+            # Filter out zero/empty values for cleaner output
+            filtered_data = {}
+            for key, value in sidebar_data.items():
+                if key == "datasets_used" and value:
+                    filtered_data[key] = value
+                elif isinstance(value, int) and value > 0:
+                    filtered_data[key] = value
+                    
+            if filtered_data:
+                print(f"✅ Found sidebar data: {filtered_data}")
+            else:
+                print("ℹ️ No additional sidebar data found")
+                
+            return sidebar_data
+            
+        except Exception as e:
+            print(f"⚠️ Warning: Could not scrape sidebar data: {e}")
+            return {}
+    
     def extract_pdf_text(self, pdf_path: Path, max_pages: int = 5) -> str:
         """Extract text from PDF files (e.g., research papers)."""
         try:
@@ -154,7 +190,12 @@ Your goal is to synthesize and explain, not just repeat the input. Generate a co
   "file_tree": [{"name": "filename", "size": 12345, "size_formatted": "12.1 KB", "url": "https://..."}],
   "papers": [{"title": "Paper Title", "url": "https://...", "summary": "Key insights and contributions", "citation": "Citation"}],
   "evaluation_summary": "Real metrics, benchmark results, performance insights",
-  "references": ["Reference 1", "Reference 2"]
+  "references": ["Reference 1", "Reference 2"],
+  "spaces_count": 88,
+  "datasets_used": ["dataset1", "dataset2"],
+  "adapter_count": 78,
+  "finetune_count": 5362,
+  "quantization_count": 13
 }
 
 Focus on:
@@ -178,6 +219,9 @@ Given the following Hugging Face model data, generate a comprehensive structured
 
 ## File Tree with Sizes:
 {json.dumps(model_data.get('resolved_files', []), indent=2)}
+
+## Additional Sidebar Data:
+{json.dumps(model_data.get('sidebar', {}), indent=2)}
 """
         
         if pdf_texts:
@@ -286,6 +330,11 @@ Given the following Hugging Face model data, generate a comprehensive structured
         print("📁 Loading model data...")
         model_data = self.load_model_data(model_dir)
         
+        # 1.5. Scrape sidebar data
+        repo_id = model_data['metadata'].get('repo_id', model_data['metadata'].get('model_id', 'unknown/model'))
+        sidebar_data = self.scrape_sidebar_data(repo_id)
+        model_data['sidebar'] = sidebar_data
+        
         # 2. Extract PDF content if provided
         pdf_texts = []
         if pdf_files:
@@ -333,6 +382,7 @@ def main():
     parser.add_argument("--pdf", type=Path, action="append", help="PDF files to extract content from (can be used multiple times)")
     parser.add_argument("--output-dir", type=Path, default="docs", help="Output directory for generated wiki pages")
     parser.add_argument("--model", default="Llama-4-Scout-17B-16E-Instruct-FP8", help="LLaMA model to use")
+    parser.add_argument("--no-sidebar", action="store_true", help="Disable sidebar scraping")
     
     args = parser.parse_args()
     
@@ -345,7 +395,11 @@ def main():
         sys.exit(1)
     
     # Initialize generator
-    generator = ModelWikiGenerator(api_key=api_key, model_name=args.model)
+    generator = ModelWikiGenerator(
+        api_key=api_key, 
+        model_name=args.model,
+        enable_sidebar_scraping=not args.no_sidebar
+    )
     
     try:
         # Generate wiki
