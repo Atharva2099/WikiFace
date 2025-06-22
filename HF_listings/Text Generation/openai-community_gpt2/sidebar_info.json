@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 13194330,
+  "datasets_used": [
+    "a very large corpus"
+  ],
+  "adapter_count": 1666,
+  "finetune_count": 1890,
+  "quantization_count": 76,
+  "model_id": "openai-community/gpt2",
+  "task_category": "Text Generation",
+  "model_name": "openai-community_gpt2",
+  "scraped_at": "2025-06-22 10:51:00"
+}

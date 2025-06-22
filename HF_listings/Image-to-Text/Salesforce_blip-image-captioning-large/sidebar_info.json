@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 2402347,
+  "datasets_used": [
+    "COCO dataset"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 10,
+  "quantization_count": 0,
+  "model_id": "Salesforce/blip-image-captioning-large",
+  "task_category": "Image-to-Text",
+  "model_name": "Salesforce_blip-image-captioning-large",
+  "scraped_at": "2025-06-22 10:49:23"
+}

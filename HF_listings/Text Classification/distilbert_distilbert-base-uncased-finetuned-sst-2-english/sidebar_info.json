@@ -1,0 +1,17 @@
+{
+  "downloads_last_month": 4540258,
+  "datasets_used": [
+    "wino_bias",
+    "super_glue",
+    "stereoset",
+    "sst2",
+    "nyu-mll/glue"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 96,
+  "quantization_count": 0,
+  "model_id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "task_category": "Text Classification",
+  "model_name": "distilbert_distilbert-base-uncased-finetuned-sst-2-english",
+  "scraped_at": "2025-06-22 10:50:28"
+}

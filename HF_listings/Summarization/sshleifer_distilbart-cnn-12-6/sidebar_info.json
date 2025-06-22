@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 2611944,
+  "datasets_used": [
+    "abisee/cnn_dailymail",
+    "EdinburghNLP/xsum"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 34,
+  "quantization_count": 2,
+  "model_id": "sshleifer/distilbart-cnn-12-6",
+  "task_category": "Summarization",
+  "model_name": "sshleifer_distilbart-cnn-12-6",
+  "scraped_at": "2025-06-22 10:50:18"
+}

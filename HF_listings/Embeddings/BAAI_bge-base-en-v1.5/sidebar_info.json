@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 3979710,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 417,
+  "quantization_count": 5,
+  "model_id": "BAAI/bge-base-en-v1.5",
+  "task_category": "Embeddings",
+  "model_name": "BAAI_bge-base-en-v1.5",
+  "scraped_at": "2025-06-22 10:48:13"
+}

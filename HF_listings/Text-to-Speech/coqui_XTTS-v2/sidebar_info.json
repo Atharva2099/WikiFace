@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 1955929,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 43,
+  "quantization_count": 0,
+  "model_id": "coqui/XTTS-v2",
+  "task_category": "Text-to-Speech",
+  "model_name": "coqui_XTTS-v2",
+  "scraped_at": "2025-06-22 10:51:25"
+}

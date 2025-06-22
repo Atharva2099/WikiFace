@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 703766,
+  "datasets_used": [
+    "google/fleurs"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 0,
+  "quantization_count": 1,
+  "model_id": "facebook/mms-lid-256",
+  "task_category": "Audio Classification",
+  "model_name": "facebook_mms-lid-256",
+  "scraped_at": "2025-06-22 10:47:45"
+}

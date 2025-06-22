@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 810003,
+  "datasets_used": [
+    "c4",
+    "legacy-datasets/c4"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 2,
+  "quantization_count": 10,
+  "model_id": "google/t5-v1_1-xxl",
+  "task_category": "Text Generation",
+  "model_name": "google_t5-v1_1-xxl",
+  "scraped_at": "2025-06-22 10:50:48"
+}

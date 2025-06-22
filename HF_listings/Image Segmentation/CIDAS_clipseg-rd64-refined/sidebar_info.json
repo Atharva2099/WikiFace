@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 2667621,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 0,
+  "quantization_count": 1,
+  "model_id": "CIDAS/clipseg-rd64-refined",
+  "task_category": "Image Segmentation",
+  "model_name": "CIDAS_clipseg-rd64-refined",
+  "scraped_at": "2025-06-22 10:48:39"
+}

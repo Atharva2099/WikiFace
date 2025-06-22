@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 1380581,
+  "datasets_used": [
+    "squad_v2",
+    "rajpurkar/squad_v2"
+  ],
+  "adapter_count": 3,
+  "finetune_count": 1681,
+  "quantization_count": 2,
+  "model_id": "deepset/roberta-base-squad2",
+  "task_category": "Question Answering",
+  "model_name": "deepset_roberta-base-squad2",
+  "scraped_at": "2025-06-22 10:49:43"
+}

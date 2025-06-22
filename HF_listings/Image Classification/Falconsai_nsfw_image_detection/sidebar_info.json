@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 165514547,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 10,
+  "quantization_count": 3,
+  "model_id": "Falconsai/nsfw_image_detection",
+  "task_category": "Image Classification",
+  "model_name": "Falconsai_nsfw_image_detection",
+  "scraped_at": "2025-06-22 10:48:31"
+}

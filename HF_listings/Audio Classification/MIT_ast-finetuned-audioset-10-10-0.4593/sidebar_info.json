@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 670062,
+  "datasets_used": [
+    "AudioSet)",
+    "AudioSet"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 127,
+  "quantization_count": 0,
+  "model_id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "task_category": "Audio Classification",
+  "model_name": "MIT_ast-finetuned-audioset-10-10-0.4593",
+  "scraped_at": "2025-06-22 10:47:57"
+}

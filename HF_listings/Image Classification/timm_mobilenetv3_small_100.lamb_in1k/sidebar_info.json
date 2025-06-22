@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 50712690,
+  "datasets_used": [
+    "ILSVRC/imagenet-1k"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 3,
+  "quantization_count": 2,
+  "model_id": "timm/mobilenetv3_small_100.lamb_in1k",
+  "task_category": "Image Classification",
+  "model_name": "timm_mobilenetv3_small_100.lamb_in1k",
+  "scraped_at": "2025-06-22 10:48:35"
+}

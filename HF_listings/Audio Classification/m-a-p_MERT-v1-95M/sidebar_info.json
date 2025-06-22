@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 839368,
+  "datasets_used": [],
+  "adapter_count": 1,
+  "finetune_count": 3,
+  "quantization_count": 0,
+  "model_id": "m-a-p/MERT-v1-95M",
+  "task_category": "Audio Classification",
+  "model_name": "m-a-p_MERT-v1-95M",
+  "scraped_at": "2025-06-22 10:47:53"
+}

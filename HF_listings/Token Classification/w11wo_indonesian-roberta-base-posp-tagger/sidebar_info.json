@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 1787050,
+  "datasets_used": [
+    "indonlp/indonlu"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 6,
+  "quantization_count": 0,
+  "model_id": "w11wo/indonesian-roberta-base-posp-tagger",
+  "task_category": "Token Classification",
+  "model_name": "w11wo_indonesian-roberta-base-posp-tagger",
+  "scraped_at": "2025-06-22 10:52:48"
+}

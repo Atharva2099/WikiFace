@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 4222431,
+  "datasets_used": [
+    "cardiffnlp/tweet_eval"
+  ],
+  "adapter_count": 8,
+  "finetune_count": 192,
+  "quantization_count": 1,
+  "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "task_category": "Text Classification",
+  "model_name": "cardiffnlp_twitter-roberta-base-sentiment-latest",
+  "scraped_at": "2025-06-22 10:50:22"
+}

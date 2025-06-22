@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 914377,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 0,
+  "quantization_count": 0,
+  "model_id": "prithivida/parrot_paraphraser_on_T5",
+  "task_category": "Text Generation",
+  "model_name": "prithivida_parrot_paraphraser_on_T5",
+  "scraped_at": "2025-06-22 10:51:04"
+}

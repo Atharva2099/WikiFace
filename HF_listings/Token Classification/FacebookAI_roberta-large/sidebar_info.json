@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 16921248,
+  "datasets_used": [
+    "legacy-datasets/wikipedia",
+    "bookcorpus/bookcorpus"
+  ],
+  "adapter_count": 61,
+  "finetune_count": 368,
+  "quantization_count": 2,
+  "model_id": "FacebookAI/roberta-large",
+  "task_category": "Token Classification",
+  "model_name": "FacebookAI_roberta-large",
+  "scraped_at": "2025-06-22 10:52:32"
+}

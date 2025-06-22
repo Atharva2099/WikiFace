@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 14335997,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 31,
+  "quantization_count": 0,
+  "model_id": "pyannote/speaker-diarization-3.1",
+  "task_category": "Audio Classification",
+  "model_name": "pyannote_speaker-diarization-3.1",
+  "scraped_at": "2025-06-22 10:48:02"
+}

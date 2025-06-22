@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 2700147,
+  "datasets_used": [],
+  "adapter_count": 7033,
+  "finetune_count": 1187,
+  "quantization_count": 13,
+  "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+  "task_category": "Text-to-Image",
+  "model_name": "stabilityai_stable-diffusion-xl-base-1.0",
+  "scraped_at": "2025-06-22 10:51:10"
+}

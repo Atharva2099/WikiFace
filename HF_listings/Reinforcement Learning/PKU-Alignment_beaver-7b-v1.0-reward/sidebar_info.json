@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 11271,
+  "datasets_used": [
+    "PKU-Alignment/PKU-SafeRLHF"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 0,
+  "quantization_count": 0,
+  "model_id": "PKU-Alignment/beaver-7b-v1.0-reward",
+  "task_category": "Reinforcement Learning",
+  "model_name": "PKU-Alignment_beaver-7b-v1.0-reward",
+  "scraped_at": "2025-06-22 10:50:04"
+}

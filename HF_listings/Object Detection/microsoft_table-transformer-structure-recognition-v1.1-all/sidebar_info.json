@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 908247,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 15,
+  "quantization_count": 1,
+  "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+  "task_category": "Object Detection",
+  "model_name": "microsoft_table-transformer-structure-recognition-v1.1-all",
+  "scraped_at": "2025-06-22 10:49:36"
+}

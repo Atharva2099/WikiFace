@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 595592,
+  "datasets_used": [],
+  "adapter_count": 1,
+  "finetune_count": 9,
+  "quantization_count": 3,
+  "model_id": "nlpconnect/vit-gpt2-image-captioning",
+  "task_category": "Image-to-Text",
+  "model_name": "nlpconnect_vit-gpt2-image-captioning",
+  "scraped_at": "2025-06-22 10:49:14"
+}

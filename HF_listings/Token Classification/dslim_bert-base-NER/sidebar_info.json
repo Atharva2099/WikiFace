@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 1895421,
+  "datasets_used": [
+    "eriktks/conll2003"
+  ],
+  "adapter_count": 4,
+  "finetune_count": 25,
+  "quantization_count": 2,
+  "model_id": "dslim/bert-base-NER",
+  "task_category": "Token Classification",
+  "model_name": "dslim_bert-base-NER",
+  "scraped_at": "2025-06-22 10:52:14"
+}

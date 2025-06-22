@@ -1,0 +1,15 @@
+{
+  "downloads_last_month": 1939704,
+  "datasets_used": [
+    "openai/gsm8k",
+    "cimec/lambada",
+    "deepmind/code_contests"
+  ],
+  "adapter_count": 233,
+  "finetune_count": 791,
+  "quantization_count": 8,
+  "model_id": "google/flan-t5-base",
+  "task_category": "Text Generation",
+  "model_name": "google_flan-t5-base",
+  "scraped_at": "2025-06-22 10:50:43"
+}

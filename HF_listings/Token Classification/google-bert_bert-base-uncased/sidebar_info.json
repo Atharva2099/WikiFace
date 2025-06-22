@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 66487309,
+  "datasets_used": [
+    "legacy-datasets/wikipedia",
+    "bookcorpus/bookcorpus"
+  ],
+  "adapter_count": 78,
+  "finetune_count": 5366,
+  "quantization_count": 13,
+  "model_id": "google-bert/bert-base-uncased",
+  "task_category": "Token Classification",
+  "model_name": "google-bert_bert-base-uncased",
+  "scraped_at": "2025-06-22 10:52:44"
+}

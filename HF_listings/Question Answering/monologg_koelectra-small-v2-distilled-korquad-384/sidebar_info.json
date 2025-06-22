@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 254962,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 0,
+  "quantization_count": 0,
+  "model_id": "monologg/koelectra-small-v2-distilled-korquad-384",
+  "task_category": "Question Answering",
+  "model_name": "monologg_koelectra-small-v2-distilled-korquad-384",
+  "scraped_at": "2025-06-22 10:49:53"
+}

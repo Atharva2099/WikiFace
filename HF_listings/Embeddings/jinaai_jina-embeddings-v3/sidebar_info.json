@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 4007003,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 28,
+  "quantization_count": 2,
+  "model_id": "jinaai/jina-embeddings-v3",
+  "task_category": "Embeddings",
+  "model_name": "jinaai_jina-embeddings-v3",
+  "scraped_at": "2025-06-22 10:48:19"
+}

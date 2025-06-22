@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 150950,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 52,
+  "quantization_count": 1,
+  "model_id": "facebook/bart-large-xsum",
+  "task_category": "Summarization",
+  "model_name": "facebook_bart-large-xsum",
+  "scraped_at": "2025-06-22 10:50:13"
+}

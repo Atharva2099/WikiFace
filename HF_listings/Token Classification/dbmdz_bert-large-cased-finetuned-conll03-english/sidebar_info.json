@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 1385939,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 7,
+  "quantization_count": 0,
+  "model_id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+  "task_category": "Token Classification",
+  "model_name": "dbmdz_bert-large-cased-finetuned-conll03-english",
+  "scraped_at": "2025-06-22 10:52:08"
+}

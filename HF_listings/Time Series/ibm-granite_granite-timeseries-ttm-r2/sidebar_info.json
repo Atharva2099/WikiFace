@@ -1,0 +1,17 @@
+{
+  "downloads_last_month": 4561664,
+  "datasets_used": [
+    "Salesforce/lotsa_data/tree/main/hierarchical_sales",
+    "Salesforce/lotsa_data/tree/main/project_tycho",
+    "Salesforce/lotsa_data/tree/main/subseasonal",
+    "Salesforce/lotsa_data/tree/main/subseasonal_precip",
+    "Salesforce/lotsa_data/tree/main/uber_tlc_daily"
+  ],
+  "adapter_count": 0,
+  "finetune_count": 0,
+  "quantization_count": 0,
+  "model_id": "ibm-granite/granite-timeseries-ttm-r2",
+  "task_category": "Time Series",
+  "model_name": "ibm-granite_granite-timeseries-ttm-r2",
+  "scraped_at": "2025-06-22 10:52:04"
+}

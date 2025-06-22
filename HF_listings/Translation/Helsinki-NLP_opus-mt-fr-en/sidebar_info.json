@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 1014340,
+  "datasets_used": [],
+  "adapter_count": 0,
+  "finetune_count": 9,
+  "quantization_count": 3,
+  "model_id": "Helsinki-NLP/opus-mt-fr-en",
+  "task_category": "Translation",
+  "model_name": "Helsinki-NLP_opus-mt-fr-en",
+  "scraped_at": "2025-06-22 10:53:07"
+}

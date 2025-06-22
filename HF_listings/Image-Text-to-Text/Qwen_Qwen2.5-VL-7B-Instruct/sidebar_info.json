@@ -1,0 +1,11 @@
+{
+  "downloads_last_month": 3102169,
+  "datasets_used": [],
+  "adapter_count": 50,
+  "finetune_count": 374,
+  "quantization_count": 70,
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "task_category": "Image-Text-to-Text",
+  "model_name": "Qwen_Qwen2.5-VL-7B-Instruct",
+  "scraped_at": "2025-06-22 10:49:09"
+}

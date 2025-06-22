@@ -1,0 +1,16 @@
+{
+  "downloads_last_month": 2769571,
+  "datasets_used": [
+    "catalog/c4",
+    "c4",
+    "wiki_dpr",
+    "legacy-datasets/c4"
+  ],
+  "adapter_count": 61,
+  "finetune_count": 1991,
+  "quantization_count": 10,
+  "model_id": "google-t5/t5-small",
+  "task_category": "Translation",
+  "model_name": "google-t5_t5-small",
+  "scraped_at": "2025-06-22 10:53:02"
+}

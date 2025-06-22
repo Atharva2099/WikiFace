@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 3241973,
+  "datasets_used": [
+    "laion/laion2B-en",
+    "laion/laion-high-resolution"
+  ],
+  "adapter_count": 1,
+  "finetune_count": 1,
+  "quantization_count": 0,
+  "model_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+  "task_category": "Text-to-Image",
+  "model_name": "stable-diffusion-v1-5_stable-diffusion-inpainting",
+  "scraped_at": "2025-06-22 10:51:15"
+}

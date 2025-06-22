@@ -1,0 +1,13 @@
+{
+  "downloads_last_month": 5162140,
+  "datasets_used": [
+    "an offline dataset"
+  ],
+  "adapter_count": 912,
+  "finetune_count": 1437,
+  "quantization_count": 451,
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "task_category": "Text Generation",
+  "model_name": "meta-llama_Llama-3.1-8B-Instruct",
+  "scraped_at": "2025-06-22 10:50:55"
+}

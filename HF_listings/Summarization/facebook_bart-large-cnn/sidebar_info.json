@@ -1,0 +1,14 @@
+{
+  "downloads_last_month": 3186707,
+  "datasets_used": [
+    "cnn_dailymail",
+    "abisee/cnn_dailymail"
+  ],
+  "adapter_count": 25,
+  "finetune_count": 366,
+  "quantization_count": 4,
+  "model_id": "facebook/bart-large-cnn",
+  "task_category": "Summarization",
+  "model_name": "facebook_bart-large-cnn",
+  "scraped_at": "2025-06-22 10:50:09"
+}
