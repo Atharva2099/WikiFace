@@ -1,0 +1,86 @@
+# {{ model_name }}
+
+**Author:** {{ author }}  
+**Last Updated:** {{ last_updated }}  
+**License:** {{ license or "N/A" }}  
+**Repository:** [{{ model_name }}]({{ huggingface_url }})
+
+---
+
+[Overview](#overview) • [Architecture](#architecture) • [File Tree](#file-tree) • [Use Cases](#use-cases) • [Benchmarks](#benchmarks) • [Variants](#model-variants) • [References](#references)
+
+---
+
+## Overview
+
+{{ overview }}
+
+---
+
+## Architecture
+
+{{ architecture }}
+
+---
+
+## File Tree
+
+```mermaid
+graph TD
+    root[{{ model_name }}]
+    {% for file in file_tree %}
+    root --> {{ loop.index }}["{{ file.name }}<br/>{{ file.size_formatted or (file.size + ' bytes') or 'unknown' }}"]
+    {% endfor %}
+```
+
+### Files
+
+| File | Size | Download |
+|------|------|----------|
+{% for file in file_tree %}
+| {{ file.name }} | {{ file.size_formatted or (file.size + ' bytes') or "unknown" }} | [Download]({{ file.url }}) |
+{% endfor %}
+
+---
+
+## Use Cases
+
+{% for use_case in use_cases %}
+- {{ use_case }}
+{% endfor %}
+
+---
+
+## Benchmarks
+
+{% if evaluation_summary %}
+{{ evaluation_summary }}
+{% else %}
+| Dataset | Metric | Value | Notes |
+|---------|--------|-------|-------|
+| No benchmark data yet | - | - | - |
+{% endif %}
+
+---
+
+## Model Variants
+
+| Model | Parameters | Base Architecture |
+|-------|------------|-------------------|
+| BERT-Base | 110M | Transformer Encoder |
+| BERT-Large | 340M | Transformer Encoder |
+| DistilBERT | 66M | Distilled BERT |
+| RoBERTa | 125M | Optimized BERT |
+| ALBERT | 12M-235M | Parameter-shared BERT |
+
+---
+
+## References
+
+{% for ref in references %}
+- {{ ref }}
+{% endfor %}
+
+---
+
+*This page was automatically generated using LLaMA 4 and validated using Pydantic.* 
