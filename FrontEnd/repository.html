@@ -12,6 +12,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+            padding-bottom: 5rem;
         }
 
         .repository-header {
@@ -81,6 +82,12 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 -5px 30px rgba(74, 144, 226, 0.4); }
+            100% { box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); }
         }
 
         .placeholder-content {
@@ -265,6 +272,66 @@
             box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
         }
 
+        .floating-chat-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-top: 2px solid #4a90e2;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .floating-chat-bar.show {
+            transform: translateY(0);
+        }
+
+        .chat-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-bar-text {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .chat-bar-icon {
+            color: #4a90e2;
+            margin-right: 0.5rem;
+        }
+
+        .chat-bar-button {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .chat-bar-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+        }
+
+        .chat-bar-button:active {
+            transform: translateY(0);
+        }
+
         @media (max-width: 768px) {
             .repository-container {
                 padding: 1rem;
@@ -283,6 +350,23 @@
                 left: 1rem;
                 padding: 0.5rem 1rem;
                 font-size: 0.9rem;
+            }
+
+            .floating-chat-bar {
+                padding: 0.75rem 1rem;
+            }
+
+            .chat-bar-text {
+                font-size: 1rem;
+            }
+
+            .chat-bar-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .repository-container {
+                padding-bottom: 4rem;
             }
         }
     </style>
@@ -307,6 +391,19 @@
                     <p>Loading repository information...</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Floating Chat Bar -->
+    <div class="floating-chat-bar" id="floatingChatBar">
+        <div class="chat-bar-content">
+            <span class="chat-bar-text">
+                <i class="fas fa-comment-dots chat-bar-icon"></i>
+                Chat about Repo with LLaMa
+            </span>
+            <button class="chat-bar-button" onclick="toggleChatBar()">
+                <i class="fas fa-chevron-up" id="chatBarIcon"></i>
+            </button>
         </div>
     </div>
 
@@ -504,11 +601,56 @@
             window.location.href = `categories.html?category=${encodeURIComponent(categoryName)}`;
         }
 
+        // Chat bar functionality
+        let chatBarVisible = false;
+
+        function toggleChatBar() {
+            const chatBar = document.getElementById('floatingChatBar');
+            const chatBarIcon = document.getElementById('chatBarIcon');
+            
+            if (chatBarVisible) {
+                // Hide chat bar
+                chatBar.classList.remove('show');
+                chatBarIcon.className = 'fas fa-chevron-up';
+                chatBarVisible = false;
+            } else {
+                // Show chat bar
+                chatBar.classList.add('show');
+                chatBarIcon.className = 'fas fa-chevron-down';
+                chatBarVisible = true;
+                
+                // Show placeholder message
+                setTimeout(() => {
+                    const repoName = repositoryData ? repositoryData.name : 'this repository';
+                    alert(`Chat functionality coming soon!\n\nThis will integrate with LLaMa to provide AI-powered assistance for ${repoName}.\n\nFeatures will include:\n• Ask questions about the model\n• Get usage examples\n• Understand architecture details\n• Troubleshoot issues`);
+                }, 300);
+            }
+        }
+
+        function showChatBar() {
+            const chatBar = document.getElementById('floatingChatBar');
+            chatBar.classList.add('show');
+            chatBarVisible = true;
+            
+            // Add a subtle pulse animation to draw attention
+            setTimeout(() => {
+                chatBar.style.animation = 'pulse 2s ease-in-out';
+                setTimeout(() => {
+                    chatBar.style.animation = '';
+                }, 2000);
+            }, 500);
+        }
+
         // Initialize the page
         async function initPage() {
             await loadRepositoryData();
             updateRepositoryHeader();
             await loadMarkdownContent();
+            
+            // Show chat bar if documentation is available
+            if (repositoryData && repositoryData.md_file_available) {
+                setTimeout(showChatBar, 1000); // Show after 1 second
+            }
         }
 
         // Start the page
