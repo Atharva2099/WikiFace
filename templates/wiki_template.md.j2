@@ -1,19 +1,26 @@
-# {{ model_name }}
+{#
+    This Jinja2 template renders a comprehensive Markdown wiki page for a Hugging Face model.
+    It expects a 'ModelWikiPage' Pydantic object (or equivalent dictionary) as input.
+    Sections are ordered to prioritize core information (Architecture, Usage) followed by details.
+#}
+# {{ model_id }} - Technical Documentation
 
 **Author:** {{ author }}  
-**Last Updated:** {{ last_updated }}  
-**License:** {{ license or "N/A" }}  
-**Repository:** [{{ model_name }}]({{ huggingface_url }})
+**License:** {{ license }}  
+**Last Modified:** {{ last_modified }}  
+**HuggingFace URL:** [{{ model_id }}]({{ huggingface_url }})
+
+{% if downloads_last_month %}
+**Downloads (Last Month):** {{ "{:,}".format(downloads_last_month) }}
+{% endif %}
+
+{% if tags %}
+**Tags:** {{ tags | join(", ") }}
+{% endif %}
 
 ---
 
-[Overview](#overview) • [Architecture](#architecture) • [File Tree](#file-tree) • [Use Cases](#use-cases) • [Benchmarks](#benchmarks) • [Variants](#model-variants) • [References](#references)
-
----
-
-## Overview
-
-{{ overview }}
+[Architecture](#architecture) • [Usage Guides](#usage-guides) • [Benchmarks](#performance--benchmarks) • [Variants](#model-variants) • [Limitations](#model-limitations--ethical-considerations) • [Conceptual Summary](#conceptual-summary) • [File Tree](#file-tree) • [Use Cases](#use-cases) • [Research Papers](#research-papers) • [Hyperparameters](#key-hyperparameters) • [GitHub](#github-repository) • [Training Info](#training-data--derivatives) • [Future Work](#future-work--roadmap) • [External Resources](#external-resources)
 
 ---
 
@@ -23,38 +30,57 @@
 
 ---
 
-## File Tree
+## Usage Guides
 
-```mermaid
-graph TD
-    root[{{ model_name }}]
-    {% for file in file_tree %}
-    root --> {{ loop.index }}["{{ file.name }}<br/>{{ file.size_formatted or (file.size + ' bytes') or 'unknown' }}"]
-    {% endfor %}
+{% if usage_guides %}
+{% for section in usage_guides %}
+### {{ section.title }}
+<p>{{ section.description }}</p>
+{% if section.code_example %}
+```python
+{{ section.code_example | trim }}
 ```
-
-### Files
-
-| File | Size | Download |
-|------|------|----------|
-{% for file in file_tree %}
-| {{ file.name }} | {{ file.size_formatted or (file.size + ' bytes') or "unknown" }} | [Download]({{ file.url }}) |
+{% endif %}
+{% if section.image_url %}
+<p align="center">
+<img src="{{ section.image_url }}" alt="{{ section.image_caption | default(section.title) }}" style="width:100%; max-width:800px; border-radius:8px;">
+{% if section.image_caption %}
+<br />
+<span>{{ section.image_caption }}</span>
+{% endif %}
+</p>
+{% endif %}
 {% endfor %}
+<p style="font-style: italic; font-size: 0.9em; margin-top: 1em;">
+Note: This wiki uses static Markdown. For interactive examples, please refer to the original
+<a href="{{ huggingface_url }}" target="_blank">Hugging Face model page</a> or the
+<a href="{{ github.url }}" target="_blank">GitHub repository</a>.
+</p>
+{% else %}
+*No detailed usage guides provided.*
+{% endif %}
 
 ---
 
-## Use Cases
+## Performance & Benchmarks
 
-{% for use_case in use_cases %}
-- {{ use_case }}
+{% if benchmarks %}
+{% for benchmark_table in benchmarks %}
+### {{ benchmark_table.title }}
+{% if benchmark_table.description %}
+<p>{{ benchmark_table.description }}</p>
+{% endif %}
+{% if benchmark_table.image_url %}
+<p align="center">
+    <img src="{{ benchmark_table.image_url }}" alt="{{ benchmark_table.image_caption | default(benchmark_table.title) }}" style="width:100%; max-width:800px; border-radius:8px;">
+    {% if benchmark_table.image_caption %}
+    <br />
+    <span>{{ benchmark_table.image_caption }}</span>
+    {% endif %}
+</p>
+{% endif %}
+{{ benchmark_table.markdown_table }}
 {% endfor %}
-
----
-
-## Benchmarks
-
-{% if evaluation_summary %}
-{{ evaluation_summary }}
 {% else %}
 | Dataset | Metric | Value | Notes |
 |---------|--------|-------|-------|
@@ -65,22 +91,231 @@ graph TD
 
 ## Model Variants
 
+{% if variants %}
+| Name | Description | Hugging Face URL |
+| :--- | :---------- | :--------------- |
+{% for variant in variants %}
+| {{ variant.name }} | {{ variant.description }} | [Link]({{ variant.huggingface_url }}) |
+{% endfor %}
+{% else %}
 | Model | Parameters | Base Architecture |
 |-------|------------|-------------------|
-| BERT-Base | 110M | Transformer Encoder |
-| BERT-Large | 340M | Transformer Encoder |
-| DistilBERT | 66M | Distilled BERT |
-| RoBERTa | 125M | Optimized BERT |
-| ALBERT | 12M-235M | Parameter-shared BERT |
+| Base Model | N/A | N/A |
+{% endif %}
 
 ---
 
-## References
+## Model Limitations & Ethical Considerations
 
-{% for ref in references %}
-- {{ ref }}
+{% if limitations %}
+### Limitations
+<p>{{ limitations }}</p>
+{% else %}
+*No specific limitations documented.*
+{% endif %}
+
+{% if ethical_considerations %}
+### Ethical Considerations
+<p>{{ ethical_considerations }}</p>
+{% else %}
+*No specific ethical considerations documented.*
+{% endif %}
+
+---
+
+## Conceptual Summary
+
+{{ overview }}
+
+{% if mindmap %}
+### Model Design Flow (Mind Map)
+
+```mermaid
+mindmap
+  root(({{ model_id.split('/')[-1] }}))
+  {% for node in mindmap %}
+    {{ node.label }}
+    {% if node.children %}
+      {% for child in node.children %}
+        {% if child.children %}
+          {{ child.label }}
+          {% for grand_child in child.children %}
+            {{ grand_child.label }}
+          {% endfor %}
+        {% else %}
+          {{ child.label }}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+```
+{% endif %}
+
+---
+
+## File Tree
+
+{% if files %}
+```mermaid
+graph TD
+    root["{{ model_id.split('/')[-1] }}"]
+    {% for file in files %}
+    {% set parts = file.name.split('/') %}
+    {% if parts|length == 1 %}
+        root --> leaf_{{ loop.index0 }}["{{ parts[0] }}<br/>{{ file.size_human or 'unknown' }}"]
+    {% else %}
+        {% set parent_node = "root" %}
+        {% for i in range(parts|length - 1) %}
+            {% set current_part = parts[i] %}
+            {# Create a unique ID for intermediate directories to avoid Mermaid clashes #}
+            {% set current_node_id = (parent_node ~ '_' ~ i ~ '_' ~ current_part)|replace('.', '_')|replace('-', '_')|replace('/', '_') %}
+            {% if not loop.first %}{# Only draw edge if not the root's first child #}
+                {{ parent_node }} --> {{ current_node_id }}["{{ current_part }}"]
+            {% else %}{# Special handling for direct children of root #}
+                {% if parts|length > 1 %}
+                    root --> {{ current_node_id }}["{{ current_part }}"]
+                {% endif %}
+            {% endif %}
+            {% set parent_node = current_node_id %}
+        {% endfor %}
+        {{ parent_node }} --> leaf_{{ loop.index0 }}["{{ parts[-1] }}<br/>{{ file.size_human or 'unknown' }}"]
+    {% endif %}
+    {% endfor %}
+```
+
+### Files
+
+| File | Size | Download |
+|------|------|----------|
+{% for file in files %}
+| `{{ file.name }}` | {{ file.size_human or "Unknown" }} | [Download]({{ file.url }}) |
 {% endfor %}
+{% else %}
+*No file structure available.*
+{% endif %}
 
 ---
 
-*This page was automatically generated using LLaMA 4 and validated using Pydantic.* 
+## Use Cases
+
+{% if use_cases %}
+{% for use_case in use_cases %}
+- {{ use_case }}
+{% endfor %}
+{% else %}
+*No specific use cases documented.*
+{% endif %}
+
+---
+
+## Research Papers
+
+{% if papers %}
+{% for paper in papers %}
+### {{ paper.title }}
+
+**URL:** [{{ paper.title }}]({{ paper.url }})
+
+{{ paper.summary }}
+
+{% if paper.citation %}
+**Citation:**
+```bibtex
+{{ paper.citation }}
+```
+{% endif %}
+
+---
+{% endfor %}
+{% else %}
+*No research papers available.*
+{% endif %}
+
+---
+
+## Key Hyperparameters
+
+{% if key_hyperparameters %}
+| Parameter | Value |
+| :-------- | :---- |
+{% for param in key_hyperparameters %}
+| {{ param.name }} | {{ param.value }} |
+{% endfor %}
+{% else %}
+*No detailed hyperparameters documented.*
+{% endif %}
+
+---
+
+## GitHub Repository
+
+{% if github %}
+**Repository:** [{{ github.repo_name }}]({{ github.url }})  
+**Stars:** {{ "{:,}".format(github.stars) }} | **Forks:** {{ "{:,}".format(github.forks) }} | **Issues:** {{ "{:,}".format(github.open_issues) }}  
+**Created:** {{ github.created_at }} | **Last Updated:** {{ github.last_updated }}
+
+{% if github.description %}
+{{ github.description }}
+{% endif %}
+
+{% if github.contributors %}
+**Key Contributors:** {{ github.contributors | join(", ") }}
+{% endif %}
+
+{% if github.topics %}
+**Topics:** {{ github.topics | join(", ") }}
+{% endif %}
+{% else %}
+*GitHub repository information not available.*
+{% endif %}
+
+---
+
+## Training Data & Derivatives
+
+{% if datasets_used %}
+**Training Datasets:**
+{% for dataset in datasets_used %}
+- `{{ dataset }}`
+{% endfor %}
+{% endif %}
+
+{% if adapter_count or finetune_count or quantization_count %}
+**Model Derivatives & Training Adjustments:**
+{% if finetune_count %}
+- Fine-tuning Instances: {{ finetune_count }}
+{% endif %}
+{% if adapter_count %}
+- Adapter Layers Applied: {{ adapter_count }}
+{% endif %}
+{% if quantization_count %}
+- Quantization Steps: {{ quantization_count }}
+{% endif %}
+{% endif %}
+
+---
+
+## Future Work & Roadmap
+
+{% if future_work %}
+<p>{{ future_work }}</p>
+{% else %}
+*No future work or roadmap details provided.*
+{% endif %}
+
+---
+
+## External Resources
+
+{% if external_resources %}
+* **Additional Resources & Blog Posts:**
+{% for resource in external_resources %}
+- [{{ resource.title }}]({{ resource.url }})
+{% endfor %}
+{% else %}
+*No additional external resources.*
+{% endif %}
+
+---
+
+*This page was automatically generated using LLaMA 4.* 
