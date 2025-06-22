@@ -10,7 +10,8 @@
           "downloads": "703,766",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         },
         {
           "name": "jonatasgrosman_wav2vec2-large-xlsr-53-russian",
@@ -18,7 +19,8 @@
           "downloads": "4,712,418",
           "adapters": 0,
           "finetunes": 6,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "m-a-p_MERT-v1-95M",
@@ -26,7 +28,8 @@
           "downloads": "839,368",
           "adapters": 1,
           "finetunes": 3,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "MIT_ast-finetuned-audioset-10-10-0.4593",
@@ -34,7 +37,8 @@
           "downloads": "670,062",
           "adapters": 0,
           "finetunes": 127,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "pyannote_speaker-diarization-3.1",
@@ -42,7 +46,8 @@
           "downloads": "14,335,997",
           "adapters": 0,
           "finetunes": 31,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "pyannote_voice-activity-detection",
@@ -50,7 +55,8 @@
           "downloads": "8,086,116",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         }
       ]
     },
@@ -64,7 +70,9 @@
           "downloads": "3,979,710",
           "adapters": 0,
           "finetunes": 417,
-          "quantizations": 5
+          "quantizations": 5,
+          "md_file_available": true,
+          "md_file_path": "md_files/Embeddings/BAAI_bge-base-en-v1.5.md"
         },
         {
           "name": "jinaai_jina-embeddings-v3",
@@ -72,7 +80,8 @@
           "downloads": "4,007,003",
           "adapters": 0,
           "finetunes": 28,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": false
         },
         {
           "name": "unslothai_1",
@@ -80,7 +89,9 @@
           "downloads": "6,159,301",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": true,
+          "md_file_path": "md_files/Embeddings/unslothai_1.md"
         }
       ]
     },
@@ -94,7 +105,9 @@
           "downloads": "87,214,782",
           "adapters": 0,
           "finetunes": 2267,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": true,
+          "md_file_path": "md_files/Image Classification/dima806_fairface_age_image_detection.md"
         },
         {
           "name": "Falconsai_nsfw_image_detection",
@@ -102,7 +115,9 @@
           "downloads": "165,514,547",
           "adapters": 0,
           "finetunes": 10,
-          "quantizations": 3
+          "quantizations": 3,
+          "md_file_available": true,
+          "md_file_path": "md_files/Image Classification/Falconsai_nsfw_image_detection.md"
         },
         {
           "name": "timm_mobilenetv3_small_100.lamb_in1k",
@@ -110,7 +125,8 @@
           "downloads": "50,712,690",
           "adapters": 0,
           "finetunes": 3,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": false
         }
       ]
     },
@@ -124,7 +140,8 @@
           "downloads": "2,667,621",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         },
         {
           "name": "facebook_mask2former-swin-tiny-coco-instance",
@@ -132,7 +149,8 @@
           "downloads": "669,937",
           "adapters": 0,
           "finetunes": 12,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "ZhengPeng7_BiRefNet",
@@ -140,7 +158,8 @@
           "downloads": "1,311,116",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         }
       ]
     },
@@ -154,7 +173,9 @@
           "downloads": "1,555,317",
           "adapters": 0,
           "finetunes": 4,
-          "quantizations": 3
+          "quantizations": 3,
+          "md_file_available": true,
+          "md_file_path": "md_files/Image-Text-to-Text/OpenGVLab_InternVL3-78B.md"
         },
         {
           "name": "Qwen_Qwen2.5-VL-3B-Instruct",
@@ -162,7 +183,9 @@
           "downloads": "3,318,216",
           "adapters": 29,
           "finetunes": 237,
-          "quantizations": 35
+          "quantizations": 35,
+          "md_file_available": true,
+          "md_file_path": "md_files/Image-Text-to-Text/Qwen_Qwen2.5-VL-3B-Instruct.md"
         },
         {
           "name": "Qwen_Qwen2.5-VL-7B-Instruct",
@@ -170,7 +193,9 @@
           "downloads": "3,102,169",
           "adapters": 50,
           "finetunes": 374,
-          "quantizations": 70
+          "quantizations": 70,
+          "md_file_available": true,
+          "md_file_path": "md_files/Image-Text-to-Text/Qwen_Qwen2.5-VL-7B-Instruct.md"
         }
       ]
     },
@@ -184,7 +209,8 @@
           "downloads": "595,592",
           "adapters": 1,
           "finetunes": 9,
-          "quantizations": 3
+          "quantizations": 3,
+          "md_file_available": false
         },
         {
           "name": "Salesforce_blip-image-captioning-base",
@@ -192,7 +218,8 @@
           "downloads": "3,059,251",
           "adapters": 4,
           "finetunes": 32,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "Salesforce_blip-image-captioning-large",
@@ -200,7 +227,8 @@
           "downloads": "2,402,347",
           "adapters": 0,
           "finetunes": 10,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         }
       ]
     },
@@ -214,7 +242,8 @@
           "downloads": "3,894,792",
           "adapters": 0,
           "finetunes": 13,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         },
         {
           "name": "microsoft_table-transformer-structure-recognition",
@@ -222,7 +251,8 @@
           "downloads": "1,187,239",
           "adapters": 0,
           "finetunes": 19,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         },
         {
           "name": "microsoft_table-transformer-structure-recognition-v1.1-all",
@@ -230,7 +260,8 @@
           "downloads": "908,247",
           "adapters": 0,
           "finetunes": 15,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         }
       ]
     },
@@ -244,7 +275,8 @@
           "downloads": "1,380,581",
           "adapters": 3,
           "finetunes": 1681,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": false
         },
         {
           "name": "distilbert_distilbert-base-cased-distilled-squad",
@@ -252,7 +284,8 @@
           "downloads": "212,468",
           "adapters": 2,
           "finetunes": 29,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": false
         },
         {
           "name": "monologg_koelectra-small-v2-distilled-korquad-384",
@@ -260,7 +293,8 @@
           "downloads": "254,962",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         }
       ]
     },
@@ -274,7 +308,8 @@
           "downloads": "9,213",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 11
+          "quantizations": 11,
+          "md_file_available": false
         },
         {
           "name": "PKU-Alignment_beaver-7b-v1.0-cost",
@@ -282,7 +317,8 @@
           "downloads": "11,359",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "PKU-Alignment_beaver-7b-v1.0-reward",
@@ -290,7 +326,8 @@
           "downloads": "11,271",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         }
       ]
     },
@@ -304,7 +341,8 @@
           "downloads": "3,186,707",
           "adapters": 25,
           "finetunes": 366,
-          "quantizations": 4
+          "quantizations": 4,
+          "md_file_available": false
         },
         {
           "name": "facebook_bart-large-xsum",
@@ -312,7 +350,8 @@
           "downloads": "150,950",
           "adapters": 0,
           "finetunes": 52,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         },
         {
           "name": "sshleifer_distilbart-cnn-12-6",
@@ -320,7 +359,8 @@
           "downloads": "2,611,944",
           "adapters": 0,
           "finetunes": 34,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": false
         }
       ]
     },
@@ -334,7 +374,8 @@
           "downloads": "4,222,431",
           "adapters": 8,
           "finetunes": 192,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         },
         {
           "name": "distilbert_distilbert-base-uncased-finetuned-sst-2-english",
@@ -342,7 +383,9 @@
           "downloads": "4,540,258",
           "adapters": 0,
           "finetunes": 96,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": true,
+          "md_file_path": "md_files/Text Classification/distilbert_distilbert-base-uncased-finetuned-sst-2-english.md"
         },
         {
           "name": "microsoft_deberta-large-mnli",
@@ -350,7 +393,8 @@
           "downloads": "3,740,563",
           "adapters": 0,
           "finetunes": 1,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         }
       ]
     },
@@ -364,7 +408,9 @@
           "downloads": "5,444,573",
           "adapters": 0,
           "finetunes": 606,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": true,
+          "md_file_path": "md_files/Text Generation/Gensyn_Qwen2.5-1.5B-Instruct.md"
         },
         {
           "name": "google_flan-t5-base",
@@ -372,7 +418,8 @@
           "downloads": "1,939,704",
           "adapters": 233,
           "finetunes": 791,
-          "quantizations": 8
+          "quantizations": 8,
+          "md_file_available": false
         },
         {
           "name": "google_t5-v1_1-xxl",
@@ -380,7 +427,8 @@
           "downloads": "810,003",
           "adapters": 0,
           "finetunes": 2,
-          "quantizations": 10
+          "quantizations": 10,
+          "md_file_available": false
         },
         {
           "name": "meta-llama_Llama-3.1-8B-Instruct",
@@ -388,7 +436,8 @@
           "downloads": "5,162,140",
           "adapters": 912,
           "finetunes": 1437,
-          "quantizations": 451
+          "quantizations": 451,
+          "md_file_available": false
         },
         {
           "name": "openai-community_gpt2",
@@ -396,7 +445,8 @@
           "downloads": "13,194,330",
           "adapters": 1666,
           "finetunes": 1890,
-          "quantizations": 76
+          "quantizations": 76,
+          "md_file_available": false
         },
         {
           "name": "prithivida_parrot_paraphraser_on_T5",
@@ -404,7 +454,9 @@
           "downloads": "914,377",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": true,
+          "md_file_path": "md_files/Text Generation/prithivida_parrot_paraphraser_on_T5.md"
         }
       ]
     },
@@ -418,7 +470,8 @@
           "downloads": "2,700,147",
           "adapters": 7033,
           "finetunes": 1187,
-          "quantizations": 13
+          "quantizations": 13,
+          "md_file_available": false
         },
         {
           "name": "stable-diffusion-v1-5_stable-diffusion-inpainting",
@@ -426,7 +479,8 @@
           "downloads": "3,241,973",
           "adapters": 1,
           "finetunes": 1,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "stable-diffusion-v1-5_stable-diffusion-v1-5",
@@ -434,7 +488,8 @@
           "downloads": "3,105,179",
           "adapters": 368,
           "finetunes": 222,
-          "quantizations": 6
+          "quantizations": 6,
+          "md_file_available": false
         }
       ]
     },
@@ -448,7 +503,8 @@
           "downloads": "1,955,929",
           "adapters": 0,
           "finetunes": 43,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "hexgrad_Kokoro-82M",
@@ -456,7 +512,8 @@
           "downloads": "1,653,999",
           "adapters": 9,
           "finetunes": 19,
-          "quantizations": 10
+          "quantizations": 10,
+          "md_file_available": false
         },
         {
           "name": "SWivid_F5-TTS",
@@ -464,7 +521,8 @@
           "downloads": "870,494",
           "adapters": 0,
           "finetunes": 49,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         }
       ]
     },
@@ -478,7 +536,8 @@
           "downloads": "134,819",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "Wan-AI_Wan2.1-T2V-1.3B-Diffusers",
@@ -486,7 +545,8 @@
           "downloads": "138,694",
           "adapters": 3,
           "finetunes": 1,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "Wan-AI_Wan2.1-T2V-14B-Diffusers",
@@ -494,7 +554,8 @@
           "downloads": "115,304",
           "adapters": 36,
           "finetunes": 1,
-          "quantizations": 1
+          "quantizations": 1,
+          "md_file_available": false
         }
       ]
     },
@@ -508,7 +569,8 @@
           "downloads": "4,675,342",
           "adapters": 0,
           "finetunes": 3,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "amazon_chronos-t5-small",
@@ -516,7 +578,8 @@
           "downloads": "68,164,373",
           "adapters": 0,
           "finetunes": 1,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         },
         {
           "name": "ibm-granite_granite-timeseries-ttm-r2",
@@ -524,7 +587,8 @@
           "downloads": "4,561,664",
           "adapters": 0,
           "finetunes": 0,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": false
         }
       ]
     },
@@ -538,7 +602,9 @@
           "downloads": "1,385,939",
           "adapters": 0,
           "finetunes": 7,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": true,
+          "md_file_path": "md_files/Token Classification/dbmdz_bert-large-cased-finetuned-conll03-english.md"
         },
         {
           "name": "dslim_bert-base-NER",
@@ -546,7 +612,9 @@
           "downloads": "1,895,421",
           "adapters": 4,
           "finetunes": 25,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": true,
+          "md_file_path": "md_files/Token Classification/dslim_bert-base-NER.md"
         },
         {
           "name": "FacebookAI_roberta-large",
@@ -554,7 +622,8 @@
           "downloads": "16,921,248",
           "adapters": 61,
           "finetunes": 368,
-          "quantizations": 2
+          "quantizations": 2,
+          "md_file_available": false
         },
         {
           "name": "FacebookAI_xlm-roberta-base",
@@ -562,7 +631,8 @@
           "downloads": "13,601,240",
           "adapters": 37,
           "finetunes": 3181,
-          "quantizations": 3
+          "quantizations": 3,
+          "md_file_available": false
         },
         {
           "name": "google-bert_bert-base-uncased",
@@ -570,7 +640,8 @@
           "downloads": "66,487,309",
           "adapters": 78,
           "finetunes": 5366,
-          "quantizations": 13
+          "quantizations": 13,
+          "md_file_available": false
         },
         {
           "name": "w11wo_indonesian-roberta-base-posp-tagger",
@@ -578,7 +649,9 @@
           "downloads": "1,787,050",
           "adapters": 0,
           "finetunes": 6,
-          "quantizations": 0
+          "quantizations": 0,
+          "md_file_available": true,
+          "md_file_path": "md_files/Token Classification/w11wo_indonesian-roberta-base-posp-tagger.md"
         }
       ]
     },
@@ -592,7 +665,8 @@
           "downloads": "2,882,185",
           "adapters": 48,
           "finetunes": 596,
-          "quantizations": 11
+          "quantizations": 11,
+          "md_file_available": false
         },
         {
           "name": "google-t5_t5-small",
@@ -600,7 +674,8 @@
           "downloads": "2,769,571",
           "adapters": 61,
           "finetunes": 1991,
-          "quantizations": 10
+          "quantizations": 10,
+          "md_file_available": false
         },
         {
           "name": "Helsinki-NLP_opus-mt-fr-en",
@@ -608,7 +683,8 @@
           "downloads": "1,014,340",
           "adapters": 0,
           "finetunes": 9,
-          "quantizations": 3
+          "quantizations": 3,
+          "md_file_available": false
         }
       ]
     }

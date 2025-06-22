@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiFace - Repository Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .repository-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .repository-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .repository-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .repository-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #2d3748;
+        }
+
+        .meta-label {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-value {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .repository-content {
+            background: #0f1419;
+            border: 1px solid #2d3748;
+            border-radius: 15px;
+            padding: 2rem;
+            min-height: 500px;
+        }
+
+        .content-loading {
+            text-align: center;
+            padding: 3rem;
+            color: #a0aec0;
+        }
+
+        .spinner {
+            border: 3px solid #2d3748;
+            border-top: 3px solid #4a90e2;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .placeholder-content {
+            text-align: center;
+            padding: 3rem;
+            color: #a0aec0;
+        }
+
+        .placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #4a90e2;
+        }
+
+        .placeholder-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .placeholder-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .placeholder-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            background: rgba(74, 144, 226, 0.1);
+            border: 1px solid #4a90e2;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            color: #4a90e2;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-desc {
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+
+        .markdown-content {
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        .markdown-content h1,
+        .markdown-content h2,
+        .markdown-content h3,
+        .markdown-content h4,
+        .markdown-content h5,
+        .markdown-content h6 {
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .markdown-content h1 {
+            font-size: 2rem;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+        }
+
+        .markdown-content h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid #2d3748;
+            padding-bottom: 0.5rem;
+        }
+
+        .markdown-content h3 {
+            font-size: 1.3rem;
+        }
+
+        .markdown-content p {
+            margin-bottom: 1rem;
+        }
+
+        .markdown-content ul,
+        .markdown-content ol {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .markdown-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-content code {
+            background: rgba(74, 144, 226, 0.2);
+            color: #4a90e2;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .markdown-content pre {
+            background: #1a1a2e;
+            border: 1px solid #2d3748;
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .markdown-content pre code {
+            background: none;
+            color: #ffffff;
+            padding: 0;
+        }
+
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .markdown-content th,
+        .markdown-content td {
+            border: 1px solid #2d3748;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .markdown-content th {
+            background: rgba(74, 144, 226, 0.1);
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .markdown-content a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-content blockquote {
+            border-left: 4px solid #4a90e2;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .repository-container {
+                padding: 1rem;
+            }
+
+            .repository-title {
+                font-size: 2rem;
+            }
+
+            .repository-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="goBack()">
+        ← Back to Categories
+    </button>
+
+    <div class="container">
+        <div class="repository-container">
+            <div class="repository-header" id="repositoryHeader">
+                <h1 class="repository-title" id="repositoryTitle">Loading...</h1>
+                <div class="repository-meta" id="repositoryMeta">
+                    <!-- Meta information will be loaded here -->
+                </div>
+            </div>
+
+            <div class="repository-content" id="repositoryContent">
+                <div class="content-loading">
+                    <div class="spinner"></div>
+                    <p>Loading repository information...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get repository information from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const repoName = urlParams.get('repo');
+        const repoPath = urlParams.get('path');
+        const categoryName = urlParams.get('category');
+
+        let repositoryData = null;
+
+        async function loadRepositoryData() {
+            try {
+                const response = await fetch('categories_data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                // Find the specific repository
+                const category = data.categories.find(cat => cat.name === categoryName);
+                if (category) {
+                    repositoryData = category.models.find(model => model.name === repoName);
+                }
+                
+                return repositoryData;
+            } catch (error) {
+                console.error('Error loading repository data:', error);
+                return null;
+            }
+        }
+
+        function updateRepositoryHeader() {
+            const title = document.getElementById('repositoryTitle');
+            const meta = document.getElementById('repositoryMeta');
+            
+            if (repositoryData) {
+                title.textContent = repositoryData.name;
+                
+                meta.innerHTML = `
+                    <div class="meta-item">
+                        <div class="meta-label">Downloads (Last Month)</div>
+                        <div class="meta-value">${repositoryData.downloads}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Adapters</div>
+                        <div class="meta-value">${repositoryData.adapters}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Finetunes</div>
+                        <div class="meta-value">${repositoryData.finetunes}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Quantizations</div>
+                        <div class="meta-value">${repositoryData.quantizations}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Documentation</div>
+                        <div class="meta-value">${repositoryData.md_file_available ? 'Available' : 'Not Available'}</div>
+                    </div>
+                `;
+            }
+        }
+
+        async function loadMarkdownContent() {
+            const content = document.getElementById('repositoryContent');
+            
+            if (!repositoryData || !repositoryData.md_file_available) {
+                // Show placeholder content
+                content.innerHTML = `
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h2 class="placeholder-title">Documentation Not Available</h2>
+                        <p class="placeholder-text">
+                            The detailed documentation for this model is not yet available. 
+                            This model has been scraped and analyzed, but the comprehensive 
+                            wiki-style documentation is still being generated.
+                        </p>
+                        <div class="placeholder-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <div class="feature-title">Model Files</div>
+                                <div class="feature-desc">Available for download from Hugging Face</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <div class="feature-title">Usage Statistics</div>
+                                <div class="feature-desc">Download counts and community metrics</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="feature-title">GitHub Data</div>
+                                <div class="feature-desc">Repository information and contributors</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            try {
+                // Load the markdown file
+                const response = await fetch(repositoryData.md_file_path);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const markdownText = await response.text();
+                
+                // Convert markdown to HTML (simple conversion for now)
+                const htmlContent = convertMarkdownToHtml(markdownText);
+                
+                content.innerHTML = `
+                    <div class="markdown-content">
+                        ${htmlContent}
+                    </div>
+                `;
+                
+            } catch (error) {
+                console.error('Error loading markdown content:', error);
+                content.innerHTML = `
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h2 class="placeholder-title">Error Loading Documentation</h2>
+                        <p class="placeholder-text">
+                            There was an error loading the documentation for this model. 
+                            Please try again later or contact support if the issue persists.
+                        </p>
+                    </div>
+                `;
+            }
+        }
+
+        function convertMarkdownToHtml(markdown) {
+            // Simple markdown to HTML conversion
+            let html = markdown;
+            
+            // Headers
+            html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+            
+            // Bold and italic
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            
+            // Code blocks
+            html = html.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+            html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Links
+            html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            
+            // Lists
+            html = html.replace(/^\* (.*$)/gim, '<li>$1</li>');
+            html = html.replace(/^- (.*$)/gim, '<li>$1</li>');
+            html = html.replace(/^(\d+)\. (.*$)/gim, '<li>$2</li>');
+            
+            // Wrap lists
+            html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+            
+            // Paragraphs
+            html = html.replace(/\n\n/g, '</p><p>');
+            html = '<p>' + html + '</p>';
+            
+            // Clean up empty paragraphs
+            html = html.replace(/<p><\/p>/g, '');
+            
+            // Tables (basic support)
+            html = html.replace(/\|(.+)\|/g, function(match) {
+                const cells = match.split('|').slice(1, -1);
+                const row = cells.map(cell => `<td>${cell.trim()}</td>`).join('');
+                return `<tr>${row}</tr>`;
+            });
+            
+            // Wrap tables
+            html = html.replace(/(<tr>.*<\/tr>)/s, '<table>$1</table>');
+            
+            return html;
+        }
+
+        function goBack() {
+            // Go back to categories page with the category parameter
+            window.location.href = `categories.html?category=${encodeURIComponent(categoryName)}`;
+        }
+
+        // Initialize the page
+        async function initPage() {
+            await loadRepositoryData();
+            updateRepositoryHeader();
+            await loadMarkdownContent();
+        }
+
+        // Start the page
+        initPage();
+    </script>
+</body>
+</html> 

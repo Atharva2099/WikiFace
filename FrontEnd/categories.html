@@ -333,9 +333,14 @@
         }
 
         function createRepositoryCard(repo) {
+            const docIndicator = repo.md_file_available ? 
+                '<div style="color: #4ade80; font-size: 0.8rem; margin-bottom: 0.5rem;"><i class="fas fa-file-alt"></i> Documentation Available</div>' : 
+                '<div style="color: #a0aec0; font-size: 0.8rem; margin-bottom: 0.5rem;"><i class="fas fa-clock"></i> Documentation Pending</div>';
+            
             return `
                 <div class="repo-card" onclick="openRepository('${repo.name}', '${repo.path}')">
                     <h4 class="repo-name">${repo.name}</h4>
+                    ${docIndicator}
                     <div class="repo-info">
                         <div>📥 ${repo.downloads} downloads</div>
                         <div>🔌 ${repo.adapters} adapters</div>
@@ -377,8 +382,15 @@
         }
 
         function openRepository(repoName, repoPath) {
-            // In a real application, this would navigate to the repository page
-            alert(`Opening repository: ${repoName}\n\nPath: ${repoPath}\n\nThis would navigate to a detailed repository page with all the model information, including:\n\n• Model metadata\n• Sidebar information (downloads, adapters, etc.)\n• GitHub data\n• Research papers\n• Model files and structure\n\nFor now, this is a placeholder for the repository detail page.`);
+            // Navigate to the repository detail page
+            const category = categoriesData.categories.find(cat => 
+                cat.models.some(model => model.name === repoName)
+            );
+            
+            if (category) {
+                const url = `repository.html?repo=${encodeURIComponent(repoName)}&path=${encodeURIComponent(repoPath)}&category=${encodeURIComponent(category.name)}`;
+                window.location.href = url;
+            }
         }
 
         // Close modal when clicking outside
