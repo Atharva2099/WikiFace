@@ -108,10 +108,12 @@ def process_model_folder(model_folder_path):
         tuple: (model_name, num_papers_found, num_papers_downloaded)
     """
     model_name = os.path.basename(model_folder_path)
+    # Get the task category (parent directory name)
+    task_category = os.path.basename(os.path.dirname(model_folder_path))
     model_info_path = os.path.join(model_folder_path, "model_info.md")
     
     if not os.path.exists(model_info_path):
-        logger.warning(f"model_info.md not found in {model_folder_path}")
+        logger.warning(f"model_info.md not found in {task_category}/{model_name}")
         return model_name, 0, 0
     
     try:
@@ -123,10 +125,10 @@ def process_model_folder(model_folder_path):
         arxiv_links = extract_arxiv_links(content)
         
         if not arxiv_links:
-            logger.info(f"No arXiv links found in {model_name}")
+            logger.info(f"No arXiv links found in {task_category}/{model_name}")
             return model_name, 0, 0
         
-        logger.info(f"Found {len(arxiv_links)} arXiv links in {model_name}: {arxiv_links}")
+        logger.info(f"Found {len(arxiv_links)} arXiv links in {task_category}/{model_name}: {arxiv_links}")
         
         # Download each paper
         successful_downloads = 0
@@ -139,7 +141,7 @@ def process_model_folder(model_folder_path):
         return model_name, len(arxiv_links), successful_downloads
         
     except Exception as e:
-        logger.error(f"Error processing {model_name}: {e}")
+        logger.error(f"Error processing {task_category}/{model_name}: {e}")
         return model_name, 0, 0
 
 def main():
@@ -156,12 +158,15 @@ def main():
     
     logger.info(f"Starting to process models in {hf_listings_dir}")
     
-    # Get all subdirectories in HF_listings
+    # Get all model folders recursively (search through task subdirectories)
     model_folders = []
-    for item in os.listdir(hf_listings_dir):
-        item_path = os.path.join(hf_listings_dir, item)
-        if os.path.isdir(item_path):
-            model_folders.append(item_path)
+    for root, dirs, files in os.walk(hf_listings_dir):
+        for dir_name in dirs:
+            dir_path = os.path.join(root, dir_name)
+            # Check if this directory contains a model_info.md file (indicating it's a model folder)
+            model_info_path = os.path.join(dir_path, "model_info.md")
+            if os.path.exists(model_info_path):
+                model_folders.append(dir_path)
     
     if not model_folders:
         logger.warning("No model folders found in HF_listings")
@@ -175,10 +180,11 @@ def main():
     
     for model_folder in model_folders:
         model_name, papers_found, papers_downloaded = process_model_folder(model_folder)
+        task_category = os.path.basename(os.path.dirname(model_folder))
         total_papers_found += papers_found
         total_papers_downloaded += papers_downloaded
         
-        logger.info(f"Processed {model_name}: {papers_downloaded}/{papers_found} papers downloaded")
+        logger.info(f"Processed {task_category}/{model_name}: {papers_downloaded}/{papers_found} papers downloaded")
     
     # Summary
     logger.info("=" * 50)
